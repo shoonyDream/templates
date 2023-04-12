@@ -2,92 +2,101 @@
 </div>
 <footer class="footer">
   <div class="footer__container">
-    <div class="uk-container uk-container-large">
-      footer
-      {% include "template/logo.html" %}
-      <!-- <nav class="footer__nav">
-        <div class="footer-nav">
-          <div class="footer-nav__list">
-            <div class="footer-nav__item footer-nav__logo">
-              {% include "template/logo.html" %}
-            </div>
-            <div class="footer-nav__item footer-nav__catalog">
-              <ul uk-accordion class="uk-accordion">
-                <li>
-                  <a class="uk-accordion-title footer-nav__item-title" href="#" aria-expanded="false"><span>О
-                      компании</span></a>
-                  <div class="footer-nav__accordion uk-accordion-content" hidden="">
-                    <a href="#" class="footer-nav__item-title"><span>О компании</span></a>
-                    <div class="footer-nav__item-body">
-                      <ul class="footer-nav__item-list">
-                        <li class="footer-nav__item-link"><a href="#" class="link"><span>Сертификаты</span></a></li>
-                        <li class="footer-nav__item-link"><a href="#" class="link"><span>Отзывы</span></a></li>
-                        <li class="footer-nav__item-link"><a href="#" class="link"><span>Политика
-                              конфиденциальности</span></a></li>
-                        <li class="footer-nav__item-link"><a href="#" class="link"><span>Банки-партнеры</span></a></li>
-                        <li class="footer-nav__item-link"><a href="#" class="link"><span>Торшеры</span></a></li>
-                        <li class="footer-nav__item-link"><a href="#" class="link"><span>Контакты</span></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="footer-nav__item footer-nav__about">
-              <ul uk-accordion class="uk-accordion">
-                <li>
-                  <a class="uk-accordion-title footer-nav__item-title" href="#"
-                    aria-expanded="false"><span>Клиентам</span></a>
-                  <div class="footer-nav__accordion uk-accordion-content" hidden="">
-                    <a href="#" class="footer-nav__item-title"><span>Клиентам</span></a>
-                    <div class="footer-nav__item-body">
-                      <ul class="footer-nav__item-list">
-                        <li class="footer-nav__item-link"><a href="#" class="link"><span>Акции</span></a></li>
-                        <li class="footer-nav__item-link"><a href="#" class="link"><span>Цены</span></a></li>
-                        <li class="footer-nav__item-link"><a href="#" class="link"><span>Блог</span></a>
-                        </li>
-                        <li class="footer-nav__item-link"><a href="#" class="link"><span>Словарь</span></a></li>
-                        <li class="footer-nav__item-link"><a href="#" class="link"><span>Вопрос-ответ</span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="footer-nav__item footer-nav__contacts">
-              <div class="footer-nav__item-title footer-nav__item-title--block"><span>Контакты</span></div>
+    <div class="footer__nav">
+      <div class="uk-container uk-container-large">
+        <nav class="footer-nav">
+          <ul class="footer-nav__list uk-child-width-1-4@m uk-grid-small" uk-grid>
+            <li class="footer-nav__item uk-visible@m">
+              <a href="#" class="footer-nav__item-title"><span>О компании</span></a>
               <div class="footer-nav__item-body">
-                <a href="tel:+74955349700" class="link">+ 7 (495) 534-97-00</a><br>
-                <a href="mailto:info@pro-svetshop.ru" class="link">info@pro-svetshop.ru</a>
+                <ul class="footer-nav__item-list">
+                  <li class="footer-nav__item-link"><a href="#" class="link"><span>Сертификаты</span></a></li>
+                  <li class="footer-nav__item-link"><a href="#" class="link"><span>Отзывы</span></a></li>
+                  <li class="footer-nav__item-link"><a href="#" class="link"><span>Политика
+                        конфиденциальности</span></a></li>
+                  <li class="footer-nav__item-link"><a href="#" class="link"><span>Банки-партнеры</span></a></li>
+                  <li class="footer-nav__item-link"><a href="#" class="link"><span>Торшеры</span></a></li>
+                  <li class="footer-nav__item-link"><a href="#" class="link"><span>Контакты</span></a>
+                  </li>
+                </ul>
               </div>
-              <div class="footer-nav__item-title footer-nav__item-title--block"><span>Подписывайтесь</span></div>
+            </li>
+            <li class="footer-nav__item uk-visible@m">
+              <a href="#" class="footer-nav__item-title"><span>Клиентам</span></a>
               <div class="footer-nav__item-body">
-                <div class="input input--subscribe">
-                  <input type="text" class="input__field" placeholder="Ваш email">
-                  <button type="button" class="input__btn">{{mixins.icon('arrow-left')}}</button>
+                <ul class="footer-nav__item-list">
+                  <li class="footer-nav__item-link"><a href="#" class="link"><span>Акции</span></a></li>
+                  <li class="footer-nav__item-link"><a href="#" class="link"><span>Цены</span></a></li>
+                  <li class="footer-nav__item-link"><a href="#" class="link"><span>Блог</span></a>
+                  </li>
+                  <li class="footer-nav__item-link"><a href="#" class="link"><span>Словарь</span></a></li>
+                  <li class="footer-nav__item-link"><a href="#" class="link"><span>Вопрос-ответ</span></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="footer-nav__item uk-visible@m">
+              <a href="#" class="footer-nav__item-title"><span>Услуги</span></a>
+              <div class="footer-nav__item-body">
+                <ul class="footer-nav__item-list">
+                  <li class="footer-nav__item-link"><a href="#" class="link"><span>Бухгалтерские услуги</span></a></li>
+                  <li class="footer-nav__item-link"><a href="#" class="link"><span>Юридические услуги</span></a></li>
+                  <li class="footer-nav__item-link"><a href="#" class="link"><span>Аудиторские услуги</span></a>
+                  </li>
+                  <li class="footer-nav__item-link"><a href="#" class="link"><span>Консультации</span></a></li>
+                  <li class="footer-nav__item-link"><a href="#" class="link"><span>Решения</span></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__item-title"><span>Контакты</span></a>
+              <div class="footer-nav__item-body">
+                <div class="footer-nav__phone-list">
+                  <div class="phone-list">
+                    <div class="phone-list__item">
+                      <a href="tel:88007005871" class="link">8 (800) 700-58-71</a> <span>Бесплатный звонок</span>
+                    </div>
+                    <div class="phone-list__item">
+                      <a href="tel:+79647655050" class="link">+7 (964) 765-50-50</a>
+                    </div>
+                    <div class="phone-list__item">
+                      <a href="tel:+74959695613" class="link">+7 (495) 969-56-13</a>
+                    </div>
+                  </div>
+                </div>
+                <p class="footer-nav__address">127015, г. Москва, ул.Сущевский Вал, дом 5, строение 2, офис 205</p>
+                <p class="footer-nav__email">E-mail: <a href="mailto:msk@timeasset.ru" class="link">msk@timeasset.ru</a>
+                </p>
+                <div class="footer-nav__social">
+                  <div class="footer-social">
+                    <div class="footer-social__title">Мы в соцсетях:</div>
+                    <div class="footer-social__body">
+                      {% include "template/social.html" %}
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="footer-nav__item footer-nav__copyright">
-              <p>Все права защищены с 2010 года</p>
-              <p>ИП Шульга С.Л.<br>
-                ИНН 502498582548<br>
-                ОГРНИП 320508100118952</p>
-            </div>
-            <div class="footer-nav__item footer-nav__policy">
-              <a href="#" class="link">Договор-оферта</a><br>
-              <a href="#" class="link">Политика конфиденциальности</a>
-            </div>
-            <div class="footer-nav__item footer-nav__follow">
-              Следите за нами в соцсетях
-            </div>
-            <div class="footer-nav__item footer-nav__socials">
-              {% include "template/social.html" %}
-            </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="uk-container uk-container-large">
+        <div class="footer-bottom">
+          <div class="footer-bottom__logo uk-visible@m">
+            {% include "template/logo.html" %}
+          </div>
+          <div class="footer-bottom__copyright">
+            © 2003-2022 Бухгалтерский центр «Time_Asset»
+          </div>
+          <div class="footer-bottom__design">
+            Сайт разработан в студии
+          </div>
+          <div class="footer-bottom__design-logo">
+            <img src="./img/common/design-logo.svg" alt="">
           </div>
         </div>
-      </nav> -->
+      </div>
     </div>
   </div>
 </footer>

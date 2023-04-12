@@ -19,9 +19,9 @@
 }
 
 :root {
-  --h1: 40;
-  --h2: 20;
-  --h3: 20;
+  --h1: 24;
+  --h2: 24;
+  --h3: 24;
   --h4: 20;
   --text: calc(var(--fz-base) * var(--fz-px));
   --text-lead: calc(16 * var(--fz-px));
@@ -102,6 +102,7 @@
   --header-height: 64;
   --save-gutter: 135;
   --card-image-decor-size: 219;
+  --logo-width: 240;
 
   @media (min-width: 1140px) {
     --header-height: 188;

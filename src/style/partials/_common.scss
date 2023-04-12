@@ -60,6 +60,8 @@ strong {
 }
 
 .logo {
+  max-width: calc(var(--logo-width) / var(--fz) * var(--fz-em));
+
   &__link {
     height: 100%;
     display: block;
@@ -69,6 +71,7 @@ strong {
     height: 100%;
     display: block;
     max-width: 100%;
+    width: 100%;
   }
 }
 
