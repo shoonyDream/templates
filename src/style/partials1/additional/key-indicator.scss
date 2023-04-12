@@ -1,0 +1,126 @@
+.list-border-container {
+
+  &--inside {
+    overflow: hidden;
+  }
+
+  &--full {
+    margin: 0
+  }
+
+  &--inside {
+    margin: 0 calc(-20 / var(--fz) * var(--fz-em));
+  }
+
+
+  &__item {
+    .list-border-container--full & {
+      border: 1px solid var(--border-color);
+    }
+
+    .list-border-container--inside & {
+      border-top: 1px solid var(--border-color);
+      border-left: 1px solid var(--border-color);
+    }
+
+    .list-border-container--full &,
+    .list-border-container--inside & {
+      padding: 0;
+      position: relative;
+      margin-top: -1px !important;
+      margin-left: -1px !important;
+
+      &.uk-first-column {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.key-indicator {
+  --icon-width: 64;
+  --icon-bg: var(--bg-2);
+
+  @media (min-width: 960px) {
+    --icon-width: 96;
+  }
+}
+
+.key-indicator {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: calc(10 / var(--fz) * var(--fz-em));
+  align-items: center;
+  text-align: center;
+  padding: calc(20 / var(--fz) * var(--fz-em));
+
+  @media (min-width: 960px) {
+    gap: calc(20 / var(--fz) * var(--fz-em));
+  }
+
+  &--horizontal {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: calc(20 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      flex-direction: row;
+    }
+  }
+
+  &--align-left {
+    text-align: left;
+  }
+
+  &__body {
+    padding: 0 calc(20 / var(--fz) * var(--fz-em));
+
+    .key-indicator--horizontal & {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    --fz: 18;
+
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    line-height: 1.2;
+    position: relative;
+    color: var(--primary);
+    font-family: var(--font);
+
+    @media (min-width: 960px) {
+      --fz: 24;
+
+    }
+  }
+
+  &__title+&__description {
+    margin-top: calc(10 / var(--fz) * var(--fz-em));
+  }
+
+  &__description {
+    --fz: 14;
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+
+    line-height: 1.5;
+  }
+
+  &__icon {
+    color: var(--primary);
+    width: calc(var(--icon-width) / var(--fz) * var(--fz-em));
+    height: calc(var(--icon-width) / var(--fz) * var(--fz-em));
+
+    &--bg {
+      background-color: var(--icon-bg);
+      border-radius: 50%;
+    }
+
+    .icon {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

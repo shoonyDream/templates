@@ -1,0 +1,122 @@
+a.card {
+  text-decoration: none;
+  color: var(--text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--text-color);
+
+    .card__title {
+      color: var(--primary);
+    }
+  }
+}
+
+a.card__title {
+  text-decoration: none;
+  color: var(--text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--primary);
+  }
+}
+
+.card {
+  $self: &;
+
+  border: none;
+  border-radius: 0;
+  word-wrap: inherit;
+  background: none;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: calc(10 / var(--fz) * var(--fz-em));
+  color: var(--text-color);
+
+  @media (min-width: 1100px) {
+    gap: calc(20 / var(--fz) * var(--fz-em));
+  }
+
+  &--bg {
+    background: var(--card-bg);
+    padding-bottom: calc(20 / var(--fz) * var(--fz-em));
+  }
+
+  &--centered {
+    align-items: center;
+    text-align: center;
+  }
+
+  &__image {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+    height: 0;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    & img {
+      position: absolute;
+      object-fit: contain;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__icon {
+    & .icon {
+      color: var(--primary);
+      width: calc(82 / var(--fz) * var(--fz-em));
+      height: calc(82 / var(--fz) * var(--fz-em));
+    }
+  }
+
+  &__body {
+    position: relative;
+
+    &--auto-top {
+      margin-top: auto;
+    }
+
+    #{$self}--bg & {
+      padding: 0 calc(20 / var(--fz) * var(--fz-em));
+    }
+  }
+
+  &__title {
+    --fz: 14;
+
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--card-title-color);
+    transition: color 0.2s linear;
+    font-size: calc(var(--fz)/ var(--fz-base) * var(--fz-em));
+    display: block;
+  }
+
+  &__info {
+    margin-top: calc(5 / var(--fz) * var(--fz-em));
+  }
+
+  &__text {
+    --fz: 14;
+
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+  }
+
+  &__footer {
+    margin-top: auto;
+    position: relative;
+  }
+}

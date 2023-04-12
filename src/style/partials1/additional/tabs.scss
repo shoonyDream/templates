@@ -1,0 +1,32 @@
+.tabs {
+  $self: &;
+
+  &__nav {
+    margin-left: 0;
+    gap: calc(10 / var(--fz) * var(--fz-em));
+  }
+
+  &__item {
+    padding-left: 0;
+  }
+
+  &__link {
+    #{$self}__nav #{$self}__item & {
+      font-size: inherit;
+      background-color: transparent;
+      padding: 0;
+    }
+
+    #{$self}__nav #{$self}__item.uk-active & {
+      cursor: default;
+    }
+  }
+
+  &__container {
+    margin-top: calc(20 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 1100px) {
+      margin-top: calc(30 / var(--fz) * var(--fz-em));
+    }
+  }
+}

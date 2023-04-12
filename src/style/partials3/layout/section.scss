@@ -1,0 +1,59 @@
+.section {
+  $self: &;
+
+  position: relative;
+
+
+  &__container {
+    position: relative;
+  }
+
+  &__header,
+  &__body {
+    position: relative;
+  }
+
+  &__header+&__header,
+  &__header+&__body,
+  &__body+&__header {
+    margin-top: calc(20 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      margin-top: calc(40 / var(--fz) * var(--fz-em));
+    }
+  }
+
+  &__title {
+
+    & .uk-h2 {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title+&__subtitle {
+    margin-top: calc(10 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      margin-top: calc(20 / var(--fz) * var(--fz-em));
+    }
+  }
+
+  &__subtitle {
+    --fz: 18;
+
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    font-family: var(--font);
+
+    @media (min-width: 960px) {
+      --fz: 24;
+    }
+  }
+
+  &__footer {
+    margin-top: calc(20 / var(--fz) * var(--fz-em));
+
+    & .btn:not(.btn--is-fixed) {
+      width: 100%;
+    }
+  }
+}

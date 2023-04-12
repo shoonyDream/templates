@@ -1,0 +1,109 @@
+:root {
+  --fz-px: 1px;
+  --fz-em: 1em;
+  --fz-base: 14;
+  --fz: var(--fz-base);
+  --font: "Montserrat", sans-serif;
+
+  // @media (min-width: 960px) {
+  //   --fz-base: 16;
+  // }
+
+  // @media (min-width: 1200px) {
+  //   --fz-base: 18;
+  // }
+
+  // @media (min-width: 1480px) {
+  //   --fz-base: 20;
+  // }
+}
+
+:root {
+  --h1: 40;
+  --h2: 20;
+  --h3: 20;
+  --h4: 20;
+  --text: calc(var(--fz-base) * var(--fz-px));
+  --text-lead: calc(16 * var(--fz-px));
+
+  @media (min-width: 960px) {
+    --h1: 48;
+    --h2: 40;
+    --h3: 32;
+    --h4: 24;
+  }
+}
+
+:root {
+  --z-white: #ffffff;
+  --z-cod-gray: #1A1A1A;
+  --z-chambray: #2D4E8B;
+  --z-cello: #213966;
+  --z-big-stone: #14233E;
+  --z-mercury: #E6E6E6;
+  --z-wild-sand: #F5F5F5;
+  --z-amaranth: #E93D50;
+
+  --main-1: var(--z-white);
+  --main-2-light: var(--z-chambray);
+  --main-2: var(--z-cello);
+  --main-2-dark: var(--z-big-stone);
+  --main-3: var(--z-cod-gray);
+  --bg-2: var(--z-wild-sand);
+  --line: var(--z-mercury);
+  --error: var(--z-amaranth);
+}
+
+:root {
+  // common colors
+  --primary-light: var(--main-2-light);
+  --primary: var(--main-2);
+  --primary-dark: var(--main-2-dark);
+
+  --header-h1-color: var(--main-3);
+  --header-color: var(--main-3);
+
+  --text-color: var(--main-3);
+  --link-color: var(--main-2);
+  --link-color-hover: var(--main-3);
+
+  --social-icon-color: var(--primary);
+
+  --main-bg: var(--main-1);
+  --main-border: var(--line);
+
+  --header-bg: var(--main-1);
+  --header-border-color: var(--line);
+
+  --footer-bg: var(--bg-2);
+
+  --modal-bg: var(--main-1);
+  --bg-offset-canvas: var(--main-1);
+  --bg-offset-canvas-overlay: hsla(0, 0%, 0%, 0.2);
+  --bg-offset-canvas-mobile: var(--main-1);
+
+  --scrollbar-bg: var(--main-2);
+
+  --list-marker-color: var(--main-2);
+  --totop-color: var(--main-1);
+  --totop-bg: var(--primary);
+  --burger-color: var(--z-white);
+  --border-color: var(--line);
+
+  --card-bg: var(--bg-2);
+  --card-bg-dark: var(--main-3);
+  --card-title-color: var(--text-color);
+  --card-title-color-large: var(--primary);
+  --tag-color: var(--primary);
+  --tag-color-hover: var(--main-1);
+}
+
+:root {
+  --header-height: 64;
+  --save-gutter: 135;
+  --card-image-decor-size: 219;
+
+  @media (min-width: 1140px) {
+    --header-height: 188;
+  }
+}
