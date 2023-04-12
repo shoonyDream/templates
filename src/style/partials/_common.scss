@@ -144,9 +144,9 @@ p+p {
   margin-top: calc(20 / var(--fz) * var(--fz-em));
 }
 
-.adaptive-container {
+.map-container {
   height: 0;
-  padding-bottom: 66.7%;
+  padding-bottom: calc(560 / var(--fz) * var(--fz-em));
   position: relative;
 
   iframe {
