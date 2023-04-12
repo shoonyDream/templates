@@ -21,6 +21,14 @@ button {
     --button-bg: transparent;
     --button-bg-hover: var(--primary);
     --button-border: var(--primary);
+
+    .dark-theme & {
+      --button-text-color: var(--z-white);
+      --button-text-color-hover: var(--primary);
+      --button-bg: transparent;
+      --button-bg-hover: var(--z-white);
+      --button-border: var(--z-white);
+    }
   }
 }
 
@@ -79,5 +87,9 @@ button {
   &--is-disabled {
     cursor: not-allowed;
     opacity: 0.5;
+  }
+
+  &--dark-theme {
+    border: 1px solid var(--z-white);
   }
 }
