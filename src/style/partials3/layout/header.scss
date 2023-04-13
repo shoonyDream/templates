@@ -9,8 +9,9 @@
   position: relative;
   background-color: var(--z-white);
   height: calc(var(--header-height) / var(--fz) * var(--fz-em));
+  overflow: hidden;
 
-  &.uk-sticky-below {
+  &.uk-active {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
   }
 

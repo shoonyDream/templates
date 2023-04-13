@@ -4,7 +4,10 @@
       <div class="main-nav scrollbar">
         <ul class="main-nav__list main-nav__list--lvl1">
           <li class="main-nav__item main-nav__item--lvl1">
-            <a href="#" class="main-nav__link link main-nav__parent">Бухгалтерские услуги</a>
+            <a href="#" class="main-nav__link link main-nav__parent">
+              {{mixins.icon('buh')}}
+              <span>Бухгалтерские услуги</span>
+            </a>
             <div class="main-nav__childs scrollbar">
               <div class="uk-container">
                 <ul class="main-nav__list main-nav__list--lvl2">
@@ -34,7 +37,22 @@
             </div>
           </li>
           <li class="main-nav__item main-nav__item--lvl1">
-            <a href="#" class="main-nav__link link">Консультации</a>
+            <a href="#" class="main-nav__link link">
+              {{mixins.icon('ur')}}
+              <span>Юридические услуги</span>
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--lvl1">
+            <a href="#" class="main-nav__link link">
+              {{mixins.icon('audit')}}
+              <span>Аудиторские услуги</span>
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--lvl1">
+            <a href="#" class="main-nav__link link">
+              {{mixins.icon('cons')}}
+              <span>Консультации</span>
+            </a>
           </li>
         </ul>
       </div>
