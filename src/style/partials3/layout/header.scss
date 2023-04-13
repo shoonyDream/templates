@@ -28,7 +28,6 @@
   &--mobile {
     display: block;
     background: var(--header-bg);
-    border-bottom: 1px solid var(--header-border-color);
     flex-grow: 1;
 
     @media (min-width: 1140px) {
@@ -54,19 +53,16 @@
   }
 
   &__main {
-    margin-top: auto;
+    margin: calc(20 / var(--fz) * var(--fz-em)) 0;
 
     .header--mobile & {
       height: 100%;
       display: flex;
       align-items: center;
-      justify-content: flex-end;
-      gap: calc(20 / var(--fz) * var(--fz-em))
+      justify-content: space-between;
+      gap: calc(20 / var(--fz) * var(--fz-em));
+      margin: calc(10 / var(--fz) * var(--fz-em)) 0;
     }
-  }
-
-  &__mobile-services {
-    flex-shrink: 0;
   }
 }
 
@@ -78,6 +74,23 @@
 
   &__nav {
     flex-shrink: 0;
+  }
+
+  &__calculator {
+    .link {
+      border-bottom: none;
+      align-items: center;
+      display: flex;
+      gap: calc(8 / var(--fz) * var(--fz-em));
+      color: var(--text-color)
+    }
+
+    .icon {
+      --fz-icon: 20;
+
+      font-size: calc(var(--fz-icon) / var(--fz) * var(--fz-em));
+      flex-shrink: 0;
+    }
   }
 }
 
