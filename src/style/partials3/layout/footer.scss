@@ -4,8 +4,11 @@
   font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
   flex: none;
   line-height: 1.4;
-  background-color: var(--footer-bg);
   color: var(--text-color);
+
+  &__container {
+    background-color: var(--footer-bg);
+  }
 
   &__nav {
     padding: calc(40 / var(--fz) * var(--fz-em)) 0;

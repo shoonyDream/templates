@@ -62,13 +62,26 @@
                 {% include "template/logo.html" %}
               </div>
               <div class="header-main__catalog">
-                Catalog
+                <button class="btn" type="button" uk-toggle="target: #catalog">
+                  <div class="header-burger">
+                    <div class="hamburger hamburger--squeeze">
+                      <span class="hamburger-box">
+                        <span class="hamburger-inner">
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  <span>Каталог услуг</span>
+                </button>
               </div>
               <div class="header-main__search">
-                Search
+                <div class="input input--search">
+                  <input type="text" class="input__field" placeholder="Поиск по сайту">
+                  {{mixins.icon('search')}}
+                </div>
               </div>
               <div class="header-main__services">
-                Services
+                {% include "template/services-list.html" %}
               </div>
             </div>
           </div>
