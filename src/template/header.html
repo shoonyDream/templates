@@ -38,45 +38,45 @@
 <body class="body">
   <header class="header" uk-sticky>
     <div class="uk-container uk-container-large">
-      header
-      {% include "template/logo.html" %}
-      <!-- <div class="header__container">
-        <div class="header__logo">
-          {% include "template/logo.html" %}
-        </div>
+      <div class="header__container">
         <div class="header--desktop">
           <div class="header__top">
             <div class="header-top">
-              <div class="header-top__contacts">
-                {% include "template/header-top-contacts.html" %}
+              <div class="header-top__calculator">
+                Calc
               </div>
               <div class="header-top__nav">
                 {% include "template/header-top-nav.html" %}
               </div>
+              <div class="header-top__contacts">
+                {% include "template/header-top-contacts.html" %}
+              </div>
             </div>
           </div>
           <div class="header__main">
-            <div class="header__nav">
-              {% include "template/nav.html" %}
+            <div class="header-main">
+              <div class="header-main__logo">
+                {% include "template/logo.html" %}
+              </div>
+              <div class="header-main__catalog">
+                Catalog
+              </div>
+              <div class="header-main__search">
+                Search
+              </div>
+              <div class="header-main__services">
+                Services
+              </div>
             </div>
+          </div>
+          <div class="header__bottom">
+            header-bottom
           </div>
         </div>
         <div class="header--mobile">
           <div class="header__main">
-            <div class="header__mobile-services">
-              <div class="services-list">
-                <div class="services-list__item">
-                  <a href="#" class="services-list__icon link link--icon-only">
-                    icon
-                  </a>
-                </div>
-                <div class="services-list__item">
-                  <a href="#" class="services-list__icon link link--icon-only">
-                    icon
-                  </a>
-                  <span class="uk-badge">1</span>
-                </div>
-              </div>
+            <div class="header-main__logo">
+              {% include "template/logo.html" %}
             </div>
             <div class="header__mobile-burger">
               <div class="header__burger">
@@ -92,7 +92,7 @@
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
   </header>
   <div class="page-wrapper">
