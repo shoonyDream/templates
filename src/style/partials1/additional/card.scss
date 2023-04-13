@@ -35,19 +35,48 @@ a.card__title {
   flex-direction: column;
   gap: calc(10 / var(--fz) * var(--fz-em));
   color: var(--text-color);
+  padding: calc(32 / var(--fz) * var(--fz-em)) calc(20 / var(--fz) * var(--fz-em));
 
   @media (min-width: 1100px) {
-    gap: calc(20 / var(--fz) * var(--fz-em));
+    gap: calc(16 / var(--fz) * var(--fz-em));
+  }
+
+  @media (min-width: 960px) {
+    padding: calc(40 / var(--fz) * var(--fz-em)) calc(32 / var(--fz) * var(--fz-em));
+  }
+
+  &--decor {
+    position: relative;
+    padding-bottom: calc(80 / var(--fz) * var(--fz-em));
+
+    &::before {
+      content: '';
+      width: calc(40 / var(--fz) * var(--fz-em));
+      height: calc(2 / var(--fz) * var(--fz-em));
+      background: var(--primary);
+      position: absolute;
+      bottom: calc(40 / var(--fz) * var(--fz-em));
+      left: calc(32 / var(--fz) * var(--fz-em));
+    }
   }
 
   &--bg {
     background: var(--card-bg);
-    padding-bottom: calc(20 / var(--fz) * var(--fz-em));
   }
 
   &--centered {
     align-items: center;
     text-align: center;
+
+    & .price {
+      justify-content: center;
+      margin-top: calc(24 / var(--fz) * var(--fz-em));
+    }
+  }
+
+  &--accent {
+    background: var(--primary);
+    color: var(--z-white);
   }
 
   &__image {
@@ -75,10 +104,19 @@ a.card__title {
   }
 
   &__icon {
+    margin-bottom: calc(24 / var(--fz) * var(--fz-em));
+
     & .icon {
+      --fz: 40;
+
+      font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
       color: var(--primary);
-      width: calc(82 / var(--fz) * var(--fz-em));
-      height: calc(82 / var(--fz) * var(--fz-em));
+    }
+  }
+
+  &--accent {
+    & .icon {
+      color: var(--z-white);
     }
   }
 
@@ -88,35 +126,26 @@ a.card__title {
     &--auto-top {
       margin-top: auto;
     }
-
-    #{$self}--bg & {
-      padding: 0 calc(20 / var(--fz) * var(--fz-em));
-    }
   }
 
   &__title {
     --fz: 14;
 
-    font-weight: 400;
     line-height: 1.5;
-    color: var(--card-title-color);
     transition: color 0.2s linear;
     font-size: calc(var(--fz)/ var(--fz-base) * var(--fz-em));
     display: block;
   }
 
-  &__info {
-    margin-top: calc(5 / var(--fz) * var(--fz-em));
-  }
-
-  &__text {
-    --fz: 14;
-
-    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+  &__description {
+    line-height: 1.5;
   }
 
   &__footer {
     margin-top: auto;
-    position: relative;
+  }
+
+  &__btn {
+    margin-top: calc(24 / var(--fz) * var(--fz-em));
   }
 }
