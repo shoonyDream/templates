@@ -21,6 +21,24 @@ button {
     --button-bg: transparent;
     --button-bg-hover: var(--primary);
     --button-border: var(--primary);
+
+    .dark-theme & {
+      --button-text-color: var(--z-white);
+      --button-text-color-hover: var(--primary);
+      --button-bg: transparent;
+      --button-bg-hover: var(--z-white);
+      --button-border: var(--z-white);
+    }
+
+    &.btn--is-disabled {
+      --button-text-color-hover: var(--primary);
+      --button-bg-hover: transparent;
+
+      .dark-theme & {
+        --button-text-color-hover: var(--primary);
+        --button-bg-hover: transparent;
+      }
+    }
   }
 }
 

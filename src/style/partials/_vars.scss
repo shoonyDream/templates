@@ -19,12 +19,13 @@
 }
 
 :root {
-  --h1: 40;
-  --h2: 20;
-  --h3: 20;
+  --h1: 24;
+  --h2: 24;
+  --h3: 24;
   --h4: 20;
   --text: calc(var(--fz-base) * var(--fz-px));
   --text-lead: calc(16 * var(--fz-px));
+  --text-small: calc(12 * var(--fz-px));
 
   @media (min-width: 960px) {
     --h1: 48;

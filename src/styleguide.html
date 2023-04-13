@@ -53,16 +53,18 @@
             <h1 style="margin-bottom: 10px;">Header h1</h1>
             <h2 style="margin-bottom: 10px;">Header h2</h2>
             <h3 style="margin-bottom: 10px;">Header h3</h3>
+            <h3 class="semi-bold" style="margin-bottom: 10px;">Header h3</h3>
             <h4 style="margin-bottom: 10px;">Header h4</h4>
+            <h4 class="semi-bold" style="margin-bottom: 10px;">Header h4</h4>
             <p style="margin-bottom: 10px;">Text</p>
             <p style="margin-bottom: 10px;" class="text-small">Text small</p>
+            <p style="margin-bottom: 10px;" class="text-lead">Text lead</p>
             <p style="margin-bottom: 10px;" class="text-is-highlighted">Text highlighted</p>
           </div>
         </div>
         <div>
           <h3>Scrollbar vertical</h3>
-          <div style="width: 100%; height: 300px; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 30px"
-            class="scrollbar">
+          <div style="width: 100%; height: 300px; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 30px" class="scrollbar">
             images
           </div>
         </div>
@@ -77,8 +79,7 @@
         </div>
         <div>
           <h3>Icons</h3>
-          <div
-            style="background: #333; padding: 10px; display: flex; align-items: center; font-size: 30px; color: #fff">
+          <div style="background: #333; padding: 10px; display: flex; align-items: center; font-size: 30px; color: #fff">
             {{mixins.icon('arrow-left')}}
             {{mixins.icon('cross')}}
             {{mixins.icon('phone')}}
@@ -89,11 +90,32 @@
           </div>
           <div class="uk-width-1-2">
             <h3>List ul</h3>
-            <div>
-              <ul class="list list--ul">
-                <li>По готовому дизайн-проекту</li>
+            <div style="margin-bottom: 20px;">
+              <ul class="list list--ul list--ul-dash">
+                <li>Именно столько на рынке составляет зарплата толкового бухгалтера с опытом не менее 5 лет.
+                  Прибавьте к этой сумме налоги, страховые взносы, больничные, отпуска, амортизация места в офисе, лицензионные программы для ведения бухгалтерии.
+                  Получается не менее 70 000 р.</li>
                 <li>По фото помещений</li>
                 <li>По эскизу и пожеланиям</li>
+              </ul>
+            </div>
+            <div style="margin-bottom: 20px;">
+              <ul class="list list--ul list--ul-square">
+                <li>Именно столько на рынке составляет зарплата толкового бухгалтера с опытом не менее 5 лет.
+                  Прибавьте к этой сумме налоги, страховые взносы, больничные, отпуска, амортизация места в офисе, лицензионные программы для ведения бухгалтерии.
+                  Получается не менее 70 000 р.</li>
+                <li>По фото помещений</li>
+                <li>По эскизу и пожеланиям</li>
+              </ul>
+            </div>
+            <div style="margin-bottom: 20px;">
+              <ul class="list list--ul list--ul-plus">
+                <li>Мы можем помочь вам найти бухгалтера
+                </li>
+                <li>Мы можем помочь вам найти штатного помощника бухгалтера на зарплату в 25 тр., который будет достаточно адекватным, чтобы оперативно работать с первичкой и простыми задачами внутри компании. А функцию главного бухгалтера мы можем взять на себя, чтобы ваш бизнес был защищен перед проверяющими органами.
+                </li>
+                <li>Мы можем помочь вам найти штатного помощника бухгалтера на зарплату в 25 тр., который будет достаточно адекватным, чтобы оперативно работать с первичкой и простыми задачами внутри компании. А функцию главного бухгалтера мы можем взять на себя, чтобы ваш бизнес был защищен перед проверяющими органами.
+                </li>
               </ul>
             </div>
           </div>
@@ -101,10 +123,18 @@
             <h3>List ol</h3>
             <div>
               <ol class="list list--ol">
-                <li>Сделает расчет освещения по техническим параметрам светильников</li>
-                <li>Подготовит эскиз с набросками концепции
-                  и план расположения светильников</li>
-                <li>Подберет комплект светильников, идеально попадающих в стиль интерьера и функционал помещения</li>
+                <li>Едем до метро Савёловская.
+                </li>
+                <li>Из стеклянных дверей выходим направо и по ступенькам поднимаемся к выходу на поверхность. При выходе на поверхность перед собой видим вход на территорию Савёловского вокзала (турникеты).
+                </li>
+                <li>Огибаем справа вход в метро и идём в сторону, противоположную входу на территорию Савёловского вокзала, то есть удаляемся от турникетов в противоположном направлении. Идём через регулируемый светофором пешеходный переход, далее по небольшому подъёму идём на мост через ж/д пути.
+                </li>
+                <li>Поднявшись на мост, идём налево. Внизу под мостом видим ж/д пути МЦД-1.
+                </li>
+                <li>Идем до конца дома № 3/5А (это первый и единственный дом, который нужно пройти), поворачиваем налево, идём далее вниз по улице примерно 20 метров и упираемся в калитку.
+                </li>
+                <li>Вы на месте. Для прохода в офис нужно позвонить (нажать на звонок, расположенный на калитке).
+                </li>
               </ol>
             </div>
           </div>
@@ -149,7 +179,14 @@
         </div>
         <div>
           <h3>Secondary btns</h3>
-          <div>
+          <div style="padding: 10px;">
+            <a class="btn btn--secondary" href="#" role="button"><span>Link</span></a>
+            <button class="btn btn--secondary" type="submit"><span>Button</span></button>
+            <input class="btn btn--secondary" type="button" value="Input" />
+            <input class="btn btn--secondary" type="submit" value="Submit" />
+            <input class="btn btn--secondary" type="reset" value="Reset" />
+          </div>
+          <div class="dark-theme" style="background-color: var(--primary); padding: 10px;">
             <a class="btn btn--secondary" href="#" role="button"><span>Link</span></a>
             <button class="btn btn--secondary" type="submit"><span>Button</span></button>
             <input class="btn btn--secondary" type="button" value="Input" />
