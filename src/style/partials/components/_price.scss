@@ -2,30 +2,22 @@
   color: var(--text-color);
   display: flex;
   gap: calc(10 / var(--fz) * var(--fz-em));
-
-  &--vertical {
-    flex-direction: column;
-    gap: 0;
-  }
+  align-items: baseline;
 
   &__unit {
-    --fz: 14;
+    --fz: 24;
+    
     font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+  }
 
-    &--through {
-      text-decoration: line-through;
-      color: var(--primary);
-    }
+  &__label {
+    --fz: 14;
 
-    &--large {
-      --fz: 32;
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+  }
 
-      @media (min-width: 1400px) {
-        --fz: 40;
-      }
-
-      font-family: var(--font);
-    }
+  &--accent {
+    color: var(--primary);
   }
 }
 

@@ -90,6 +90,23 @@
             {{mixins.icon('wtsp')}}
             {{mixins.icon('tg')}}
           </div>
+          <div style="background: #333; padding: 10px; display: flex; align-items: center; font-size: 30px; color: #fff">
+            {{mixins.icon('paperdoc')}}
+            {{mixins.icon('scan')}}
+            {{mixins.icon('electronicdoc')}}
+            {{mixins.icon('payinvoice')}}
+            {{mixins.icon('experience')}}
+            {{mixins.icon('workexperience')}}
+            {{mixins.icon('penalties')}}
+            {{mixins.icon('mens')}}
+            {{mixins.icon('activetime')}}
+            {{mixins.icon('calc')}}
+            {{mixins.icon('cup')}}
+            {{mixins.icon('folder')}}
+            {{mixins.icon('chat')}}
+            {{mixins.icon('scales')}}
+            {{mixins.icon('chart')}}
+          </div>
           <div class="uk-width-1-2">
             <h3>List ul</h3>
             <div style="margin-bottom: 20px;">
@@ -141,6 +158,25 @@
             </div>
           </div>
         </div>
+        <div class="uk-width-1-2">
+          <h3>Price</h3>
+          <div>
+            <div class="price semi-bold">
+              <div class="price__label">от </div>
+              <div class="price__unit">5 500</div>
+              <div class="price__label"> руб/мес</div>
+            </div>
+          </div>
+          <div>
+            <div class="price price--accent semi-bold">
+              <div class="price__label">Итого: </div>
+              <div class="price__unit">25 000</div>
+              <div class="price__label"> рублей</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="uk-width-1-2">
         <div>
           <h3>Link</h3>
           <div uk-grid class="uk-grid-small uk-child-width-1-2">
@@ -436,5 +472,79 @@
         </div>
       </div>
     </div>
+    <div class="section__body">
+      <div uk-grid class="uk-grid-small uk-child-width-1-1">
+        <div>
+          <h3>Card card--bg card--accent card--centered</h3>
+          <div uk-grid class="uk-grid-small uk-child-width-1-4">
+            <div>
+              <a href="#" class="card card--decor">
+                <div class="card__header">
+                  <div class="card__icon">{{mixins.icon('paperdoc')}}</div>
+                  <div class="card__title bold">Подписание в бумажном
+                    виде</div>
+                </div>
+                <div class="card__body">
+                  <div class="card__description">There are many variations of passages of Lorem Ipsum available, but the </div>
+                </div>
+              </a>
+            </div>
+            <div>
+              <article href="#" class="card card--bg card--decor">
+                <div class="card__header">
+                  <div class="card__icon">{{mixins.icon('paperdoc')}}</div>
+                  <div class="card__title bold">Подписание в бумажном
+                    виде</div>
+                </div>
+                <div class="card__body">
+                  <div class="card__description">There are many variations of passages of Lorem Ipsum available, but the </div>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article class="card dark-theme card--accent">
+                <div class="card__header">
+                  <div class="card__icon">{{mixins.icon('paperdoc')}}</div>
+                  <div class="card__title bold">Подписание в бумажном
+                    виде</div>
+                </div>
+                <div class="card__body">
+                  <div class="card__description">There are many variations of passages of Lorem Ipsum available, but the </div>
+                </div>
+                <div class="card__footer">
+                  <div class="card__btn">
+                    <a href="#" class="btn btn--secondary">Заключить договор</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article class="card card--centered">
+                <div class="card__header">
+                  <div class="card__icon">{{mixins.icon('cup')}}</div>
+                  <div class="card__title bold">Актив Основной</div>
+                </div>
+                <div class="card__body">
+                  <div class="card__description">There are many variations of passages of Lorem Ipsum available, but the </div>
+                  <div class="card__price">
+                    <div class="price semi-bold">
+                      <div class="price__label">от </div>
+                      <div class="price__unit">5 500</div>
+                      <div class="price__label"> руб/мес</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <div class="card__btn">
+                    <a href="#" class="btn btn--primary">Заключить договор</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 {% include "template/footer.html" %}
