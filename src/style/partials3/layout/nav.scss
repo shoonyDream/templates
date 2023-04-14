@@ -58,7 +58,7 @@
   width: 100%;
   height: 100%;
   position: relative;
-  max-height: calc(100vh - var(--header-height) *1px - 80px);
+  max-height: calc(100vh - var(--header-height) *1px);
   display: flex;
   justify-content: space-between;
   overflow: auto;
@@ -69,6 +69,16 @@
     &--lvl1 {
       width: 25%;
     }
+
+    &--lvl2 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: calc(64 / var(--fz) * var(--fz-em));
+    }
+
+    &--lvl3 {
+      margin-top: calc(16 / var(--fz) * var(--fz-em));
+    }
   }
 
   &__item {
@@ -77,6 +87,16 @@
     &--lvl1 {
       display: block;
       width: 100%;
+    }
+
+
+
+    &--lvl3 {
+      margin-bottom: calc(16 / var(--fz) * var(--fz-em));
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -89,8 +109,8 @@
       transition-delay: 0.3s;
 
       top: 0;
-      left: calc(100% + 40 / var(--fz) * (var(--fz-em)));
-      width: 100%;
+      left: calc(100% + 50 / var(--fz) * (var(--fz-em)));
+      width: calc(300% - 50 / var(--fz) * (var(--fz-em)));
       height: 100%;
       position: absolute;
     }
@@ -99,11 +119,16 @@
       visibility: visible;
       opacity: 1;
     }
+  }
 
-    #{$self}__item--lvl2>& {
-      width: 200%;
-      display: flex;
-    }
+  &__title {
+    --fz-title: 24;
+
+    font-size: calc(var(--fz-title) / var(--fz) * var(--fz-em));
+    font-weight: 300;
+    color: var(--text-color);
+    margin-bottom: calc(40 / var(--fz-title) * var(--fz-em));
+    display: block;
   }
 
   &__link {
@@ -119,7 +144,7 @@
       text-transform: uppercase;
       color: var(--text-color);
       font-weight: 700;
-      margin-bottom: calc(40 / var(--fz-lvl1) * var(--fz-em));
+      padding-bottom: calc(40 / var(--fz-lvl1) * var(--fz-em));
       display: flex;
       align-items: center;
       gap: calc(10 / var(--fz-lvl1) * var(--fz-em));
@@ -131,11 +156,19 @@
     }
 
     #{$self}__item--lvl2>& {
-      --fz-lvl2: 18;
+      --fz-lvl2: 14;
 
       font-size: calc(var(--fz-lvl2) / var(--fz) * var(--fz-em));
-      padding: calc(5 / var(--fz-lvl2) * var(--fz-em)) 0;
+      text-transform: uppercase;
+      font-weight: 700;
     }
+
+    #{$self}__item--lvl3>& {
+      --fz-lvl3: 14;
+
+      font-size: calc(var(--fz-lvl3) / var(--fz) * var(--fz-em));
+    }
+
   }
 }
 
