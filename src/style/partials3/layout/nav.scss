@@ -35,7 +35,8 @@
       background-color: var(--z-white);
       z-index: 1;
       height: 100%;
-      padding: calc(40 / var(--fz) * var(--fz-em)) calc(20 / var(--fz) * var(--fz-em)) calc(40 / var(--fz) * var(--fz-em));
+      padding: calc(70 / var(--fz) * var(--fz-em)) calc(20 / var(--fz) * var(--fz-em)) calc(40 / var(--fz) * var(--fz-em));
+      box-shadow: inset 0 calc(16 / var(--fz) * var(--fz-em)) calc(40 / var(--fz) * var(--fz-em)) rgba(0, 0, 0, 0.08);
 
       &::before {
         content: '';

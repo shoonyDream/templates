@@ -76,10 +76,12 @@
                 {% include "template/catalog.html" %}
               </div>
               <div class="header-main__search">
-                <div class="input input--search">
-                  <input type="text" class="input__field" placeholder="Поиск по сайту">
-                  {{mixins.icon('search')}}
-                </div>
+                <form action="">
+                  <div class="input input--search">
+                    <input type="text" class="input__field" placeholder="Поиск по сайту">
+                    <button type="submit">{{mixins.icon('search')}}</button>
+                  </div>
+                </form>
               </div>
               <div class="header-main__services">
                 {% include "template/services-list.html" %}
