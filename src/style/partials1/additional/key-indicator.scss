@@ -12,7 +12,6 @@
     margin: 0 calc(-20 / var(--fz) * var(--fz-em));
   }
 
-
   &__item {
     .list-border-container--full & {
       border: 1px solid var(--border-color);
@@ -40,10 +39,6 @@
 .key-indicator {
   --icon-width: 40;
   --icon-bg: var(--bg-2);
-
-  @media (min-width: 960px) {
-    --icon-width: 40;
-  }
 }
 
 .key-indicator {
@@ -95,25 +90,6 @@
     .key-indicator--horizontal & {
       padding: 0;
     }
-  }
-
-  &__title {
-    --fz: 18;
-
-    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
-    line-height: 1.2;
-    position: relative;
-    color: var(--primary);
-    font-family: var(--font);
-
-    @media (min-width: 960px) {
-      --fz: 24;
-
-    }
-  }
-
-  &__title+&__description {
-    margin-top: calc(10 / var(--fz) * var(--fz-em));
   }
 
   &__description {

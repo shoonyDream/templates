@@ -1,7 +1,6 @@
 .price {
   color: var(--text-color);
   display: flex;
-  flex-wrap: wrap;
   gap: calc(10 / var(--fz) * var(--fz-em));
   align-items: flex-end;
   font-weight: 600;
@@ -11,6 +10,8 @@
 
     font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
     line-height: 0.7;
+    flex-shrink: 0;
+    white-space: nowrap;
   }
 
   &__label {

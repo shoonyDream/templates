@@ -23,21 +23,26 @@
     width: calc(80 / var(--fz-after) * var(--fz-em));
     height: calc(80 / var(--fz-after) * var(--fz-em));
     line-height: 1.9;
-    background: var(--z-white);
     color: var(--primary);
     text-align: center;
     font-size: calc(var(--fz-after) / var(--fz) * var(--fz-em));
     font-weight: 100;
   }
 
-  &--decor::before {
-    content: '';
-    width: calc(40 / var(--fz) * var(--fz-em));
-    height: calc(2 / var(--fz) * var(--fz-em));
-    background: var(--primary);
-    position: absolute;
-    bottom: calc(24 / var(--fz) * var(--fz-em));
-    left: calc(32 / var(--fz) * var(--fz-em));
+  &--decor {
+    &::before {
+      content: '';
+      width: calc(40 / var(--fz) * var(--fz-em));
+      height: calc(2 / var(--fz) * var(--fz-em));
+      background: var(--primary);
+      position: absolute;
+      bottom: calc(24 / var(--fz) * var(--fz-em));
+      left: calc(32 / var(--fz) * var(--fz-em));
+    }
+  }
+
+  &--bg {
+    background-color: var(--bg-2);
   }
 
   &__title {

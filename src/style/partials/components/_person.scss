@@ -1,27 +1,3 @@
-a.person {
-  text-decoration: none;
-  color: var(--text-color);
-
-  &:hover,
-  &:focus {
-    color: var(--text-color);
-
-    .person__title {
-      color: var(--primary);
-    }
-  }
-}
-
-a.person__title {
-  text-decoration: none;
-  color: var(--text-color);
-
-  &:hover,
-  &:focus {
-    color: var(--primary);
-  }
-}
-
 .person {
   $self: &;
 
@@ -32,36 +8,14 @@ a.person__title {
   height: 100%;
   position: relative;
   display: flex;
-  flex-direction: column;
+
   gap: calc(10 / var(--fz) * var(--fz-em));
   color: var(--text-color);
-  padding: calc(40 / var(--fz) * var(--fz-em)) calc(32 / var(--fz) * var(--fz-em));
-  padding-top: 0;
-  align-items: center;
 
-  @media (min-width: 960px) {
-    gap: calc(16 / var(--fz) * var(--fz-em));
-    padding: calc(40 / var(--fz) * var(--fz-em)) calc(32 / var(--fz) * var(--fz-em));
-  }
-
-  @media (min-width: 960px) {
-    padding: calc(40 / var(--fz) * var(--fz-em)) calc(32 / var(--fz) * var(--fz-em));
-  }
-
-  &--horizontal {
-    flex-direction: row;
-    text-align: left;
-    align-items: flex-start;
-
-    & .person__image {
-      width: calc(80 / var(--fz) * var(--fz-em));
-      height: calc(80 / var(--fz) * var(--fz-em));
-      flex-shrink: 0;
-    }
-
-    & .person__body {
-      text-align: left;
-    }
+  &--vertical {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   &--decor {
@@ -84,27 +38,28 @@ a.person__title {
     background: var(--card-bg);
   }
 
-  &--centered {
-    align-items: center;
-    text-align: center;
-
-    & .price {
-      justify-content: center;
-      margin-top: calc(24 / var(--fz) * var(--fz-em));
-    }
-  }
-
   &--accent {
     background: var(--primary);
     color: var(--z-white);
+
+    & .icon {
+      color: var(--z-white);
+    }
   }
 
   &__image {
     position: relative;
     overflow: hidden;
-    width: calc(160 / var(--fz) * var(--fz-em));
-    height: calc(160 / var(--fz) * var(--fz-em));
+
     border-radius: 50%;
+    width: calc(80 / var(--fz) * var(--fz-em));
+    height: calc(80 / var(--fz) * var(--fz-em));
+    flex-shrink: 0;
+
+    #{$self}--vertical & {
+      width: calc(160 / var(--fz) * var(--fz-em));
+      height: calc(160 / var(--fz) * var(--fz-em));
+    }
   }
 
   &__img {
@@ -124,33 +79,11 @@ a.person__title {
     }
   }
 
-  &__icon {
-    margin-bottom: calc(24 / var(--fz) * var(--fz-em));
-
-    & .icon {
-      --fz: 40;
-
-      font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
-      color: var(--primary);
-    }
-  }
-
-  &--accent {
-    & .icon {
-      color: var(--z-white);
-    }
-  }
-
   &__body {
     position: relative;
-    text-align: center;
-
-    &--auto-top {
-      margin-top: auto;
-    }
   }
 
-  &__title {
+  &__name {
     --fz: 14;
 
     line-height: 1.7;
@@ -160,15 +93,15 @@ a.person__title {
     display: block;
   }
 
-  &__job,
-  &__organization {
+  &__post,
+  &__company {
     line-height: 1.7;
     font-weight: 400;
     transition: color 0.2s linear;
     display: block;
   }
 
-  &__text {
+  &__experience {
     line-height: 1.7;
     font-weight: 400;
     transition: color 0.2s linear;
@@ -176,17 +109,5 @@ a.person__title {
     display: block;
     color: var(--text-color-light);
     margin-top: calc(8 / var(--fz) * var(--fz-em));
-  }
-
-  &__description {
-    line-height: 1.5;
-  }
-
-  &__footer {
-    margin-top: auto;
-  }
-
-  &__btn {
-    margin-top: calc(24 / var(--fz) * var(--fz-em));
   }
 }
