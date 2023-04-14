@@ -38,11 +38,11 @@
 }
 
 .key-indicator {
-  --icon-width: 64;
+  --icon-width: 40;
   --icon-bg: var(--bg-2);
 
   @media (min-width: 960px) {
-    --icon-width: 96;
+    --icon-width: 40;
   }
 }
 
@@ -51,13 +51,26 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: calc(10 / var(--fz) * var(--fz-em));
+  gap: calc(24 / var(--fz) * var(--fz-em));
   align-items: center;
   text-align: center;
-  padding: calc(20 / var(--fz) * var(--fz-em));
+  padding: calc(20 / var(--fz) * var(--fz-em)) calc(24 / var(--fz) * var(--fz-em)) calc(48 / var(--fz) * var(--fz-em)) calc(24 / var(--fz) * var(--fz-em));
+  padding-bottom: 48px;
 
   @media (min-width: 960px) {
-    gap: calc(20 / var(--fz) * var(--fz-em));
+    gap: calc(24 / var(--fz) * var(--fz-em));
+    padding: calc(24 / var(--fz) * var(--fz-em)) calc(32 / var(--fz) * var(--fz-em)) calc(48 / var(--fz) * var(--fz-em)) calc(32 / var(--fz) * var(--fz-em));
+  }
+
+  &::before {
+    content: '';
+    width: 40px;
+    height: 2px;
+    background: var(--primary);
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
   }
 
   &--horizontal {
@@ -103,9 +116,10 @@
 
   &__description {
     --fz: 14;
-    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
 
-    line-height: 1.5;
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    font-weight: 600;
+    line-height: 1.4;
   }
 
   &__icon {
