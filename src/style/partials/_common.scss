@@ -1,5 +1,13 @@
 @font-face {
   font-family: 'Montserrat';
+  src: local('Montserrat Thin'), local('Montserrat-Thin'),
+    url('../fonts/Montserrat-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
   src: local('Montserrat Regular'), local('Montserrat-Regular'),
     url('../fonts/Montserrat-Regular.ttf') format('truetype');
   font-weight: normal;
