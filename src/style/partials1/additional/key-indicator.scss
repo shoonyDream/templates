@@ -62,15 +62,17 @@
     padding: calc(24 / var(--fz) * var(--fz-em)) calc(32 / var(--fz) * var(--fz-em)) calc(48 / var(--fz) * var(--fz-em)) calc(32 / var(--fz) * var(--fz-em));
   }
 
-  &::before {
-    content: '';
-    width: 40px;
-    height: 2px;
-    background: var(--primary);
-    position: absolute;
-    bottom: 24px;
-    left: 50%;
-    transform: translate3d(-50%, 0, 0);
+  &--decor {
+    &::before {
+      content: '';
+      width: 40px;
+      height: 2px;
+      background: var(--primary);
+      position: absolute;
+      bottom: 24px;
+      left: 50%;
+      transform: translate3d(-50%, 0, 0);
+    }
   }
 
   &--horizontal {

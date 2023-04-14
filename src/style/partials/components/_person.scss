@@ -37,7 +37,7 @@ a.person__title {
   color: var(--text-color);
   padding: calc(40 / var(--fz) * var(--fz-em)) calc(32 / var(--fz) * var(--fz-em));
   padding-top: 0;
-  justify-content: center;
+  align-items: center;
 
   @media (min-width: 960px) {
     gap: calc(16 / var(--fz) * var(--fz-em));
@@ -51,6 +51,17 @@ a.person__title {
   &--horizontal {
     flex-direction: row;
     text-align: left;
+    align-items: flex-start;
+
+    & .person__image {
+      width: calc(80 / var(--fz) * var(--fz-em));
+      height: calc(80 / var(--fz) * var(--fz-em));
+      flex-shrink: 0;
+    }
+
+    & .person__body {
+      text-align: left;
+    }
   }
 
   &--decor {
@@ -91,7 +102,9 @@ a.person__title {
   &__image {
     position: relative;
     overflow: hidden;
-    padding-bottom: 100%;
+    width: calc(160 / var(--fz) * var(--fz-em));
+    height: calc(160 / var(--fz) * var(--fz-em));
+    border-radius: 50%;
   }
 
   &__img {
@@ -100,7 +113,6 @@ a.person__title {
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 50%;
 
     & img {
       position: absolute;
@@ -131,6 +143,7 @@ a.person__title {
 
   &__body {
     position: relative;
+    text-align: center;
 
     &--auto-top {
       margin-top: auto;
@@ -147,7 +160,8 @@ a.person__title {
     display: block;
   }
 
-  &__subtitle {
+  &__job,
+  &__organization {
     line-height: 1.7;
     font-weight: 400;
     transition: color 0.2s linear;
@@ -161,6 +175,7 @@ a.person__title {
     font-size: calc(var(--fz)/ var(--fz-base) * var(--fz-em));
     display: block;
     color: var(--text-color-light);
+    margin-top: calc(8 / var(--fz) * var(--fz-em));
   }
 
   &__description {

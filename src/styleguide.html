@@ -549,7 +549,7 @@
           <h3>Key-indicators, tile</h3>
           <div uk-grid class="uk-grid-small key-indicators uk-child-width-1-3@m">
             <div class="key-indicators__item">
-              <div class="key-indicator">
+              <div class="key-indicator key-indicator--decor">
                 <div class="key-indicator__header">
                   <div class="key-indicator__icon">{{mixins.icon('experience')}}</div>
                 </div>
@@ -571,48 +571,99 @@
                   <span>Особенности бухгалтерского учета в агентствах недвижимости</span>
                 </div>
               </div>
-          </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="section__body">
-      <div uk-grid class="uk-grid-small uk-child-width-1-1">
-        <div>
-          <h3>Person</h3>
-          <div uk-grid class="uk-grid-small key-indicators uk-child-width-1-4@m">
-            <article class="person person--decor">
-              <div class="person__image">
-                <div class="person__img">
-                  <img src="img/victoria.jpg" alt="product">
-                </div>
-              </div>
-              <div class="person__body">
-                <div class="person__title person__title--large">Виктория Жукова</div>
-                <div class="person__info">
-                  <p class="person__subtitle">Главный бухгалтер</p>
-                  <p class="person__text">Опыт работы 16 лет</p>
-                </div>
-              </div>
-            </article>
-            <article class="person person--horizontal">
-              <div class="person__image">
-                <div class="person__img">
-                  <img src="img/ivanov.jpg" alt="product">
-                </div>
-              </div>
-              <div class="person__body">
-                <div class="person__title person__title--large">Иван Иванов</div>
-                <div class="person__info">
-                  <p class="person__subtitle">Генеральный Директор
-                    ООО «Уневерсальная Проектная Сеть»</p>
-                </div>
-              </div>
-            </article>
+            </a>
           </div>
         </div>
       </div>
+      <div class="section__body">
+        <div uk-grid class="uk-grid-small uk-child-width-1-1">
+          <div>
+            <h3>Person</h3>
+            <div uk-grid class="uk-grid-small key-indicators uk-child-width-1-4@m">
+              <article class="person person--decor">
+                <div class="person__image">
+                  <div class="person__img">
+                    <img src="img/victoria.jpg" alt="product">
+                  </div>
+                </div>
+                <div class="person__body">
+                  <div class="person__title person__title--large">Виктория Жукова</div>
+                  <div class="person__info">
+                    <p class="person__subtitle">Главный бухгалтер</p>
+                    <p class="person__text">Опыт работы 16 лет</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div uk-grid class="uk-grid-small key-indicators uk-child-width-1-2@m">
+              <article class="person person--horizontal">
+                <div class="person__image">
+                  <div class="person__img">
+                    <img src="img/ivanov.jpg" alt="product">
+                  </div>
+                </div>
+                <div class="person__body">
+                  <div class="person__title person__title--large">Иван Иванов</div>
+                  <div class="person__info">
+                    <div class="person__job">Генеральный Директор</div>
+                    <div class="person__organization">ООО «Уневерсальная Проектная Сеть»</div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section__body">
+        <div uk-grid class="uk-grid-small uk-child-width-2-3">
+          <div>
+            <h3>Steps</h3>
+            <div uk-grid class="uk-grid-small uk-child-width-2-3">
+              <div class="steps">
+                <ol uk-grid="" class="uk-grid-small steps__list uk-child-width-1-2 uk-grid">
+                  <li class="steps__item uk-first-column">
+                    <div class="step step--decor">
+                      <div class="step__title">Вы заказываете бухгалтерские услуги </div>
+                      <div class="step__content">There are many variations of passages of Lorem Ipsum available, but the majority have</div>
+                    </div>
+                  </li>
+                  <li class="steps__item">
+                    <div class="step step--decor">
+                      <div class="step__title">С вами связывается менеджер </div>
+                      <div class="step__content">There are many variations of passages of Lorem Ipsum available, but the majority have</div>
+                    </div>
+                  </li>
+                  <li class="steps__item">
+                    <div class="step step--decor">
+                      <div class="step__title">Заключаем договор</div>
+                      <div class="step__content">There are many variations of passages of Lorem Ipsum available, but the majority have
+                      </div>
+                    </div>
+                  </li>
+                  <li class="steps__item">
+                    <div class="step step--decor">
+                      <div class="step__title">Вам назначается бухгалтер</div>
+                      <div class="step__content">There are many variations of passages of Lorem Ipsum available, but the majority have</div>
+                    </div>
+                  </li>
+                  <li class="steps__item">
+                    <div class="step step--decor">
+                      <div class="step__title">Вы передаете необходимые документы</div>
+                      <div class="step__content">There are many variations of passages of Lorem Ipsum available, but the majority have</div>
+                    </div>
+                  </li>
+                  <li class="steps__item">
+                    <div class="step step--decor">
+                      <div class="step__title">Мы работаем с налоговой и фондами</div>
+                      <div class="step__content">There are many variations of passages of Lorem Ipsum available, but the majority have</div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 </section>
 {% include "template/footer.html" %}
