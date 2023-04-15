@@ -85,6 +85,8 @@
   }
 
   &__experience {
+    --fz: 14;
+
     font-size: calc(var(--fz)/ var(--fz-base) * var(--fz-em));
     color: var(--text-color-light);
     margin-top: calc(8 / var(--fz) * var(--fz-em));
