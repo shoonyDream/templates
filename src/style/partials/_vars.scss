@@ -44,12 +44,14 @@
   --z-mercury: #E6E6E6;
   --z-wild-sand: #F5F5F5;
   --z-amaranth: #E93D50;
+  --z-gray: #888888;
 
   --main-1: var(--z-white);
   --main-2-light: var(--z-chambray);
   --main-2: var(--z-cello);
   --main-2-dark: var(--z-big-stone);
   --main-3: var(--z-cod-gray);
+  --main-3-light: var(--z-gray);
   --bg-2: var(--z-wild-sand);
   --line: var(--z-mercury);
   --error: var(--z-amaranth);
@@ -65,6 +67,7 @@
   --header-color: var(--main-3);
 
   --text-color: var(--main-3);
+  --text-color-light: var(--main-3-light);
   --link-color: var(--main-2);
   --link-color-hover: var(--main-3);
 

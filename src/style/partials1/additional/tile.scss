@@ -1,14 +1,25 @@
+a.tile {
+  text-decoration: none;
+  color: var(--text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--text-color);
+
+    .tile__description {
+      color: var(--primary);
+    }
+  }
+}
+
 .tile {
   height: 100%;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
 
   &__image {
     position: relative;
     overflow: hidden;
-    padding-bottom: 56.8%;
+    padding-bottom: 56%;
     height: 0;
   }
 
@@ -29,10 +40,6 @@
     }
   }
 
-  &__info {
-    margin-top: calc(10 / var(--fz) * var(--fz-em));
-  }
-
   &__body {
     position: relative;
     display: flex;
@@ -41,55 +48,12 @@
     margin-top: calc(20 / var(--fz) * var(--fz-em));
   }
 
-  &__container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    min-width: 0;
-  }
-
-  &__title {
-    --fz: 18;
-
-    color: var(--primary);
-    font-family: var(--font);
-    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
-    font-weight: 400;
-    line-height: 1.2;
-    display: block;
-    margin-bottom: calc(10 / var(--fz) * var(--fz-em));
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    @media (min-width: 960px) {
-      --fz: 24;
-    }
-  }
-
   &__description {
     --fz: 14;
 
     font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
-    line-height: 1.5;
+    line-height: 1.7;
     font-weight: 400;
   }
 
-  &__link {
-    --fz: 14;
-
-    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
-    margin-top: auto;
-
-    & .link {
-      display: inline-block;
-      margin-top: calc(20 / var(--fz) * var(--fz-em));
-    }
-  }
-}
-
-a.tile__title {
-  color: var(--primary);
-  text-decoration: none;
 }
