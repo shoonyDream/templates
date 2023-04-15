@@ -1,10 +1,6 @@
 .person {
   $self: &;
 
-  border: none;
-  border-radius: 0;
-  word-wrap: inherit;
-  background: none;
   height: 100%;
   position: relative;
   display: flex;
@@ -80,21 +76,16 @@
     line-height: 1.7;
     font-weight: 700;
     font-size: calc(var(--fz)/ var(--fz-base) * var(--fz-em));
-    display: block;
   }
 
   &__post,
-  &__company {
+  &__company,
+  &__experience {
     line-height: 1.7;
-    font-weight: 400;
-    display: block;
   }
 
   &__experience {
-    line-height: 1.7;
-    font-weight: 400;
     font-size: calc(var(--fz)/ var(--fz-base) * var(--fz-em));
-    display: block;
     color: var(--text-color-light);
     margin-top: calc(8 / var(--fz) * var(--fz-em));
   }
