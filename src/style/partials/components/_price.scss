@@ -1,6 +1,7 @@
 .price {
   color: var(--text-color);
   display: flex;
+  flex-wrap: wrap;
   gap: calc(10 / var(--fz) * var(--fz-em));
   align-items: flex-end;
   font-weight: 600;

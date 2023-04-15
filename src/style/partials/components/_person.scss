@@ -38,15 +38,6 @@
     background: var(--card-bg);
   }
 
-  &--accent {
-    background: var(--primary);
-    color: var(--z-white);
-
-    & .icon {
-      color: var(--z-white);
-    }
-  }
-
   &__image {
     position: relative;
     overflow: hidden;
@@ -88,7 +79,6 @@
 
     line-height: 1.7;
     font-weight: 700;
-    transition: color 0.2s linear;
     font-size: calc(var(--fz)/ var(--fz-base) * var(--fz-em));
     display: block;
   }
@@ -97,14 +87,12 @@
   &__company {
     line-height: 1.7;
     font-weight: 400;
-    transition: color 0.2s linear;
     display: block;
   }
 
   &__experience {
     line-height: 1.7;
     font-weight: 400;
-    transition: color 0.2s linear;
     font-size: calc(var(--fz)/ var(--fz-base) * var(--fz-em));
     display: block;
     color: var(--text-color-light);
