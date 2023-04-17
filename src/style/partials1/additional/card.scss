@@ -61,10 +61,10 @@ a.card__title {
   }
 
   &--img {
-    padding-bottom: 264px;
+    padding-bottom: calc(264 / var(--fz) * var(--fz-em));
 
     @media (min-width: 960px) {
-      padding-bottom: 350px;
+      padding-bottom: calc(350 / var(--fz) * var(--fz-em));
     }
 
     &::before {
@@ -72,27 +72,40 @@ a.card__title {
       position: absolute;
       bottom: 0;
       right: 0;
-      width: 240px;
-      height: 264px;
+      width: calc(240 / var(--fz) * var(--fz-em));
+      height: calc(264 / var(--fz) * var(--fz-em));
       background-image: url(../../img/depositphotos.png);
       background-repeat: no-repeat;
 
       @media (min-width: 960px) {
-        right: -26px;
-        width: 343px;
-        height: 377px;
+        right: calc(-26 / var(--fz) * var(--fz-em));
+        width: calc(343 / var(--fz) * var(--fz-em));
+        height: calc(377 / var(--fz) * var(--fz-em));
       }
     }
   }
 
   &__image--decor {
-    margin: -60px -32px -40px 0;
-    width: 343px;
-    padding-bottom: 400px;
+    margin: calc(-60 / var(--fz) * var(--fz-em)) calc(-32 / var(--fz) * var(--fz-em)) calc(-40 / var(--fz) * var(--fz-em)) 0;
+    width: calc(343 / var(--fz) * var(--fz-em));
+    padding-bottom: calc(400 / var(--fz) * var(--fz-em));
   }
 
   &--bg {
     background: var(--card-bg);
+  }
+
+  &--bg-img {
+    background-image: url(../../img/depositphotos.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding-bottom: calc(240 / var(--fz) * var(--fz-em));
+    background-size: calc(240 / var(--fz) * var(--fz-em)) calc(264 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      background-size: calc(343 / var(--fz) * var(--fz-em)) calc(373 / var(--fz) * var(--fz-em));
+      padding-bottom: calc(343 / var(--fz) * var(--fz-em));
+    }
   }
 
   &--centered {
@@ -106,12 +119,12 @@ a.card__title {
   }
 
   &--accent {
-    background: var(--primary);
+    background-color: var(--primary);
     color: var(--z-white);
   }
 
   &__image {
-    margin-right: -32px;
+    margin-right: calc(-32 / var(--fz) * var(--fz-em));
     position: relative;
     overflow: hidden;
     padding-bottom: 100%;
@@ -183,8 +196,6 @@ a.card__title {
         --fz: 24;
         line-height: 1.5;
       }
-
-
     }
   }
 
