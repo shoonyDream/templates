@@ -21,10 +21,42 @@
   &__body {
     display: flex;
     flex-direction: column;
-    gap: calc(20 / var(--fz) * var(--fz-em));
+    gap: calc(24 / var(--fz) * var(--fz-em));
 
     @media (min-width: 960px) {
       flex-direction: row;
     }
+
+    &--column {
+      gap: calc(32 / var(--fz) * var(--fz-em));
+
+      @media (min-width: 960px) {
+        gap: calc(75 / var(--fz) * var(--fz-em));
+      }
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.card-column {
+  gap: calc(24 / var(--fz) * var(--fz-em));
+
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid #213966;
+    margin-left: 3px;
+    padding-left: calc(20 / var(--fz) * var(--fz-em));
+  }
+
+  &__title {
+    font-weight: 700;
+    line-height: 1.7;
+    text-transform: uppercase;
   }
 }
