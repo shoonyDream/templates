@@ -1,6 +1,12 @@
 .large-card {
 
-  &__subtitle {
+  & h2,
+  h3,
+  h4 {
+    font-weight: 300;
+  }
+
+  &__discription-header {
     margin-top: calc(16 / var(--fz) * var(--fz-em));
     line-height: 1.4;
 
@@ -15,6 +21,38 @@
 
     @media (min-width: 960px) {
       margin-top: calc(40 / var(--fz) * var(--fz-em));
+    }
+  }
+
+  &__subtitle {
+    --fz: 16;
+
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    font-weight: 600;
+    line-height: 1.5;
+    margin-top: calc(16 / var(--fz) * var(--fz-em));
+  }
+
+  &__text {
+    margin-top: calc(24 / var(--fz) * var(--fz-em));
+    line-height: 1.7;
+  }
+
+  &__link {
+    display: none;
+    margin-top: calc(40 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      display: block;
+    }
+
+    &--mobile {
+      display: block;
+      margin-top: calc(24 / var(--fz) * var(--fz-em));
+
+      @media (min-width: 960px) {
+        display: none;
+      }
     }
   }
 
@@ -39,6 +77,24 @@
   &__column {
     display: flex;
     flex-direction: column;
+  }
+
+  &__container-img {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(24 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      margin-top: 0;
+    }
+
+    & img {
+      width: 50%;
+
+      @media (min-width: 960px) {
+        max-width: 33%;
+      }
+    }
   }
 }
 
