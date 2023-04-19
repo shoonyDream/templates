@@ -58,11 +58,6 @@
     }
   }
 
-  .checkmate--top & {
-    gap: calc(20 / var(--fz) * var(--fz-em));
-    align-self: flex-start;
-  }
-
   & .btn {
     width: 100%;
 
@@ -143,11 +138,6 @@
       .checkmate--reverse & {
         left: auto;
         right: 0;
-      }
-
-      .checkmate--vertical & {
-        width: calc(490 / var(--fz) * var(--fz-em));
-        height: calc(580 / var(--fz) * var(--fz-em));
       }
 
       img {
