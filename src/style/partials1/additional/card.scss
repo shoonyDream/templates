@@ -100,10 +100,10 @@ a.card__title {
     background-repeat: no-repeat;
     background-position: right bottom;
     padding-bottom: calc(240 / var(--fz) * var(--fz-em));
-    background-size: calc(240 / var(--fz) * var(--fz-em)) calc(264 / var(--fz) * var(--fz-em));
+    background-size: calc(240 / var(--fz) * var(--fz-em));
 
     @media (min-width: 960px) {
-      background-size: calc(343 / var(--fz) * var(--fz-em)) calc(373 / var(--fz) * var(--fz-em));
+      background-size: calc(343 / var(--fz) * var(--fz-em));
       padding-bottom: calc(343 / var(--fz) * var(--fz-em));
     }
   }
