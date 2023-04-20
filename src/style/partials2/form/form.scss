@@ -296,12 +296,12 @@ input::-webkit-inner-spin-button {
     position: relative;
     background-color: var(--z-white);
     transition: 0.2s linear;
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--primary);
     box-shadow: inset 0px 1px 2px hsla(0, 0%, 0%, 0.1);
 
     #{$self}--confirm & {
-      width: calc(18 / var(--fz) * var(--fz-em));
-      height: calc(18 / var(--fz) * var(--fz-em));
+      width: calc(16 / var(--fz) * var(--fz-em));
+      height: calc(16 / var(--fz) * var(--fz-em));
       border-radius: 3px;
       background: transparent;
       border: 1px solid;
@@ -329,7 +329,7 @@ input::-webkit-inner-spin-button {
         background-repeat: no-repeat;
         transform: translate(-50%, -50%);
         background-size: contain;
-        background-image: url("data:image/svg+xml,%3Csvg width='21' height='16' viewBox='0 0 21 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.6925 0.319082C20.2824 -0.106361 19.6176 -0.106361 19.2075 0.319082L6.62789 13.3703L1.79248 8.35369C1.38245 7.92824 0.71767 7.92829 0.307555 8.35369C-0.102518 8.77909 -0.102518 9.46878 0.307555 9.89422L5.88543 15.6811C6.29534 16.1065 6.96061 16.1062 7.37036 15.6811L20.6925 1.85966C21.1025 1.43426 21.1025 0.744525 20.6925 0.319082Z' fill='%239C7C56'/%3E%3C/svg%3E%0A");
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M4.66845 7.11304L10.7964 0.984375L11.7398 1.92704L4.66845 8.99837L0.425781 4.75571L1.36845 3.81304L4.66845 7.11304Z' fill='%23213966'/%3e%3c/svg%3e");
       }
     }
 
@@ -337,7 +337,7 @@ input::-webkit-inner-spin-button {
       border-color: hsla(0, 0%, 0%, 0.05);
 
       &::after {
-        background-image: url("data:image/svg+xml,%3Csvg width='11' height='9' viewBox='0 0 11 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 4.5L4.5 7.5L10 1' stroke='%239C7C56' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M4.66845 7.11304L10.7964 0.984375L11.7398 1.92704L4.66845 8.99837L0.425781 4.75571L1.36845 3.81304L4.66845 7.11304Z' fill='%23213966'/%3e%3c/svg%3e");
       }
     }
   }
