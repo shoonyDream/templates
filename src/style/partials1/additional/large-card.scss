@@ -11,6 +11,7 @@
 
   &--small {
     padding: calc(50 / var(--fz) * var(--fz-em)) calc(0 / var(--fz) * var(--fz-em));
+    box-shadow: none;
   }
 
   &--decor {
