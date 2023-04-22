@@ -3,9 +3,24 @@
 
   position: relative;
 
+  &--bg {
+    background-color: var(--bg-2);
+  }
 
   &__container {
     position: relative;
+  }
+
+  &__header {
+    display: flex;
+    align-items: flex-end;
+    gap: calc(24 / var(--fz) * var(--fz-em));
+    padding-right: calc(80 / var(--fz) *var(--fz-em));
+  }
+
+  &__link {
+    flex-shrink: 0;
+    padding-bottom: calc(8 / var(--fz) * var(--fz-em));
   }
 
   &__header,

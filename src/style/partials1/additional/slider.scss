@@ -8,6 +8,8 @@
   }
 
   &__arr {
+    position: absolute;
+
     .slider & {
       background-color: var(--z-white);
       color: var(--primary);
