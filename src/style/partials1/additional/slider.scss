@@ -59,24 +59,21 @@
     .slider--arr-outside & {
       transform: none;
       left: auto;
-      right: 50px;
-      top: calc(-70 / var(--fz) * var(--fz-em));
+      right: 60%;
+      top: calc(-10 / var(--fz) * var(--fz-em));
+
+      @media (min-width: 960px) {
+        top: calc(-70 / var(--fz) * var(--fz-em));
+        right: 50px;
+      }
 
       &:last-child {
-        right: 0;
+        right: 40%;
+
+        @media (min-width: 960px) {
+          right: 0;
+        }
       }
     }
   }
-
-
-  // &__arr--feedback {
-
-  //   .slider & {
-
-  //     @media (min-width: 960px) {
-  //       right: 0;
-  //       top: calc(-50 / var(--fz) * var(--fz-em));
-  //     }
-  //   }
-  // }
 }

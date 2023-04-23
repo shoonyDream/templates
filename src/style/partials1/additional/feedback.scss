@@ -22,7 +22,12 @@
   }
 
   &__description {
-    padding: calc(32 / var(--fz) * var(--fz-em));
+    padding: 0;
+    padding-top: calc(20 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      padding: calc(32 / var(--fz) * var(--fz-em));
+    }
   }
 
   &__text {
