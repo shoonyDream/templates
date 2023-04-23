@@ -1,6 +1,10 @@
 .consultation {
   padding-top: calc(80 / var(--fz) * var(--fz-em));
   padding-bottom: calc(80 / var(--fz) * var(--fz-em));
+  background-image: url(../../img/consultationfon.png);
+  background-repeat: no-repeat;
+  background-size: calc(100% - 660px);
+  background-position: right;
   background-color: var(--bg-2);
 
   &__image {
@@ -27,12 +31,12 @@
     }
   }
 
-  &__discription {
+  &__description {
     margin-left: calc(100 / var(--fz) * var(--fz-em));
   }
 
   &__input {
-    border: 1px solid #E6E6E6;
+    border: 1px solid var(--line);
     padding: calc(12 / var(--fz) * var(--fz-em)) calc(16 / var(--fz) * var(--fz-em));
     min-width: calc(288 / var(--fz) * var(--fz-em));
     background-color: var(--z-white);
