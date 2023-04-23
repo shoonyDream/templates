@@ -20,42 +20,13 @@ a.link {
     border-color: currentColor;
   }
 
-  &--plus {
-    display: block;
-    position: relative;
-    border-bottom: none;
-    padding-left: calc(20 / var(--fz) * var(--fz-em));
+  &--icon {
+    --fz: 16;
 
-    &::before {
-      left: 0;
-      top: calc(3 / var(--fz) * var(--fz-em));
-      content: '';
-      width: calc(10 / var(--fz) * var(--fz-em));
-      height: calc(10 / var(--fz) * var(--fz-em));
-      position: absolute;
-      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5.16797 5.16797V0.167969H6.83464V5.16797H11.8346V6.83464H6.83464V11.8346H5.16797V6.83464H0.167969V5.16797H5.16797Z' fill='%23213966'/%3e%3c/svg%3e");
-      background-repeat: no-repeat;
-      background-position: 50%;
-    }
-  }
-
-  &--doc {
-    display: block;
-    position: relative;
-    border-bottom: none;
-    padding-left: calc(20 / var(--fz) * var(--fz-em));
-
-    &::before {
-      left: 0;
-      top: calc(3 / var(--fz) * var(--fz-em));
-      content: '';
-      width: calc(10 / var(--fz) * var(--fz-em));
-      height: calc(10 / var(--fz) * var(--fz-em));
-      position: absolute;
-      background-image: url("data:image/svg+xml,%3Csvg width='12' height='14' viewBox='0 0 12 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.3333 13.6654H0.666667C0.489856 13.6654 0.320286 13.5951 0.195262 13.4701C0.0702379 13.3451 0 13.1755 0 12.9987V0.998698C0 0.821887 0.0702379 0.652318 0.195262 0.527293C0.320286 0.402269 0.489856 0.332031 0.666667 0.332031H11.3333C11.5101 0.332031 11.6797 0.402269 11.8047 0.527293C11.9298 0.652318 12 0.821887 12 0.998698V12.9987C12 13.1755 11.9298 13.3451 11.8047 13.4701C11.6797 13.5951 11.5101 13.6654 11.3333 13.6654ZM10.6667 12.332V1.66536H1.33333V12.332H10.6667ZM3.33333 3.66536H8.66667V4.9987H3.33333V3.66536ZM3.33333 6.33203H8.66667V7.66536H3.33333V6.33203ZM3.33333 8.9987H8.66667V10.332H3.33333V8.9987Z' fill='%23213966'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: 50%;
-    }
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    display: flex;
+    gap: calc(8 / var(--fz) * var(--fz-em));
+    align-items: center;
   }
 
   &--icon-only {
