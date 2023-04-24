@@ -1,11 +1,9 @@
 .page-banner {
-  padding-top: calc(20 / var(--fz) * var(--fz-em));
-  padding-bottom: calc(40 / var(--fz) * var(--fz-em));
   background-image: url(../../img/padgebannerfon.png);
   background-repeat: no-repeat;
   background-position: right;
   background-color: var(--bg-2);
-  background-size: contain;
+  background-size: cover;
 
   &__container {
     display: flex;
@@ -69,24 +67,39 @@
   }
 
   & ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
+
+    @media (min-width: 960px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: flex-start;
+    }
   }
 
   & li+li {
-    margin-top: 0;
+
+    @media (min-width: 960px) {
+      margin-top: 0;
+    }
   }
 
   & li {
-    margin-bottom: calc(24 / var(--fz) * var(--fz-em));
-    margin-right: calc(10 / var(--fz) * var(--fz-em));
-    flex-basis: 45%;
+
+    @media (min-width: 960px) {
+      margin-bottom: calc(24 / var(--fz) * var(--fz-em));
+      margin-right: calc(10 / var(--fz) * var(--fz-em));
+      flex-basis: 45%;
+    }
   }
 
   &__buttons {
     display: flex;
-    gap: calc(16 / var(--fz) * var(--fz-em));
+    flex-direction: column;
+    gap: calc(20 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      flex-direction: row;
+      gap: calc(16 / var(--fz) * var(--fz-em));
+    }
   }
 }

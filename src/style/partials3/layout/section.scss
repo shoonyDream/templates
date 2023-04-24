@@ -43,6 +43,11 @@
     & .uk-h2 {
       margin-bottom: 0;
     }
+
+    &--centered {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__title+&__subtitle {
