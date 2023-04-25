@@ -50,7 +50,7 @@
   align-items: center;
   text-align: center;
   padding: calc(20 / var(--fz) * var(--fz-em)) calc(24 / var(--fz) * var(--fz-em)) calc(48 / var(--fz) * var(--fz-em)) calc(24 / var(--fz) * var(--fz-em));
-  padding-bottom: 48px;
+  padding-bottom: calc(48 / var(--fz) * var(--fz-em));
 
   @media (min-width: 960px) {
     gap: calc(24 / var(--fz) * var(--fz-em));
@@ -60,11 +60,11 @@
   &--decor {
     &::before {
       content: '';
-      width: 40px;
-      height: 2px;
+      width: calc(40 / var(--fz) * var(--fz-em));
+      height: calc(2 / var(--fz) * var(--fz-em));
       background: var(--primary);
       position: absolute;
-      bottom: 24px;
+      bottom: calc(24 / var(--fz) * var(--fz-em));
       left: 50%;
       transform: translate3d(-50%, 0, 0);
     }
@@ -82,6 +82,14 @@
 
   &--align-left {
     text-align: left;
+  }
+
+  &__title {
+    --fz: 24;
+
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    font-weight: 600;
+    line-height: 1.3;
   }
 
   &__body {

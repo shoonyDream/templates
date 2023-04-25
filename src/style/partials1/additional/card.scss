@@ -100,6 +100,22 @@ a.card__title {
     }
   }
 
+  &--centered-decor {
+    width: 100%;
+    padding-bottom: calc(80 / var(--fz) * var(--fz-em));
+
+    &::before {
+      content: '';
+      width: calc(40 / var(--fz) * var(--fz-em));
+      height: calc(2 / var(--fz) * var(--fz-em));
+      background: var(--primary);
+      position: absolute;
+      bottom: calc(40 / var(--fz) * var(--fz-em));
+      left: 50%;
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+
   &--accent {
     background-color: var(--primary);
     color: var(--z-white);
@@ -154,8 +170,21 @@ a.card__title {
     }
   }
 
+  & h4 {
+    font-weight: 600;
+  }
+
+
   &__description {
     line-height: 1.5;
+
+    &--large {
+      --fz: 16;
+
+      font-size: calc(var(--fz)/ var(--fz-base) * var(--fz-em));
+      font-weight: 400;
+      line-height: 1.7;
+    }
   }
 
   &__footer {

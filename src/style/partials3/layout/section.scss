@@ -9,6 +9,13 @@
 
   &__container {
     position: relative;
+
+    &--shadow {
+
+      @media (min-width: 960px) {
+        box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.08);
+      }
+    }
   }
 
   &__header {
