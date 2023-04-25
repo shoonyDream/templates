@@ -16,6 +16,10 @@
     align-items: flex-end;
     gap: calc(24 / var(--fz) * var(--fz-em));
     padding-right: calc(80 / var(--fz) *var(--fz-em));
+
+    &--centered {
+      padding-right: 0;
+    }
   }
 
   &__link {
