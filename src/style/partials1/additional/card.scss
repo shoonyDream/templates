@@ -154,6 +154,10 @@ a.card__title {
     font-size: calc(var(--fz)/ var(--fz-base) * var(--fz-em));
     display: block;
 
+    &+& {
+      margin-top: calc(20 / var(--fz) * var(--fz-em));
+    }
+
     &--uppercase {
       --fz: 20;
 
@@ -167,6 +171,17 @@ a.card__title {
         --fz: 24;
         line-height: 1.5;
       }
+    }
+
+    &--uppercase-small {
+      --fz: 14;
+
+      font-size: calc(var(--fz)/ var(--fz-base) * var(--fz-em));
+      font-weight: 700;
+      line-height: 1.6;
+      text-transform: uppercase;
+      position: relative;
+      padding-left: calc(24 / var(--fz) * var(--fz-em));
     }
   }
 
