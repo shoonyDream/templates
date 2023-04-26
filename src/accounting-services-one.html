@@ -1,6 +1,26 @@
 {% set page = 'main' %}
 {% import "template/_mixins.html" as mixins %}
 {% include "template/header.html" %}
+<section class="breadcrumbs-container">
+  <div class="uk-container">
+    <nav class="breadcrumbs scrollbar">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Бухгалтерские услуги</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Бухгалтерские услуги для ООО</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <span class="breadcrumbs__link">Бухгалтерское сопровождение ООО</span>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
 <section class="section uk-section page-banner page-banner--accounting1">
   <div class="uk-container section__container">
     <div uk-grid class="uk-grid-small">
@@ -10,8 +30,7 @@
             <h1>Бухгалтерские услуги</h1>
             <div class="page-banner__text"><span>Time Asset - это ваша четкая бухгалтерия на аутсорсинге,
                 которая работает лучше, чем штатный бухгалтер</span></div>
-            <ul class="list"></ul>
-            <div class="page-banner__buttons">
+            <div class="page-banner__buttons page-banner__buttons--margin">
               <button class="btn" type="submit"><span>Заключить договор</span></button>
               <button class="btn" type="submit"><span>Задать вопрос</span></button>
             </div>

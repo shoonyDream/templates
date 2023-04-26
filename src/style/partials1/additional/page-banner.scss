@@ -9,6 +9,12 @@
     background-image: url(../../img/accounting1.png);
   }
 
+  &--accounting2 {
+    background-image: url(../../img/accounting2.png);
+    background-size: 50%;
+    background-color: var(--bg-2);
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -110,6 +116,14 @@
     @media (min-width: 960px) {
       flex-direction: row;
       gap: calc(16 / var(--fz) * var(--fz-em));
+    }
+
+    &--margin {
+      margin-top: calc(24 / var(--fz) * var(--fz-em));
+
+      @media (min-width: 960px) {
+        margin-top: calc(64 / var(--fz) * var(--fz-em));
+      }
     }
   }
 }

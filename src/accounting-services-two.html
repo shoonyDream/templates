@@ -1,0 +1,292 @@
+{% set page = 'main' %}
+{% import "template/_mixins.html" as mixins %}
+{% include "template/header.html" %}
+<section class="breadcrumbs-container">
+  <div class="uk-container">
+    <nav class="breadcrumbs scrollbar">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Бухгалтерские услуги</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Бухгалтерские услуги для ООО</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <span class="breadcrumbs__link">Бухгалтерское сопровождение ООО</span>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+<section class="section uk-section page-banner page-banner--accounting2">
+  <div class="uk-container section__container">
+    <div uk-grid class="uk-grid-small">
+      <div class="page-banner__container page-banner__container--left uk-flex-middle">
+        <div class="uk-width-1-2@m">
+          <div class="page-banner__description">
+            <h1>Бухгалтерские услуги для ООО</h1>
+            <div class="page-banner__text"><span>Time Asset - это ваша четкая бухгалтерия на аутсорсинге, которая работает лучше, чем штатный бухгалтер</span></div>
+            <div class="page-banner__buttons page-banner__buttons--margin">
+              <button class="btn" type="submit"><span>Заключить договор</span></button>
+              <button class="btn btn--secondary" type="submit"><span>Смотреть договор</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section uk-section">
+  <div class="uk-container section__container">
+    <div uk-grid class="uk-grid-small uk-width-1-1">
+      <div class="section__body uk-width-3-4@m description-service">
+        <div class="description-service__list">
+          <article class="description-service__item">
+            <h4>Услуги бухгалтера для ООО</h4>
+            <p>Законодательство об электронной коммерции находится в стадии формирования. Постоянная корректировка регламентов превращает бухгалтерскую отчетность интернет-магазинов в одно из наиболее ответственных направлений работы БЦ «Актив». Специалисты занимаются обслуживанием виртуальных торговых площадок несколько лет. Направление хорошо изучено, а в основу методик положен практический опыт. Обратиться за услугой предложено как начинающим предпринимателям, так и состоявшимся в сети компаниям.</p>
+          </article>
+          <article class="description-service__item">
+            <h4>Мы поможем решить все эти проблемы</h4>
+            <p>Традиционные системы документирования коммерческих операций к электронной торговле неприменимы. Важным отличием является невозможность перехода на привычный налоговый режим — ЕНВД. Законодатель запрещает распространять на дистанционные продажи нормы о вмененном доходе. Именно поэтому специалисты делают ставку на мониторинг практики по УСН и ОСН.</p>
+          </article>
+          <article class="description-service__item">
+            <h4>Наши услуги помогают:</h4>
+            <ul class="list list--ul list--ul-dash">
+              <li>Упаковка;</li>
+              <li>Транспортировка;</li>
+              <li>Страховка посылки;</li>
+              <li>Экспедиция груза.</li>
+            </ul>
+            <p>Порядок составления бухгалтерской документации интернет-магазина зависит от оплаты доставки. При включении суммы в стоимость товара самостоятельной услугой она являться не будет.</p>
+            <p>Поскольку вручение заказа производится с привлечением курьерских или почтовых служб, отражать в отчетности придется специфические издержки. Фиксировать необходимо следующие расходы:</p>
+          </article>
+          <div class="section--bg">
+            {% include "template/consultation.html" %}
+          </div>
+          <article class="description-service__item">
+            <h4>Кассовая дисциплина</h4>
+            <p>Цифровые чеки разрешили высылать покупателям на электронные ящики. Однако от необходимости оформлять кассовые документы для бухгалтерии интернет-магазины не освободили. Виртуальная площадка должна иметь соответствующие регистры, фиксировать оплату по каждой сделке.</p>
+          </article>
+          <article class="description-service__item">
+            <h4>Заключив договор с БЦ «Актив», Вы получаете:</h4>
+            <p>Профессиональное сопровождение включает учет затрат на привлечение покупателей. Специалисты отражают в документах издержки следующего характера:</p>
+            <ul class="list list--ul list--ul-dash">
+              <li>Маркетинговые исследования;</li>
+              <li>Услуги продвижения в сети;</li>
+              <li>Создание контента;</li>
+              <li>Техническое обслуживание сайта;</li>
+              <li>Закупка дополнительных программ и их обновление;</li>
+              <li>Хранение персональных данных.</li>
+            </ul>
+            <p>БЦ «Актив» оказывает бухгалтерские услуги интернет-магазинам русскоязычного сегмента. Клиенты получают оперативную консультационную поддержку, а также пользуются круглосуточным доступом к облачному сервису. Согласовать формат обслуживания с менеджером можно прямо сейчас!</p>
+          </article>
+        </div>
+      </div>
+      <aside class="uk-width-1-4">
+        <div class="aside-service">
+          <div class="aside-service__header">
+            <div class="link__icon">{{mixins.icon('linkdoc')}}</div>
+            <div class="aside-service__title">Бухгалтерские услуги</div>
+          </div>
+          <div class="aside-service__body">
+            <ul uk-accordion class="questions">
+              <li class="uk-open questions__item">
+                <a class="uk-accordion-title questions__title" href="#">Бухгалтерские услуги для ООО</a>
+                <div class="uk-accordion-content questions__content">
+                  <p>Бухгалтерское сопровождение ООО
+                  </p>
+                  <p>Бухгалтерское обслуживание ООО
+                  </p>
+                  <p>Нулевая отчетность ООО
+                  </p>
+                  <p>Бухгалтерский учет в ООО
+                  </p>
+                </div>
+              </li>
+              <li class="questions__item">
+                <a class="uk-accordion-title questions__title" href="#">Бухгалтерские услуги для ИП</a>
+                <div class="uk-accordion-content questions__content">
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                    Duis aute irure dolor reprehenderit.</p>
+                  <div class="questions__subtitle">Стоимость услуг:</div>
+                  <ul class="list list--ul list--ul-dash">
+                    <li>Бухгалтерское обслуживание
+                    </li>
+                    <li>Юридическое обслуживание
+                    </li>
+                    <li>Аудиторские услуги</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="questions__item">
+                <a class="uk-accordion-title questions__title" href="#">Бухгалтерская отчетность</a>
+                <div class="uk-accordion-content questions__content">
+                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                    Excepteur sint occaecat cupidatat proident.</p>
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title questions__title" href="#">Бухгалтерский учет</a>
+                <div class="uk-accordion-content questions__content">
+                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                    Excepteur sint occaecat cupidatat proident.</p>
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title questions__title" href="#">Бухгалтерское обслуживание</a>
+                <div class="uk-accordion-content questions__content">
+                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                    Excepteur sint occaecat cupidatat proident.</p>
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title questions__title" href="#">Кадровый учет
+                </a>
+                <div class="uk-accordion-content questions__content">
+                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                    Excepteur sint occaecat cupidatat proident.</p>
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title questions__title" href="#">Бухгалтерское сопровождение
+                </a>
+                <div class="uk-accordion-content questions__content">
+                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                    Excepteur sint occaecat cupidatat proident.</p>
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title questions__title" href="#">Выписка из ЕГРЮЛ
+                </a>
+                <div class="uk-accordion-content questions__content">
+                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                    Excepteur sint occaecat cupidatat proident.</p>
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title questions__title" href="#">Аутсорсинг бухгалтерии
+                </a>
+                <div class="uk-accordion-content questions__content">
+                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                    Excepteur sint occaecat cupidatat proident.</p>
+                </div>
+              </li>
+              <li>
+                <a class="uk-accordion-title questions__title" href="#">Налоговый консалтинг
+                </a>
+                <div class="uk-accordion-content questions__content">
+                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+                    Excepteur sint occaecat cupidatat proident.</p>
+                </div>
+              </li>
+            </ul>
+            <div class="aside-service__link">
+              <div class="link__icon">{{mixins.icon('message')}}</div>
+              <div class="aside-service__text">Юридические услуги</div>
+            </div>
+            <div class="aside-service__link">
+              <div class="link__icon">{{mixins.icon('scales')}}</div>
+              <div class="aside-service__text">Аудиторские услуги</div>
+            </div>
+            <div class="aside-service__link">
+              <div class="link__icon">{{mixins.icon('consult')}}</div>
+              <div class="aside-service__text">Консультации</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+<section class="section uk-section">
+  <div class="uk-container section__container">
+    <div class="section__header section__header--centered">
+      <div class="section__title section__title--centered">
+        <h2>Преимущества компании</h2>
+      </div>
+    </div>
+    <div class="section__body">
+      <div uk-grid class="uk-grid-small key-indicators uk-child-width-1-3@m">
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('experience')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> 10 лет опыта на рынке бухгалтерских услуг</div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('workexperience')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> 5 лет средний стаж специалистов в нашей компании
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('penalties')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> 0 штрафов от налоговой за несвоевременно сданную отчетность
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('mens')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> 15 претензий урегулировано в сторону клиентов со стороны налоговой
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('mens')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> Страховка от ошибок бухгалтера
+                на 1 млн. рублей в год
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('mens')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> >75% аутсорсинг бухгалтерии выгоднее, чем содержание штата бухгалтеров
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include "template/footer.html" %}
