@@ -99,3 +99,10 @@ button {
     opacity: 0.5;
   }
 }
+
+.button__container {
+  width: 100%;
+  display: flex;
+  gap: calc(16 / var(--fz) * var(--fz-em));
+  justify-content: center;
+}

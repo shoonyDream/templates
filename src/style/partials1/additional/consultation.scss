@@ -7,6 +7,9 @@
   background-position: right;
   background-color: var(--bg-2);
 
+
+
+
   &__image {
     position: relative;
     overflow: hidden;
@@ -32,7 +35,20 @@
   }
 
   &__description {
-    margin-left: calc(100 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      margin-left: calc(100 / var(--fz) * var(--fz-em));
+    }
+  }
+
+  &--small {
+
+    & .consultation__description {
+
+      @media (min-width: 960px) {
+        margin-left: calc(30 / var(--fz) * var(--fz-em));
+      }
+    }
   }
 
   &__input {

@@ -1,0 +1,26 @@
+.table-price {
+  border-collapse: collapse;
+  border-style: hidden;
+  width: 100%;
+  line-height: 1.7;
+  margin-bottom: calc(60 / var(--fz) * var(--fz-em));
+
+  & td,
+  th {
+    border: 2px solid var(--bg-2);
+    padding: calc(12 / var(--fz) * var(--fz-em)) calc(20 / var(--fz) * var(--fz-em)) calc(12 / var(--fz) * var(--fz-em)) calc(40 / var(--fz) * var(--fz-em));
+  }
+
+  & th {
+    font-weight: 600;
+  }
+
+  &__unit {
+    font-weight: 600;
+  }
+}
+
+.table-container {
+  padding: 80px 100px;
+  box-shadow: 0px 24px 80px 0px #00000014;
+}
