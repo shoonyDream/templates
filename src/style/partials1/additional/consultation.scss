@@ -43,6 +43,10 @@
 
   &--small {
 
+    padding-top: calc(20 / var(--fz) * var(--fz-em));
+    padding-bottom: calc(20 / var(--fz) * var(--fz-em));
+    margin-bottom: calc(60 / var(--fz) * var(--fz-em));
+
     & .consultation__description {
 
       @media (min-width: 960px) {
