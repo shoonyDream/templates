@@ -19,6 +19,12 @@
     background-image: url(../../img/map.png);
     background-size: 50%;
     background-color: var(--bg-2);
+
+    & h1 {
+      color: var(--primary);
+      font-weight: 300;
+      line-height: 1.25;
+    }
   }
 
   &__container {
