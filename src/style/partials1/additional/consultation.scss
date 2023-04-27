@@ -7,9 +7,6 @@
   background-position: right;
   background-color: var(--bg-2);
 
-
-
-
   &__image {
     position: relative;
     overflow: hidden;
@@ -58,14 +55,18 @@
   &__input {
     border: 1px solid var(--line);
     padding: calc(12 / var(--fz) * var(--fz-em)) calc(16 / var(--fz) * var(--fz-em));
-    min-width: calc(288 / var(--fz) * var(--fz-em));
     background-color: var(--z-white);
   }
 
   &__input-container {
     display: flex;
+    flex-direction: column;
     gap: calc(20 / var(--fz) * var(--fz-em));
     margin-top: calc(40 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      flex-direction: row;
+    }
   }
 
   &__confirm {
