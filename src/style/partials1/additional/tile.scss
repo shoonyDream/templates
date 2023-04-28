@@ -16,11 +16,22 @@ a.tile {
   height: 100%;
   position: relative;
 
+  &__item {
+    padding: calc(24 / var(--fz) * var(--fz-em)) 0;
+    border-bottom: 1px solid var(--bg-2);
+
+    @media (min-width: 960px) {
+      padding: calc(72 / var(--fz) * var(--fz-em)) calc(32 / var(--fz) * var(--fz-em));
+    }
+  }
+
   &__image {
     position: relative;
     overflow: hidden;
     padding-bottom: 56%;
     height: 0;
+    min-width: 50%;
+    flex-basis: 50%;
 
     .tile--play & {
       &::before {
@@ -61,6 +72,7 @@ a.tile {
     flex-direction: column;
     flex-grow: 1;
     margin-top: calc(20 / var(--fz) * var(--fz-em));
+    justify-content: center;
   }
 
   &__description {
@@ -69,6 +81,31 @@ a.tile {
     font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
     line-height: 1.7;
     font-weight: 400;
+    min-width: 50%;
+    flex-basis: 50%;
+    margin-top: calc(8 / var(--fz) * var(--fz-em));
   }
 
+  &__title {
+    font-weight: 600;
+  }
+
+  &__link {
+    margin-top: calc(16 / var(--fz) * var(--fz-em));
+  }
+
+  &--gorizontal {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    @media (min-width: 960px) {
+      flex-direction: row;
+      gap: calc(40 / var(--fz) * var(--fz-em));
+    }
+
+    & .tile__image {
+      padding-bottom: 30%;
+    }
+  }
 }
