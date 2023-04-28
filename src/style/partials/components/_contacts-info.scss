@@ -1,17 +1,36 @@
 .contacts-info {
-  display: flex;
 
-  &--vertical {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
+  &__container {
+    display: flex;
+    gap: calc(72 / var(--fz) * var(--fz-em));
+    margin-top: calc(40 / var(--fz) * var(--fz-em));
   }
 
   &__tel-container {
     display: flex;
+
     gap: calc(24 / var(--fz) * var(--fz-em));
     align-items: flex-end;
     margin-top: calc(8 / var(--fz) * var(--fz-em));
+  }
+
+  &__mail {
+
+    line-height: 2.2;
+
+    & a {
+      --fz: 16;
+
+      font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+      color: var(--primary);
+      font-weight: 600;
+    }
+  }
+
+  &__social-container {
+    display: flex;
+    gap: calc(24 / var(--fz) * var(--fz-em));
+    align-items: flex-end;
   }
 
   &__tel {
@@ -36,12 +55,34 @@
   }
 
   &__icon {
-    flex-shrink: 0;
+    --fz: 20;
 
-    .header-top-contacts & {
-      --fz-icon: 21;
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    color: var(--primary);
+  }
 
-      font-size: calc(var(--fz-icon) / var(--fz) * var(--fz-em));
-    }
+  &__container-address {
+    margin-top: calc(40 / var(--fz) * var(--fz-em));
+  }
+
+  &__address {
+    --fz: 16;
+
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    font-weight: 600;
+    line-height: 1.5;
+    margin-top: calc(16 / var(--fz) * var(--fz-em));
+  }
+
+  &__container-time {
+    margin-top: calc(40 / var(--fz) * var(--fz-em));
+  }
+
+  &__time {
+    --fz: 14;
+
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    font-weight: 600;
+    line-height: 1.7;
   }
 }

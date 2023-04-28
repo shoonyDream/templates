@@ -19,12 +19,12 @@
   <div class="uk-container section__container">
     <div uk-grid class="uk-grid-small">
       <div class="page-banner__container page-banner__container--left uk-flex-middle">
-        <div class="uk-width-1-1">
+        <div class="uk-width-1-1@m">
           <div class="page-banner__description contacts">
             <div class="contacts__header">
               <h1 class="uk-h3">Наш офис в Москве</h1>
             </div>
-            <div class="">
+            <div class="contacts__body">
               <div class="contacts-info">
                 <p class="contacts-info__text">Бесплатно по России</p>
                 <div class="contacts-info__tel-container">
@@ -32,9 +32,27 @@
                   <a class="contacts-info__tel" href="tel:+79647655050">+7 (964) 765-50-50</a>
                   <a class="contacts-info__tel" href="tel:+74959695613">+7 (495) 969-56-13</a>
                 </div>
-                <div class="">
-                  <p>E-mail: </p>
-                  <a href="mailto:msk@buhactiv.ru">msk@buhactiv.ru</a>
+                <div class="contacts-info__container">
+                  <div class="contacts-info__mail">
+                    <p class="contacts-info__text>">E-mail: </p>
+                    <a href=" mailto:msk@buhactiv.ru">msk@buhactiv.ru</a>
+                  </div>
+                  <div class="">
+                    <p class="contacts-info__text>">Mы в соцсетях</p>
+                    <div class="contacts-info__social-container">
+                      <a class="contacts-info__tel" href="tel:+74959695613">+7 (495) 969-56-13</a>
+                      <div class="contacts-info__icon">{{mixins.icon('wtsp')}}</div>
+                      <div class="contacts-info__icon">{{mixins.icon('tg')}}</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contacts-info__container-address">
+                  <p class="contacts-info__text">Юридический / Фактический адрес:</p>
+                  <div class="contacts-info__address">127018, г. Москва, ул. Сущевский Вал, дом 5, строение 2, офис 205</div>
+                </div>
+                <div class="contacts-info__container-time">
+                  <p class="contacts-info__text">Время работы офиса:</p>
+                  <div class="contacts-info__time">Понедельник-Пятница, с 9:00 до 18:15</div>
                 </div>
               </div>
             </div>
@@ -42,7 +60,6 @@
         </div>
       </div>
     </div>
-  </div>
 </section>
 <section class="section uk-section section--bg">
   <div class="uk-container section__container">
