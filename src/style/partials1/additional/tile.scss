@@ -23,6 +23,10 @@ a.tile {
     @media (min-width: 960px) {
       padding: calc(72 / var(--fz) * var(--fz-em)) calc(32 / var(--fz) * var(--fz-em));
     }
+
+    &:first-child {
+      padding-top: 0;
+    }
   }
 
   &__image {
