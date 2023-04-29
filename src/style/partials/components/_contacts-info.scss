@@ -101,4 +101,15 @@
     font-weight: 600;
     line-height: 1.7;
   }
+
+  &__route {
+    position: relative;
+    padding: calc(80 / var(--fz) * var(--fz-em)) calc(100 / var(--fz) * var(--fz-em)) calc(120 / var(--fz) * var(--fz-em)) calc(100 / var(--fz) * var(--fz-em));
+    margin-top: calc(-120 / var(--fz) * var(--fz-em));
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: calc(40 / var(--fz) * var(--fz-em));
+    background-color: var(--z-white);
+  }
 }
