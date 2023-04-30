@@ -1,6 +1,6 @@
 .contacts-info {
   display: flex;
-  gap: calc(10 / var(--fz) * var(--fz-em));
+  gap: calc(16 / var(--fz) * var(--fz-em));
   align-items: center;
 
   &--vertical {
@@ -15,11 +15,5 @@
 
   &__icon {
     flex-shrink: 0;
-
-    .header-top-contacts & {
-      --fz-icon: 21;
-
-      font-size: calc(var(--fz-icon) / var(--fz) * var(--fz-em));
-    }
   }
 }
