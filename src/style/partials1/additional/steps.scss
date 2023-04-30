@@ -1,4 +1,10 @@
 .steps {
+  margin: 0 -20px;
+
+  @media (min-width: 960px) {
+    margin: 0;
+  }
+
   &__list {
     list-style-type: none;
     counter-reset: list;
@@ -10,6 +16,8 @@
   padding: calc(32 / var(--fz) * var(--fz-em));
   padding-bottom: calc(80 / var(--fz) * var(--fz-em));
   height: 100%;
+  background-color: var(--z-white);
+
 
   &::after {
     --fz-after: 40;

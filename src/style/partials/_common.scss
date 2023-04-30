@@ -251,6 +251,10 @@ p+p {
   margin-top: calc(40 / var(--fz) * var(--fz-em));
 }
 
+.uk-grid-collapse>.uk-grid-margin {
+  margin-top: 0;
+}
+
 .uk-grid-medium>.uk-grid-margin {
   margin-top: calc(30 / var(--fz) * var(--fz-em));
 }
@@ -272,20 +276,30 @@ p+p {
 }
 
 .uk-section {
-  --gutter: 30;
+  --gutter: 60;
+  --gutter-top: var(--gutter);
 
   @media (min-width: 960px) {
-    --gutter: 60;
+    --gutter: 120;
   }
 
-  padding: calc(var(--gutter) / var(--fz) * var(--fz-em)) 0;
+  padding: calc(var(--gutter-top) / var(--fz) * var(--fz-em)) 0 calc(var(--gutter) / var(--fz) * var(--fz-em));
 }
 
 
 .uk-section-small {
-  --gutter: 20;
+  --gutter: 40;
+  --gutter-top: var(--gutter);
 
-  padding: calc(var(--gutter) / var(--fz) * var(--fz-em)) 0;
+  padding: calc(var(--gutter-top) / var(--fz) * var(--fz-em)) 0 calc(var(--gutter) / var(--fz) * var(--fz-em));
+
+  @media (min-width: 960px) {
+    --gutter: 80;
+  }
+
+  +.uk-section-small {
+    --gutter-top: 40;
+  }
 }
 
 .uk-section-large {
@@ -333,7 +347,7 @@ p+p {
 .uk-pagination>*>:focus,
 .uk-pagination>*>:hover,
 .uk-pagination>.uk-active>* {
-  color: var(--primary);
+  color: var(--z-white);
   border: 1px solid var(--primary);
 }
 

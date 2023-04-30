@@ -7,10 +7,6 @@
     flex-wrap: nowrap;
   }
 
-  &--bg {
-    background-color: var(--bg-2);
-  }
-
   &--reverse {
     @media (min-width: 960px) {
       flex-direction: row-reverse;

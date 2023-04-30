@@ -1,21 +1,9 @@
 {% set page = 'main' %}
 {% import "template/_mixins.html" as mixins %}
 {% include "template/header.html" %}
-<section class="breadcrumbs-container">
-  <div class="uk-container">
-    <nav class="breadcrumbs scrollbar">
-      <ul class="breadcrumbs__list">
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="#">Главная</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="#">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</section>
-<section class="section uk-section">
+{% include "template/breadcrumbs.html" %}
+
+<section class="section">
   <div class="uk-container section__container">
     <div class="section__header">
       <div class="section__title">
@@ -34,11 +22,14 @@
             <div class="tile__body">
               <div class="tile__title"><span>Как принять и оформить иностранца на работу</span></div>
               <div class="tile__description">
-                <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like. </span>
+                <span>It is a long established fact that a reader will be distracted by the readable content of a page
+                  when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                  distribution of letters, as opposed to using 'Content here, content here', making it look like.
+                </span>
               </div>
               <div class="tile__link">
                 <a href="#" class="link link--icon">
-                  <div class="link__icon">{{mixins.icon('linkplus')}}</div><span>Читать полностью</span>
+                  <span class="link__icon">{{mixins.icon('linkplus')}}</span><span>Читать полностью</span>
                 </a>
               </div>
             </div>
@@ -54,11 +45,14 @@
             <div class="tile__body">
               <div class="tile__title"><span>Как принять и оформить иностранца на работу</span></div>
               <div class="tile__description">
-                <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like. </span>
+                <span>It is a long established fact that a reader will be distracted by the readable content of a page
+                  when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                  distribution of letters, as opposed to using 'Content here, content here', making it look like.
+                </span>
               </div>
               <div class="tile__link">
                 <a href="#" class="link link--icon">
-                  <div class="link__icon">{{mixins.icon('linkplus')}}</div><span>Читать полностью</span>
+                  <span class="link__icon">{{mixins.icon('linkplus')}}</span><span>Читать полностью</span>
                 </a>
               </div>
             </div>
@@ -74,11 +68,14 @@
             <div class="tile__body">
               <div class="tile__title"><span>Как принять и оформить иностранца на работу</span></div>
               <div class="tile__description">
-                <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like. </span>
+                <span>It is a long established fact that a reader will be distracted by the readable content of a page
+                  when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                  distribution of letters, as opposed to using 'Content here, content here', making it look like.
+                </span>
               </div>
               <div class="tile__link">
                 <a href="#" class="link link--icon">
-                  <div class="link__icon">{{mixins.icon('linkplus')}}</div><span>Читать полностью</span>
+                  <span class="link__icon">{{mixins.icon('linkplus')}}</span><span>Читать полностью</span>
                 </a>
               </div>
             </div>
@@ -94,11 +91,14 @@
             <div class="tile__body">
               <div class="tile__title"><span>Как принять и оформить иностранца на работу</span></div>
               <div class="tile__description">
-                <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like. </span>
+                <span>It is a long established fact that a reader will be distracted by the readable content of a page
+                  when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                  distribution of letters, as opposed to using 'Content here, content here', making it look like.
+                </span>
               </div>
               <div class="tile__link">
                 <a href="#" class="link link--icon">
-                  <div class="link__icon">{{mixins.icon('linkplus')}}</div><span>Читать полностью</span>
+                  <span class="link__icon">{{mixins.icon('linkplus')}}</span><span>Читать полностью</span>
                 </a>
               </div>
             </div>
@@ -114,11 +114,14 @@
             <div class="tile__body">
               <div class="tile__title"><span>Как принять и оформить иностранца на работу</span></div>
               <div class="tile__description">
-                <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like. </span>
+                <span>It is a long established fact that a reader will be distracted by the readable content of a page
+                  when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                  distribution of letters, as opposed to using 'Content here, content here', making it look like.
+                </span>
               </div>
               <div class="tile__link">
                 <a href="#" class="link link--icon">
-                  <div class="link__icon">{{mixins.icon('linkplus')}}</div><span>Читать полностью</span>
+                  <span class="link__icon">{{mixins.icon('linkplus')}}</span><span>Читать полностью</span>
                 </a>
               </div>
             </div>
@@ -127,7 +130,8 @@
       </div>
       <div class="pagination">
         <ul class="uk-pagination pagination__list" uk-margin>
-          <li class="pagination__item pagination__item-previous"><a href="#"><span uk-pagination-previous></span></a></li>
+          <li class="pagination__item pagination__item-previous"><a href="#"><span uk-pagination-previous></span></a>
+          </li>
           <li class="pagination__item"><a href="#">1</a></li>
           <li class="pagination__item"><a href="#">2</a></li>
           <li class="pagination__item"><a href="#">3</a></li>
@@ -142,7 +146,7 @@
     </div>
   </div>
 </section>
-<section class="section uk-section section--bg">
+<section class="section uk-section-small section--bg">
   <div class="uk-container section__container">
     <div class="section__body">
       {% include "template/consultation.html" %}
@@ -196,7 +200,8 @@
               <div class="key-indicator__icon">{{mixins.icon('mens')}}</div>
             </div>
             <div class="key-indicator__body">
-              <div class="key-indicator__description"> 15 претензий урегулировано в сторону клиентов со стороны налоговой
+              <div class="key-indicator__description"> 15 претензий урегулировано в сторону клиентов со стороны
+                налоговой
               </div>
             </div>
           </div>
@@ -219,7 +224,8 @@
               <div class="key-indicator__icon">{{mixins.icon('mens')}}</div>
             </div>
             <div class="key-indicator__body">
-              <div class="key-indicator__description"> >75% аутсорсинг бухгалтерии выгоднее, чем содержание штата бухгалтеров
+              <div class="key-indicator__description"> >75% аутсорсинг бухгалтерии выгоднее, чем содержание штата
+                бухгалтеров
               </div>
             </div>
           </div>

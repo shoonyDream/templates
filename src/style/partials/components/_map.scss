@@ -2,6 +2,14 @@
   position: relative;
   padding-bottom: 0;
 
+  .page-banner & {
+    padding: 0;
+
+    @media (min-width: 960px) {
+      height: 100%;
+    }
+  }
+
   &__card {
     @media (min-width: 960px) {
       position: absolute;
@@ -10,6 +18,10 @@
       width: 100%;
       z-index: 1;
     }
+
+    .page-banner & {
+      display: none;
+    }
   }
 
   &__body {
@@ -17,8 +29,22 @@
     position: relative;
     margin-top: calc(40 / var(--fz) * var(--fz-em));
 
+    .page-banner & {
+      margin-top: 0;
+    }
+
     @media (min-width: 960px) {
       margin-top: 0;
+    }
+
+    .page-banner & {
+      @media (min-width: 960px) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }
@@ -106,11 +132,31 @@
   padding-bottom: calc(560 / var(--fz) * var(--fz-em));
   position: relative;
 
+  .page-banner & {
+    @media (min-width: 960px) {
+      padding-bottom: 140%;
+    }
+
+    @media (min-width: 1200px) {
+      padding-bottom: calc(580 / var(--fz) * var(--fz-em));
+    }
+  }
+
   iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+
+    .page-banner & {
+      margin: 0 -20px;
+      width: calc(100% + 40px);
+
+      @media (min-width: 960px) {
+        margin: 0;
+        width: 860px;
+      }
+    }
   }
 }

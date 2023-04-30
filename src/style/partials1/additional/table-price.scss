@@ -1,4 +1,4 @@
-.table {
+.table-price {
   width: 100%;
   line-height: 1.7;
   margin-bottom: calc(60 / var(--fz) * var(--fz-em));
@@ -14,7 +14,7 @@
   &__row {
     display: flex;
     flex-direction: column;
-    border-bottom: 2px solid var(--bg-2);
+    border-bottom: 1px solid var(--bg-2);
 
     @media (min-width: 960px) {
       flex-direction: row;
@@ -40,7 +40,7 @@
       border-right: none;
 
       @media (min-width: 960px) {
-        border-right: 2px solid var(--bg-2);
+        border-right: 1px solid var(--bg-2);
         max-width: 65%;
         flex-basis: 65%;
       }
@@ -53,7 +53,6 @@
 
   &__title {
     font-weight: 600;
-    border-bottom: 2px solid var(--bg-2);
     padding: calc(12 / var(--fz) * var(--fz-em)) calc(20 / var(--fz) * var(--fz-em)) calc(12 / var(--fz) * var(--fz-em)) calc(40 / var(--fz) * var(--fz-em));
   }
 
@@ -62,7 +61,7 @@
   }
 }
 
-.table-container {
+.table-price-container {
   padding: calc(10 / var(--fz) * var(--fz-em)) calc(20 / var(--fz) * var(--fz-em));
 
   @media (min-width: 960px) {

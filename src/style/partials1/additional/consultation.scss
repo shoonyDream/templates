@@ -1,6 +1,4 @@
 .consultation {
-  padding-top: calc(80 / var(--fz) * var(--fz-em));
-  padding-bottom: calc(80 / var(--fz) * var(--fz-em));
   background-image: url(../../img/consultationfon.png);
   background-repeat: no-repeat;
   background-size: calc(100% - 660px);
@@ -12,14 +10,30 @@
     overflow: hidden;
     padding-bottom: 100%;
     height: 0;
+
+    .consultation--small & {
+      @media (min-width: 960px) {
+        overflow: unset;
+        padding-bottom: 85%;
+      }
+    }
   }
 
   &__img {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 30px;
     width: 100%;
     height: 100%;
+
+    .consultation--small & {
+      @media (min-width: 960px) {
+        width: 240px;
+        height: 320px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
 
     & img {
       position: absolute;
@@ -28,6 +42,12 @@
       left: 0;
       width: 100%;
       height: 100%;
+
+      .consultation--small & {
+        @media (min-width: 960px) {
+          object-fit: contain;
+        }
+      }
     }
   }
 
@@ -36,19 +56,28 @@
     @media (min-width: 960px) {
       margin-left: calc(100 / var(--fz) * var(--fz-em));
     }
+
+    .consultation--small & {
+      h4 {
+        font-weight: 400;
+      }
+
+      @media (min-width: 960px) {
+        margin-left: 0;
+        padding-right: 10px;
+      }
+    }
   }
 
   &--small {
+    margin: 0 -20px;
+    padding: 60px 20px;
 
-    padding-top: calc(20 / var(--fz) * var(--fz-em));
-    padding-bottom: calc(20 / var(--fz) * var(--fz-em));
-    margin-bottom: calc(60 / var(--fz) * var(--fz-em));
-
-    & .consultation__description {
-
-      @media (min-width: 960px) {
-        margin-left: calc(30 / var(--fz) * var(--fz-em));
-      }
+    @media (min-width: 960px) {
+      margin: 0;
+      padding: 0;
+      padding-top: calc(20 / var(--fz) * var(--fz-em));
+      padding-bottom: calc(20 / var(--fz) * var(--fz-em));
     }
   }
 

@@ -20,12 +20,16 @@ a.link {
   }
 
   &--icon {
-    --fz: 16;
-
-    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
-    display: flex;
+    display: inline-flex;
     gap: calc(8 / var(--fz) * var(--fz-em));
     align-items: center;
+    border: none;
+
+    @media (min-width: 960px) {
+      --fz: 16;
+
+      font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    }
   }
 
   &--icon-only {

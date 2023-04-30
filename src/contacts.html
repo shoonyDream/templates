@@ -1,74 +1,68 @@
 {% set page = 'main' %}
 {% import "template/_mixins.html" as mixins %}
 {% include "template/header.html" %}
-<section class="breadcrumbs-container">
-  <div class="uk-container">
-    <nav class="breadcrumbs scrollbar">
-      <ul class="breadcrumbs__list">
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="#">Главная</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="#">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</section>
-<section class="section uk-section page-banner page-banner--contacts">
+
+<section class="section page-banner">
+  {% include "template/breadcrumbs.html" %}
   <div class="uk-container section__container">
     <div uk-grid class="uk-grid-small">
-      <div class="page-banner__container uk-flex-middle">
-        <div class="uk-width-1-1@m">
-          <div class="page-banner__description contacts">
-            <div class="contacts__header">
-              <h1 class="uk-h3">Наш офис в Москве</h1>
-            </div>
-            <div class="contacts__body">
-              <div class="contacts-info">
-                <p class="contacts-info__text">Бесплатно по России</p>
-                <div class="contacts-info__tel-container">
-                  <a class="contacts-info__tel contacts-info__tel--large" href="tel:88007005871">8 (800) 700-58-71</a>
-                  <a class="contacts-info__tel" href="tel:+79647655050">+7 (964) 765-50-50</a>
-                  <a class="contacts-info__tel" href="tel:+74959695613">+7 (495) 969-56-13</a>
+      <div class="uk-width-1-2@m">
+        <div class="page-banner__container contacts">
+          <div class="contacts__header">
+            <h1 class="uk-h3">Наш офис в Москве</h1>
+          </div>
+          <div class="contacts__body">
+            <div class="contacts-info">
+              <p class="contacts-info__text">Бесплатно по России</p>
+              <div class="contacts-info__tel-container">
+                <a class="contacts-info__tel contacts-info__tel--large" href="tel:88007005871">8 (800) 700-58-71</a>
+                <a class="contacts-info__tel" href="tel:+79647655050">+7 (964) 765-50-50</a>
+                <a class="contacts-info__tel" href="tel:+74959695613">+7 (495) 969-56-13</a>
+              </div>
+              <div class="contacts-info__container">
+                <div class="contacts-info__mail">
+                  <p class="contacts-info__text>">E-mail: </p>
+                  <a href=" mailto:msk@buhactiv.ru">msk@buhactiv.ru</a>
                 </div>
-                <div class="contacts-info__container">
-                  <div class="contacts-info__mail">
-                    <p class="contacts-info__text>">E-mail: </p>
-                    <a href=" mailto:msk@buhactiv.ru">msk@buhactiv.ru</a>
-                  </div>
-                  <div class="">
-                    <p class="contacts-info__text>">Mы в соцсетях</p>
-                    <div class="contacts-info__social-container">
-                      <a class="contacts-info__tel" href="tel:+74959695613">+7 (495) 969-56-13</a>
-                      <div class="contacts-info__icon">{{mixins.icon('wtsp')}}</div>
-                      <div class="contacts-info__icon">{{mixins.icon('tg')}}</div>
-                    </div>
+                <div class="">
+                  <p class="contacts-info__text>">Mы в соцсетях</p>
+                  <div class="contacts-info__social-container">
+                    <a class="contacts-info__tel" href="tel:+74959695613">+7 (495) 969-56-13</a>
+                    <div class="contacts-info__icon">{{mixins.icon('wtsp')}}</div>
+                    <div class="contacts-info__icon">{{mixins.icon('tg')}}</div>
                   </div>
                 </div>
-                <div class="contacts-info__container-address">
-                  <p class="contacts-info__text">Юридический / Фактический адрес:</p>
-                  <div class="contacts-info__address">127018, г. Москва, ул. Сущевский Вал, дом 5, строение 2, офис 205</div>
+              </div>
+              <div class="contacts-info__container-address">
+                <p class="contacts-info__text">Юридический / Фактический адрес:</p>
+                <div class="contacts-info__address">127018, г. Москва, ул. Сущевский Вал, дом 5, строение 2, офис 205
                 </div>
-                <div class="contacts-info__container-time">
-                  <p class="contacts-info__text">Время работы офиса:</p>
-                  <div class="contacts-info__time">Понедельник-Пятница, с 9:00 до 18:15</div>
-                </div>
+              </div>
+              <div class="contacts-info__container-time">
+                <p class="contacts-info__text">Время работы офиса:</p>
+                <div class="contacts-info__time">Понедельник-Пятница, с 9:00 до 18:15</div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="uk-width-1-2@m">
+        {% include "template/map.html" %}
+      </div>
     </div>
 </section>
-<section class="section uk-section">
-  <div class="uk-container section__container section__container--shadow">
-    <div class="contacts-info__route">
-      <div class="section__title">
-        <h3>Маршрут до офиса</h3>
-        <p>Путь от метро «Савеловская» до нашего офиса занимает ориентировочно 4-5 минут пешком. Нас найти очень просто:</p>
+<section class="section uk-section-small section--outside">
+  <div class="uk-container section__container">
+    <div class="large-card">
+      <div class="large-card__header">
+        <h2>Маршрут до офиса</h2>
+        <div class="large-card__description-header">
+          <p>Путь от метро «Савеловская» до нашего офиса занимает ориентировочно 4-5 минут пешком. Нас найти очень
+            просто:
+          </p>
+        </div>
       </div>
-      <div class="section__body">
+      <div class="large-card__body">
         <ol class="list list--ol">
           <li>Едем до метро Савёловская.
           </li>
@@ -91,7 +85,7 @@
     </div>
   </div>
 </section>
-<section class="section uk-section section--bg">
+<section class="section uk-section-small section--bg">
   <div class="uk-container section__container">
     <div class="section__body">
       {% include "template/consultation.html" %}
@@ -145,7 +139,8 @@
               <div class="key-indicator__icon">{{mixins.icon('mens')}}</div>
             </div>
             <div class="key-indicator__body">
-              <div class="key-indicator__description"> 15 претензий урегулировано в сторону клиентов со стороны налоговой
+              <div class="key-indicator__description"> 15 претензий урегулировано в сторону клиентов со стороны
+                налоговой
               </div>
             </div>
           </div>
@@ -168,7 +163,8 @@
               <div class="key-indicator__icon">{{mixins.icon('mens')}}</div>
             </div>
             <div class="key-indicator__body">
-              <div class="key-indicator__description"> >75% аутсорсинг бухгалтерии выгоднее, чем содержание штата бухгалтеров
+              <div class="key-indicator__description"> >75% аутсорсинг бухгалтерии выгоднее, чем содержание штата
+                бухгалтеров
               </div>
             </div>
           </div>

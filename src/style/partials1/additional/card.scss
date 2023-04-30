@@ -33,13 +33,9 @@ a.card__title {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: calc(10 / var(--fz) * var(--fz-em));
+  gap: calc(16 / var(--fz) * var(--fz-em));
   color: var(--text-color);
   padding: calc(32 / var(--fz) * var(--fz-em)) calc(20 / var(--fz) * var(--fz-em));
-
-  @media (min-width: 960px) {
-    gap: calc(16 / var(--fz) * var(--fz-em));
-  }
 
   @media (min-width: 960px) {
     padding: calc(40 / var(--fz) * var(--fz-em)) calc(32 / var(--fz) * var(--fz-em));
@@ -63,6 +59,11 @@ a.card__title {
   &--contract {
     padding-bottom: calc(264 / var(--fz) * var(--fz-em));
     overflow: hidden;
+    margin: 0 -20px;
+
+    @media (min-width: 960px) {
+      margin: 0;
+    }
 
     @media (min-width: 960px) {
       padding-bottom: calc(350 / var(--fz) * var(--fz-em));
@@ -73,8 +74,8 @@ a.card__title {
       position: absolute;
       bottom: 0;
       right: 0;
-      width: calc(240 / var(--fz) * var(--fz-em));
-      height: calc(264 / var(--fz) * var(--fz-em));
+      width: calc(310 / var(--fz) * var(--fz-em));
+      height: calc(300 / var(--fz) * var(--fz-em));
       background-image: url(../../img/depositphotos.png);
       background-repeat: no-repeat;
       z-index: 1;
@@ -122,6 +123,13 @@ a.card__title {
     color: var(--z-white);
   }
 
+  & &__header {
+    & h4 {
+      line-height: 1.6;
+      font-weight: 600;
+    }
+  }
+
   &__icon {
     margin-bottom: calc(24 / var(--fz) * var(--fz-em));
 
@@ -154,18 +162,19 @@ a.card__title {
     transition: color 0.2s linear;
     font-size: calc(var(--fz)/ var(--fz-base) * var(--fz-em));
     display: block;
+    text-transform: uppercase;
+    font-weight: 700;
 
     &+& {
       margin-top: calc(20 / var(--fz) * var(--fz-em));
     }
 
-    &--uppercase {
+    &--large {
       --fz: 20;
 
       font-size: calc(var(--fz)/ var(--fz-base) * var(--fz-em));
-      font-weight: 700;
+
       line-height: 1.6;
-      text-transform: uppercase;
       position: relative;
 
       @media (min-width: 960px) {
@@ -173,29 +182,15 @@ a.card__title {
         line-height: 1.5;
       }
     }
-
-    &--uppercase-small {
-      --fz: 14;
-
-      font-size: calc(var(--fz)/ var(--fz-base) * var(--fz-em));
-      font-weight: 700;
-      line-height: 1.6;
-      text-transform: uppercase;
-      position: relative;
-      padding-left: calc(24 / var(--fz) * var(--fz-em));
-    }
   }
-
-  & h4 {
-    font-weight: 600;
-  }
-
 
   &__description {
     line-height: 1.5;
 
     &--large {
-      --fz: 16;
+      @media (min-width: 960px) {
+        --fz: 16;
+      }
 
       font-size: calc(var(--fz)/ var(--fz-base) * var(--fz-em));
       font-weight: 400;
