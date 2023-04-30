@@ -66,7 +66,7 @@ input::-webkit-inner-spin-button {
   display: flex;
   align-items: center;
   position: relative;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--line);
   padding: calc(10 / var(--fz) * var(--fz-em)) calc(15 / var(--fz) * var(--fz-em));
   line-height: 1.5;
   background-color: var(--z-white);
@@ -110,45 +110,14 @@ input::-webkit-inner-spin-button {
     align-items: flex-start;
   }
 
-  &--subscribe {
-    border: none;
-    border-top: 1px solid var(--z-white);
-    border-bottom: 1px solid var(--z-white);
-    color: var(--z-white);
-    padding-left: 0;
-    padding-right: 0;
-
-    .icon {
-      --fz-icon: 21;
-
-      font-size: calc(var(--fz-icon) / var(--fz) * var(--fz-em));
-      flex-shrink: 0;
-    }
-  }
-
   &--search {
-    border: none;
-    padding-left: 0;
-    padding-right: 0;
     width: 100%;
 
     .icon {
-      --fz-icon: 24;
+      --fz-icon: 20;
 
       font-size: calc(var(--fz-icon) / var(--fz) * var(--fz-em));
       flex-shrink: 0;
-      margin-right: calc(20 / var(--fz-icon) * var(--fz-em));
-    }
-
-    .mobile-menu & {
-      padding-top: 0;
-      border-bottom: 1px solid var(--line);
-      padding-bottom: calc(20 / var(--fz) * var(--fz-em));
-      margin-bottom: calc(20 / var(--fz) * var(--fz-em));
-
-      .icon {
-        --fz-icon: 32;
-      }
     }
   }
 
@@ -166,7 +135,6 @@ input::-webkit-inner-spin-button {
     background: transparent;
 
     &::placeholder {
-      opacity: 0.6;
       color: var(--text-color);
       transition: opacity 0.2s linear, color 0.2s linear;
     }
@@ -184,10 +152,6 @@ input::-webkit-inner-spin-button {
     .input--textarea & {
       width: 100%;
       min-height: calc(80 / var(--fz) * var(--fz-em));
-    }
-
-    .input--search & {
-      margin-top: 4px;
     }
   }
 
@@ -588,7 +552,7 @@ input::-webkit-inner-spin-button {
 }
 
 .select2-container--default .select2-results__option--selected {
-  background: var(--header-border-color);
+  background: var(--line);
 }
 
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {

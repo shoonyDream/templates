@@ -31,18 +31,23 @@
   }
 
   &__icon {
-    --fz-icon: 32;
-
-    font-size: calc(var(--fz-icon) / var(--fz) * var(--fz-em));
     display: flex;
     align-items: center;
-    gap: calc(12 / var(--fz-icon) * var(--fz-em));
+    gap: calc(4 / var(--fz) * var(--fz-em));
+    border-bottom: none !important;
 
-    .mobile-menu & .link {
-      --fz-text: 14;
+    .icon {
+      --fz-icon: 20;
 
-      font-size: calc(var(--fz-text) / var(--fz-icon) * var(--fz-em));
-
+      font-size: calc(var(--fz-icon) / var(--fz) * var(--fz-em));
+      color: var(--primary);
     }
+
+    // .mobile-menu & .link {
+    //   --fz-text: 14;
+
+    //   font-size: calc(var(--fz-text) / var(--fz-icon) * var(--fz-em));
+
+    // }
   }
 }
