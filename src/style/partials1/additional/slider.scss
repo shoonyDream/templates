@@ -1,0 +1,53 @@
+.slider {
+  &__container {
+    padding: 0 calc(40 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      padding: 0;
+    }
+  }
+
+  &__arr {
+    .slider & {
+      background-color: var(--z-white);
+      color: var(--primary);
+      border-radius: 50%;
+      width: calc(24 / var(--fz) * var(--fz-em));
+      height: calc(24 / var(--fz) * var(--fz-em));
+      margin: 0;
+      transition: 0.2s linear;
+      background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.67684 9.99745L12.8008 5.87245L11.6228 4.69411L6.32078 9.99745L11.6228 15.3008L12.8008 14.1224L8.67684 9.99745Z' fill='%23213966'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: calc(20 / var(--fz) * var(--fz-em));
+
+      @media (min-width: 960px) {
+        left: calc(-20 / var(--fz) * var(--fz-em));
+      }
+
+      &:last-child {
+        background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.3232 9.99745L7.19922 5.87245L8.37725 4.69411L13.6792 9.99745L8.37725 15.3008L7.19922 14.1224L11.3232 9.99745Z' fill='%23213966'/%3E%3C/svg%3E%0A");
+
+        @media (min-width: 960px) {
+          left: auto;
+          right: calc(-20 / var(--fz) * var(--fz-em));
+        }
+      }
+
+      svg {
+        display: none;
+      }
+
+      &:hover,
+      &:focus {
+        color: var(--z-white);
+        background-color: var(--primary);
+        background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.67684 9.99745L12.8008 5.87245L11.6228 4.69411L6.32078 9.99745L11.6228 15.3008L12.8008 14.1224L8.67684 9.99745Z' fill='%23ffffff'/%3E%3C/svg%3E%0A");
+
+        &:last-child {
+          background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.3232 9.99745L7.19922 5.87245L8.37725 4.69411L13.6792 9.99745L8.37725 15.3008L7.19922 14.1224L11.3232 9.99745Z' fill='%23ffffff'/%3E%3C/svg%3E%0A");
+        }
+      }
+    }
+  }
+}
