@@ -1,7 +1,8 @@
 {% set page = 'main' %}
 {% import "template/_mixins.html" as mixins %}
 {% include "template/header.html" %}
-<section class="section page-banner" style="background-image: url(./img/bg-acc.png);">
+<section class="section page-banner">
+  <div class="page-banner__bg" style="background-image: url(./img/bg-acc.png);"></div>
   {% include "template/breadcrumbs.html" %}
   <div class="uk-container section__container">
     <div uk-grid class="uk-grid-small uk-flex-middle">
@@ -17,7 +18,7 @@
           <h1>Бухгалтерские услуги для ООО</h1>
           <div class="page-banner__text"><span>Time Asset - это ваша четкая бухгалтерия на аутсорсинге, которая
               работает лучше, чем штатный бухгалтер</span></div>
-          <div class="page-banner__buttons page-banner__buttons--margin">
+          <div class="page-banner__buttons">
             <a class="btn" href="#"><span>Заключить договор</span></a>
             <a class="btn btn--secondary" href="#"><span>Смотреть договор</span></a>
           </div>
@@ -135,13 +136,13 @@
                 <li class="uk-open accordion__item">
                   <a class="uk-accordion-title accordion__title" href="#">Бухгалтерские услуги для ООО</a>
                   <div class="uk-accordion-content accordion__content">
-                    <p><a href="#">Бухгалтерское сопровождение ООО
+                    <p><a href="#" class="link">Бухгалтерское сопровождение ООО
                       </a></p>
-                    <p><a href="#">Бухгалтерское обслуживание ООО
+                    <p><a href="#" class="link">Бухгалтерское обслуживание ООО
                       </a></p>
-                    <p><a href="#">Нулевая отчетность ООО
+                    <p><a href="#" class="link">Нулевая отчетность ООО
                       </a></p>
-                    <p><a href="#">Бухгалтерский учет в ООО
+                    <p><a href="#" class="link">Бухгалтерский учет в ООО
                       </a></p>
                   </div>
                 </li>

@@ -98,7 +98,7 @@ a.tile {
     margin-top: calc(16 / var(--fz) * var(--fz-em));
   }
 
-  &--gorizontal {
+  &--horizontal {
     display: flex;
     flex-direction: column;
     gap: 0;
@@ -109,7 +109,11 @@ a.tile {
     }
 
     & .tile__image {
-      padding-bottom: 30%;
+      padding-bottom: 56%;
+
+      @media (min-width: 960px) {
+        padding-bottom: 30%;
+      }
     }
   }
 }

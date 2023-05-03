@@ -41,7 +41,7 @@
 
 .aside-service {
   padding: calc(32 / var(--fz) * var(--fz-em));
-  box-shadow: 0px calc(15 / var(--fz) * var(--fz-em)) calc(40 / var(--fz) * var(--fz-em)) 0px rgba(0, 0, 0, 0.078);
+  box-shadow: 0 calc(15 / var(--fz) * var(--fz-em)) calc(40 / var(--fz) * var(--fz-em)) 0 rgba(0, 0, 0, 0.078);
 
   &__title {
     color: var(--primary);

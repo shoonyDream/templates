@@ -1,7 +1,7 @@
 .consultation {
   background-image: url(../../img/consultationfon.png);
   background-repeat: no-repeat;
-  background-size: calc(100% - calc(660 / var(--fz) * var(--fz-em)));
+  background-size: calc(100% - (660 / var(--fz) * var(--fz-em)));
   background-position: right;
   background-color: var(--bg-2);
 
