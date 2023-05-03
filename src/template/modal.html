@@ -1,7 +1,7 @@
 <div id="modal-3d" uk-modal>
   <div class="modal uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
     <div class="modal__header">
-      <h2 class="modal__title">Скачать 3D модель</h2>
+      <h2 class="modal__title">Задать вопрос</h2>
       <button class="modal__close uk-modal-close" type="button"></button>
     </div>
     <div class="modal__body">
@@ -34,7 +34,7 @@
         </div>
         <div class="form__footer">
           <div class="form__item">
-            <div uk-grid class="uk-child-width-1-2@m">
+            <div uk-grid class="uk-child-width-1-1">
               <div>
                 <div class="form__btn">
                   <button class="btn btn--primary uk-width-1-1" role="button">
@@ -46,10 +46,15 @@
           </div>
           <div class="form__item">
             <div class="checkbox checkbox--confirm">
-              <div class="checkbox__text">
-                <span>Нажимая на кнопку "Отправить заявку", я соглашаюсь <a class="link link--bordered" href="#">с
-                    политикой конфиденциальности</a> </span>
-              </div>
+              <label class="checkbox checkbox--confirm">
+                <div class="checkbox__label consultation__checkbox">
+                  <input type="checkbox" class="checkbox__input" checked="checked" value="3" />
+                  <span class="checkbox__mark"></span>
+                  <div class="checkbox__text">
+                    Отправляя данную форму вы соглашаетесь с <a href="#" class="link">политикой конфиденциальности</a>
+                  </div>
+                </div>
+              </label>
             </div>
           </div>
         </div>

@@ -1,0 +1,45 @@
+.feedback {
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: calc(40 / var(--fz) * var(--fz-em));
+  }
+
+  &__title {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: calc(24 / var(--fz) * var(--fz-em));
+    align-items: end;
+
+    @media (min-width: 960px) {
+      grid-template-columns: 1fr auto;
+    }
+
+    & h2 {
+      line-height: 0.7;
+    }
+  }
+
+  &__description {
+    padding: 0;
+    padding-top: calc(20 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      padding: calc(32 / var(--fz) * var(--fz-em));
+    }
+  }
+
+  &__text {
+    line-height: 1.6;
+    margin-top: calc(16 / var(--fz) * var(--fz-em));
+    padding-bottom: calc(32 / var(--fz) * var(--fz-em));
+    border-bottom: 1px solid var(--bg-2);
+  }
+
+  &__link {
+    display: flex;
+    gap: calc(26 / var(--fz) * var(--fz-em));
+    margin-top: calc(32 / var(--fz) * var(--fz-em));
+  }
+}

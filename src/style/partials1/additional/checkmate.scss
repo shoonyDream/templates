@@ -86,11 +86,6 @@
     font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
     line-height: 1.7;
     font-weight: 400;
-    margin-bottom: calc(32 / var(--fz) * var(--fz-em));
-
-    @media (min-width: 960px) {
-      margin-bottom: calc(40 / var(--fz) * var(--fz-em));
-    }
   }
 
   &__subtitle {
@@ -102,7 +97,14 @@
     line-height: 1.5;
     text-decoration: uppercase;
     margin-bottom: calc(8 / var(--fz) * var(--fz-em));
+  }
 
+  &__btn-container {
+    margin-top: calc(24 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      margin-top: calc(50 / var(--fz) * var(--fz-em));
+    }
   }
 
   &__image-container {

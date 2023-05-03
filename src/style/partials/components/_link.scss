@@ -19,6 +19,19 @@ a.link {
     border-color: currentColor;
   }
 
+  &--icon {
+    display: inline-flex;
+    gap: calc(8 / var(--fz) * var(--fz-em));
+    align-items: center;
+    border: none;
+
+    @media (min-width: 960px) {
+      --fz: 16;
+
+      font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    }
+  }
+
   &--icon-only {
     border: none;
   }

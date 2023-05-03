@@ -1,12 +1,12 @@
 .person {
   $self: &;
-
   height: 100%;
   position: relative;
   display: flex;
 
   gap: calc(10 / var(--fz) * var(--fz-em));
   color: var(--text-color);
+
 
   &--vertical {
     flex-direction: column;

@@ -1,44 +1,172 @@
 {% set page = 'main' %}
 {% import "template/_mixins.html" as mixins %}
 {% include "template/header.html" %}
-{% include "template/breadcrumbs.html" %}
-<section class="section section--margin-bottom section--border section--border-bottom section--border-bottom-outside">
+<section class="section page-banner">
+  {% include "template/breadcrumbs.html" %}
   <div class="uk-container section__container">
-    <div class="section__body">
-      <div uk-grid class="uk-grid-small card-list uk-grid">
-        <div class="uk-width-1-2@s card-list__item uk-first__item">
-          <div class="contacts">
-            <div class="contacts__title">
-              <h1 class="uk-h2">Контакты</h1>
-            </div>
-            <div class="contacts__body">
-              <div class="contacts__info">
-                <div class="contacts-info contacts-info--vertical">
-                  <div class="contacts-info__phone"><a href="tel:+7 (495) 534-97-00" class="link"><span>+7 (495)
-                        534-97-00</span></a></div>
-                  <div class="contacts-info__email"><a href="mailto:info@pro-svetshop.ru"
-                      class="link"><span>info@pro-svetshop.ru</span></a></div>
-                  <div class="contacts-info__address">
-                    <address>Москва, Пречистенская наб., д.43/12, офис 14</address>
+    <div uk-grid class="uk-grid-small">
+      <div class="uk-width-1-2@m">
+        <div class="page-banner__container contacts">
+          <div class="contacts__header">
+            <h1 class="uk-h3">Наш офис в Москве</h1>
+            <h4><a href="#" class="link"><span>Филиал в Омске</span></a></h4>
+          </div>
+          <div class="contacts__body">
+            <div class="contacts-info">
+              <p class="contacts-info__text">Бесплатно по России</p>
+              <div class="contacts-info__link-container">
+                <a class="contacts-info__link contacts-info__link--large" href="tel:88007005871">8 (800) 700-58-71</a>
+                <a class="contacts-info__link" href="tel:+79647655050">+7 (964) 765-50-50</a>
+                <a class="contacts-info__link" href="tel:+74959695613">+7 (495) 969-56-13</a>
+              </div>
+              <div class="contacts-info__container">
+                <div class="contacts-info__mail">
+                  <p class="contacts-info__text">E-mail: </p>
+                  <a class="contacts-info__link" href="mailto:msk@buhactiv.ru">msk@buhactiv.ru</a>
+                </div>
+                <div class="">
+                  <p class="contacts-info__text">Mы в соцсетях:</p>
+                  <div class="contacts-info__social-container">
+                    <a class="contacts-info__link" href="tel:+74959695613">+7 (495) 969-56-13</a>
+                    <a class="contacts-info__icon" href="#">{{mixins.icon('wtsp')}}</a>
+                    <a class="contacts-info__icon" href="#">{{mixins.icon('tg')}}</a>
                   </div>
                 </div>
               </div>
-              <div class="contacts__props">
-                ИП Шульга С.Л.<br>
-                ИНН 502498582548<br>
-                ОГРНИП 320508100118952
+              <div class="contacts-info__container-address">
+                <p class="contacts-info__text">Юридический / Фактический адрес:</p>
+                <div class="contacts-info__address">127018, г. Москва, ул. Сущевский Вал, дом 5, строение 2, офис 205
+                </div>
               </div>
-            </div>
-            <div class="contacts__footer">
-              <p>Заполните форму и мы свяжемся с вами
-                как можно скорее, или сделайте заказ по телефону</p>
-              <p><a href="tel:+74955349700" class="link">+7 (495) 534-97-00</a></p>
+              <div class="contacts-info__container-time">
+                <p class="contacts-info__text">Время работы офиса:</p>
+                <div class="contacts-info__time">Понедельник-Пятница, с 9:00 до 18:15</div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="uk-width-1-2@s">
-          <div class="card card--custom-bg" style="background-color: #F7F4EF;">
-            {% include "template/form-contacts.html" %}
+      </div>
+      <div class="uk-width-1-2@m">
+        {% include "template/map.html" %}
+      </div>
+    </div>
+</section>
+<section class="section uk-section-small section--outside">
+  <div class="uk-container section__container">
+    <div class="large-card">
+      <div class="large-card__header">
+        <h2>Маршрут до офиса</h2>
+        <div class="large-card__description-header">
+          <p>Путь от метро «Савеловская» до нашего офиса занимает ориентировочно 4-5 минут пешком. Нас найти очень
+            просто:
+          </p>
+        </div>
+      </div>
+      <div class="large-card__body">
+        <ol class="list list--ol">
+          <li>Едем до метро Савёловская.
+          </li>
+          <li>Из стеклянных дверей выходим направо и по ступенькам поднимаемся к выходу на поверхность. При выходе
+            на поверхность перед собой видим вход на территорию Савёловского вокзала (турникеты).
+          </li>
+          <li>Огибаем справа вход в метро и идём в сторону, противоположную входу на территорию Савёловского
+            вокзала, то есть удаляемся от турникетов в противоположном направлении. Идём через регулируемый
+            светофором пешеходный переход, далее по небольшому подъёму идём на мост через ж/д пути.
+          </li>
+          <li>Поднявшись на мост, идём налево. Внизу под мостом видим ж/д пути МЦД-1.
+          </li>
+          <li>Идем до конца дома № 3/5А (это первый и единственный дом, который нужно пройти), поворачиваем
+            налево, идём далее вниз по улице примерно 20 метров и упираемся в калитку.
+          </li>
+          <li>Вы на месте. Для прохода в офис нужно позвонить (нажать на звонок, расположенный на калитке).
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section uk-section-small section--bg">
+  <div class="uk-container section__container">
+    <div class="section__body">
+      {% include "template/consultation.html" %}
+    </div>
+  </div>
+</section>
+<section class="section uk-section">
+  <div class="uk-container section__container">
+    <div class="section__header section__header--centered">
+      <div class="section__title section__title--centered">
+        <h2>Преимущества компании</h2>
+      </div>
+    </div>
+    <div class="section__body">
+      <div uk-grid class="uk-grid-small key-indicators uk-child-width-1-3@m">
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('experience')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> 10 лет опыта на рынке бухгалтерских услуг</div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('workexperience')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> 5 лет средний стаж специалистов в нашей компании
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('penalties')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> 0 штрафов от налоговой за несвоевременно сданную отчетность
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('mens')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> 15 претензий урегулировано в сторону клиентов со стороны
+                налоговой
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('mens')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> Страховка от ошибок бухгалтера
+                на 1 млн. рублей в год
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('mens')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> >75% аутсорсинг бухгалтерии выгоднее, чем содержание штата
+                бухгалтеров
+              </div>
+            </div>
           </div>
         </div>
       </div>

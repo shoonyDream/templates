@@ -1,52 +1,154 @@
 .contacts {
-  display: flex;
-  flex-direction: column;
-  gap: calc(40 / var(--fz) * var(--fz-em));
-  height: 100%;
-  padding-bottom: calc(20 / var(--fz) * var(--fz-em));
+  margin-top: calc(40 / var(--fz) * var(--fz-em));
+  padding-bottom: 0;
 
-  &__title {
-    & .uk-h2 {
-      margin-bottom: 0;
+  @media (min-width: 960px) {
+    padding-bottom: calc(120 / var(--fz) * var(--fz-em));
+  }
+
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(40 / var(--fz) * var(--fz-em));
+    align-items: flex-end;
+    margin-bottom: calc(40 / var(--fz) * var(--fz-em));
+
+    & h1,
+    h4 {
+      font-weight: 300;
+      line-height: 1;
+      margin: 0;
+    }
+
+    & h1 {
+      color: var(--primary);
+    }
+  }
+}
+
+.contacts-info {
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(24 / var(--fz) * var(--fz-em));
+    margin-top: calc(24 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      gap: calc(72 / var(--fz) * var(--fz-em));
+      margin-top: calc(40 / var(--fz) * var(--fz-em));
     }
   }
 
-  &__footer {
-    --fz: 18;
+  &__link-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(24 / var(--fz) * var(--fz-em));
+    align-items: flex-end;
+    margin-top: calc(8 / var(--fz) * var(--fz-em));
+  }
 
-    font-family: var(--font);
-    font-size: calc(var(--fz)/ var(--fz-base) * var(--fz-em));
-    font-weight: 400;
-    line-height: 1.2;
+  &__mail {
 
-    @media (min-width: 1100px) {
+    line-height: 2.2;
+
+    & a {
+      --fz: 16;
+
+      font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+      color: var(--primary);
+      font-weight: 600;
+    }
+  }
+
+  &__social-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(24 / var(--fz) * var(--fz-em));
+    align-items: flex-end;
+  }
+
+  &__link {
+    --fz: 16;
+
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    font-weight: 600;
+    line-height: 1;
+    flex-shrink: 0;
+
+    &:hover,
+    &:focus {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    &--large {
       --fz: 24;
+
+      font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
     }
   }
 
-  &__props {
+  &__text {
+    --fz: 12;
+
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+  }
+
+  &__icon {
+    --fz: 20;
+
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    color: var(--primary);
+    flex-shrink: 1;
+
+    &:hover,
+    &:focus {
+      color: var(--primary);
+    }
+  }
+
+  &__container-address {
+    margin-top: calc(24 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      margin-top: calc(40 / var(--fz) * var(--fz-em));
+    }
+  }
+
+  &__address {
+    --fz: 16;
+
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    font-weight: 600;
+    line-height: 1.5;
+    margin-top: calc(16 / var(--fz) * var(--fz-em));
+  }
+
+  &__container-time {
+    margin-top: calc(24 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      margin-top: calc(40 / var(--fz) * var(--fz-em));
+    }
+  }
+
+  &__time {
     --fz: 14;
 
-    font-family: var(--font);
-    font-size: calc(var(--fz)/ var(--fz-base) * var(--fz-em));
-    font-weight: 400;
-    line-height: 1.5;
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    font-weight: 600;
+    line-height: 1.7;
   }
 
-  &__footer {
-    margin-top: auto;
-  }
-
-  .contacts-info {
-    --fz: 18;
-
-    font-family: var(--font);
-    font-size: calc(var(--fz)/ var(--fz-base) * var(--fz-em));
-    font-weight: 400;
-    line-height: 1.2;
-
-    @media (min-width: 1100px) {
-      --fz: 24;
-    }
+  &__route {
+    position: relative;
+    padding: calc(80 / var(--fz) * var(--fz-em)) calc(100 / var(--fz) * var(--fz-em)) calc(120 / var(--fz) * var(--fz-em)) calc(100 / var(--fz) * var(--fz-em));
+    margin-top: calc(-120 / var(--fz) * var(--fz-em));
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: calc(40 / var(--fz) * var(--fz-em));
+    background-color: var(--z-white);
   }
 }

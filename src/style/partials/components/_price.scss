@@ -1,9 +1,9 @@
 .price {
-  color: var(--text-color);
   display: flex;
   flex-wrap: wrap;
   gap: calc(10 / var(--fz) * var(--fz-em));
   align-items: flex-end;
+  color: var(--text-color);
   font-weight: 600;
 
   &__unit {
@@ -13,48 +13,28 @@
     line-height: 0.7;
     flex-shrink: 0;
     white-space: nowrap;
+
+    .price--large & {
+      line-height: 1.3;
+      font-weight: 700;
+    }
   }
 
   &__label {
     --fz: 14;
 
     font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+
+    .price--large & {
+      --fz: 24;
+
+      font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+      font-weight: 700;
+      line-height: 1.3;
+    }
   }
 
   &--accent {
     color: var(--primary);
-  }
-}
-
-.count-tools {
-  display: flex;
-  align-items: center;
-  width: fit-content;
-  border: 1px solid var(--primary);
-  width: 100%;
-
-  &__num {
-    width: calc(100% - (64 / var(--fz) * var(--fz-em)));
-    text-align: center;
-    border-left: 1px solid var(--primary);
-    border-right: 1px solid var(--primary);
-    height: calc(40 / var(--fz) * var(--fz-em));
-  }
-
-  &__arrow-minus,
-  &__arrow-plus {
-    width: calc(32 / var(--fz) * var(--fz-em));
-    height: calc(40 / var(--fz) * var(--fz-em));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    user-select: none;
-    flex-shrink: 0;
-
-    &:hover,
-    &:focus {
-      text-decoration: none;
-      color: var(--primary);
-    }
   }
 }

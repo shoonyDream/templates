@@ -70,6 +70,16 @@
     }
   }
 
+  &--ul-empty {
+    li {
+      padding-left: 0;
+    }
+
+    li+li {
+      margin-top: calc(8 / var(--fz) * var(--fz-em));
+    }
+  }
+
   &--ol {
     counter-reset: list;
 

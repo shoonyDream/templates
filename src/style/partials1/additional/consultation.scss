@@ -1,0 +1,104 @@
+.consultation {
+  background-image: url(../../img/consultationfon.png);
+  background-repeat: no-repeat;
+  background-size: calc(100% - (660 / var(--fz) * var(--fz-em)));
+  background-position: right;
+  background-color: var(--bg-2);
+
+  &__image {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+    height: 0;
+
+    .consultation--small & {
+      @media (min-width: 960px) {
+        overflow: unset;
+        padding-bottom: 85%;
+      }
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    right: calc(30 / var(--fz) * var(--fz-em));
+    width: 100%;
+    height: 100%;
+
+    .consultation--small & {
+      @media (min-width: 960px) {
+        width: calc(240 / var(--fz) * var(--fz-em));
+        height: calc(320 / var(--fz) * var(--fz-em));
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    & img {
+      position: absolute;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      .consultation--small & {
+        @media (min-width: 960px) {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+
+  &__description {
+
+    @media (min-width: 960px) {
+      margin-left: calc(100 / var(--fz) * var(--fz-em));
+    }
+
+    .consultation--small & {
+      h4 {
+        font-weight: 400;
+      }
+
+      @media (min-width: 960px) {
+        margin-left: 0;
+        padding-right: calc(10 / var(--fz) * var(--fz-em));
+      }
+    }
+  }
+
+  &--small {
+    margin: 0 calc(-20 / var(--fz) * var(--fz-em));
+    padding: calc(60 / var(--fz) * var(--fz-em)) calc(20 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      margin: 0;
+      padding: 0;
+      padding-top: calc(20 / var(--fz) * var(--fz-em));
+      padding-bottom: calc(20 / var(--fz) * var(--fz-em));
+    }
+  }
+
+  &__input {
+    border: 1px solid var(--line);
+    padding: calc(12 / var(--fz) * var(--fz-em)) calc(16 / var(--fz) * var(--fz-em));
+    background-color: var(--z-white);
+  }
+
+  &__input-container {
+    display: flex;
+    flex-direction: column;
+    gap: calc(20 / var(--fz) * var(--fz-em));
+    margin-top: calc(40 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      flex-direction: row;
+    }
+  }
+
+  &__confirm {
+    margin-top: calc(24 / var(--fz) * var(--fz-em));
+  }
+}
