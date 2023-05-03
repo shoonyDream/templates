@@ -1,7 +1,7 @@
 .consultation {
   background-image: url(../../img/consultationfon.png);
   background-repeat: no-repeat;
-  background-size: calc(100% - 660px);
+  background-size: calc(100% - calc(660 / var(--fz) * var(--fz-em)));
   background-position: right;
   background-color: var(--bg-2);
 
@@ -22,14 +22,14 @@
   &__img {
     position: absolute;
     top: 0;
-    right: 30px;
+    right: calc(30 / var(--fz) * var(--fz-em));
     width: 100%;
     height: 100%;
 
     .consultation--small & {
       @media (min-width: 960px) {
-        width: 240px;
-        height: 320px;
+        width: calc(240 / var(--fz) * var(--fz-em));
+        height: calc(320 / var(--fz) * var(--fz-em));
         top: 50%;
         transform: translateY(-50%);
       }
@@ -64,14 +64,14 @@
 
       @media (min-width: 960px) {
         margin-left: 0;
-        padding-right: 10px;
+        padding-right: calc(10 / var(--fz) * var(--fz-em));
       }
     }
   }
 
   &--small {
-    margin: 0 -20px;
-    padding: 60px 20px;
+    margin: 0 calc(-20 / var(--fz) * var(--fz-em));
+    padding: calc(60 / var(--fz) * var(--fz-em)) calc(20 / var(--fz) * var(--fz-em));
 
     @media (min-width: 960px) {
       margin: 0;

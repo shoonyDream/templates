@@ -1,7 +1,6 @@
 {% set page = 'main' %}
 {% import "template/_mixins.html" as mixins %}
 {% include "template/header.html" %}
-
 <section class="section page-banner" style="background-color: #FAFBFC">
   {% include "template/breadcrumbs.html" %}
   <div class="uk-container section__container">
@@ -19,15 +18,14 @@
           <div class="page-banner__text"><span>Time Asset - это ваша четкая бухгалтерия на аутсорсинге,
               которая работает лучше, чем штатный бухгалтер</span></div>
           <div class="page-banner__buttons page-banner__buttons--margin">
-            <button class="btn" type="submit"><span>Заключить договор</span></button>
-            <button class="btn" type="submit"><span>Задать вопрос</span></button>
+            <a class="btn" href="#"><span>Заключить договор</span></a>
+            <a class="btn" href="#"><span>Задать вопрос</span></a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 <section class="section uk-section-small section--outside">
   <div class="uk-container section__container">
     <div class="section__body">
@@ -128,8 +126,7 @@
             </div>
           </section>
           <section class="section">
-            <div uk-grid
-              class="uk-grid-collapse list-border-container list-border-container--inside uk-child-width-1-3@m uk-grid">
+            <div uk-grid class="uk-grid-collapse list-border-container list-border-container--inside uk-child-width-1-3@m uk-grid">
               <div class="list-border-container__item uk-first-column">
                 <article class="card">
                   <div class="card__header">

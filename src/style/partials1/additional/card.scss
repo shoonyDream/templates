@@ -59,7 +59,7 @@ a.card__title {
   &--contract {
     padding-bottom: calc(264 / var(--fz) * var(--fz-em));
     overflow: hidden;
-    margin: 0 -20px;
+    margin: 0 calc(-20 / var(--fz) * var(--fz-em));
 
     @media (min-width: 960px) {
       margin: 0;

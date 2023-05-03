@@ -12,7 +12,7 @@ a.link {
   &:focus {
     color: var(--link-color-hover);
     text-decoration: none;
-    border-color: currentColor;
+    border: currentColor;
   }
 
   &--bordered {

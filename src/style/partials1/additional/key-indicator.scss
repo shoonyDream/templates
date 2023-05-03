@@ -8,10 +8,6 @@
     margin: 0
   }
 
-  &--inside {
-    // margin: 0 calc(-20 / var(--fz) * var(--fz-em));
-  }
-
   &__item {
     .list-border-container--full & {
       border: 1px solid var(--border-color);

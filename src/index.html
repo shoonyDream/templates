@@ -1,7 +1,6 @@
 {% set page = 'main' %}
 {% import "template/_mixins.html" as mixins %}
 {% include "template/header.html" %}
-
 <section class="section page-banner">
   <div class="page-banner__bg" style="background-image: url(./img/padgebannerfon.png);"></div>
   <div class="uk-container section__container">
@@ -27,7 +26,7 @@
             </ul>
           </div>
           <div class="page-banner__buttons">
-            <button class="btn" type="submit"><span>Смотреть отзывы</span></button>
+            <a class="btn" href="#"><span>Смотреть отзывы</span></a>
             <button class="btn" type="submit"><span>Задать вопрос</span></button>
           </div>
         </div>
@@ -52,7 +51,7 @@
           </article>
         </div>
         <div class="uk-width-1-5@l uk-width-1-2@m">
-          <article href="#" class="card card--decor card--bg">
+          <article class="card card--decor card--bg">
             <div class="card__header">
               <div class="card__icon">{{mixins.icon('chat')}}</div>
               <div class="card__title bold">Консультационные
@@ -61,7 +60,7 @@
           </article>
         </div>
         <div class="uk-width-1-5@l uk-width-1-2@m">
-          <article href="#" class="card card--decor">
+          <article class="card card--decor">
             <div class="card__header">
               <div class="card__icon">{{mixins.icon('scales')}}</div>
               <div class="card__title bold">Юридические
@@ -71,7 +70,7 @@
           </article>
         </div>
         <div class="uk-width-1-5@l uk-width-1-2@m">
-          <article href="#" class="card card--decor">
+          <article class="card card--decor">
             <div class="card__header">
               <div class="card__icon">{{mixins.icon('chart')}}</div>
               <div class="card__title bold">Аудиторские
@@ -227,7 +226,7 @@
           </div>
           <div class="checkmate__image-container">
             <div class="checkmate__image">
-              <img src="./img/frame28754.jpg" alt="">
+              <img src="./img/accounting.jpg" alt="">
             </div>
           </div>
         </div>
@@ -523,8 +522,7 @@
       <div uk-grid class="uk-grid-collapse">
         <div class="uk-width-2-3@m">
           <div class="steps">
-            <ol uk-grid
-              class="uk-grid-collapse steps__list list-border-container list-border-container--inside uk-child-width-1-2@m ">
+            <ol uk-grid class="uk-grid-collapse steps__list list-border-container list-border-container--inside uk-child-width-1-2@m ">
               <li class="steps__item list-border-container__item uk-first-column">
                 <div class="step step--decor">
                   <div class="step__title">Вы заказываете бухгалтерские услуги </div>
@@ -676,7 +674,7 @@
           </div>
           <div class="checkmate__image-container">
             <div class="checkmate__image">
-              <img src="./img/frame28754.jpg" alt="">
+              <img src="./img/accounting.jpg" alt="">
             </div>
           </div>
         </div>
@@ -952,11 +950,11 @@
                         сотрудников, система налогообложения, вид деятельности и др.</p>
                       <div class="accordion__subtitle">Стоимость услуг:</div>
                       <ul class="list list--ul list--ul-dash">
-                        <li>Бухгалтерское обслуживание
+                        <li><a href="#"><span>Бухгалтерское обслуживание</span></a>
                         </li>
-                        <li>Юридическое обслуживание
+                        <li><a href="#"><span>Юридическое обслуживание</span></a>
                         </li>
-                        <li>Аудиторские услуги</li>
+                        <li><a href="#"><span>Аудиторские услуги</span></a></li>
                       </ul>
                     </div>
                   </li>
@@ -1018,7 +1016,7 @@
                 уникальную книгу «…..».
                 Эта книга (краткое описание)</p>
               <div class="checkmate__btn-container">
-                <a class="btn btn--secondary" href="#">Получить книгу</a>
+                <button class="btn btn--secondary" type="button">Получить книгу</button>
               </div>
             </div>
           </div>

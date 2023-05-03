@@ -59,7 +59,7 @@
     .slider--arr-outside & {
       transform: none;
       left: auto;
-      right: 50px;
+      right: calc(50 / var(--fz) * var(--fz-em));
       top: calc(-45 / var(--fz) * var(--fz-em));
 
       @media (min-width: 960px) {

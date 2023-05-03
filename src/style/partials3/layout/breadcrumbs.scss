@@ -1,11 +1,6 @@
 .breadcrumbs-container {
   padding: calc(20 / var(--fz) * var(--fz-em)) 0;
   position: relative;
-
-  // @media (min-width: 960px) {
-  //   top: calc(60 / var(--fz) * var(--fz-em));
-  //   z-index: 10;
-  // }
 }
 
 .breadcrumbs {

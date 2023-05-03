@@ -1,7 +1,6 @@
 {% set page = 'main' %}
 {% import "template/_mixins.html" as mixins %}
 {% include "template/header.html" %}
-
 <section class="section page-banner" style="background-image: url(./img/bg-acc.png);">
   {% include "template/breadcrumbs.html" %}
   <div class="uk-container section__container">
@@ -19,15 +18,14 @@
           <div class="page-banner__text"><span>Time Asset - это ваша четкая бухгалтерия на аутсорсинге, которая
               работает лучше, чем штатный бухгалтер</span></div>
           <div class="page-banner__buttons page-banner__buttons--margin">
-            <button class="btn" type="submit"><span>Заключить договор</span></button>
-            <button class="btn btn--secondary" type="submit"><span>Смотреть договор</span></button>
+            <a class="btn" href="#"><span>Заключить договор</span></a>
+            <a class="btn btn--secondary" href="#"><span>Смотреть договор</span></a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 <section class="section uk-section-small">
   <div class="uk-container section__container">
     <div uk-grid class="uk-grid-small">
@@ -100,7 +98,6 @@
                 </div>
               </div>
             </article>
-
             <article class="description-service__item">
               <h4>Кассовая дисциплина</h4>
               <p>Цифровые чеки разрешили высылать покупателям на электронные ящики. Однако от необходимости оформлять
@@ -125,10 +122,9 @@
             </article>
           </div>
         </div>
-
       </div>
-      <aside class="uk-width-1-4 uk-visible@m">
-        <div class="aside-service">
+      <div class="uk-width-1-4 uk-visible@m">
+        <aside class="aside-service">
           <div class="aside-service__body">
             <a href="#" class="aside-service__link link link--icon">
               {{mixins.icon('linkdoc')}}
@@ -139,14 +135,14 @@
                 <li class="uk-open accordion__item">
                   <a class="uk-accordion-title accordion__title" href="#">Бухгалтерские услуги для ООО</a>
                   <div class="uk-accordion-content accordion__content">
-                    <p>Бухгалтерское сопровождение ООО
-                    </p>
-                    <p>Бухгалтерское обслуживание ООО
-                    </p>
-                    <p>Нулевая отчетность ООО
-                    </p>
-                    <p>Бухгалтерский учет в ООО
-                    </p>
+                    <p><a href="#">Бухгалтерское сопровождение ООО
+                      </a></p>
+                    <p><a href="#">Бухгалтерское обслуживание ООО
+                      </a></p>
+                    <p><a href="#">Нулевая отчетность ООО
+                      </a></p>
+                    <p><a href="#">Бухгалтерский учет в ООО
+                      </a></p>
                   </div>
                 </li>
                 <li class="accordion__item">
@@ -236,7 +232,6 @@
                 </li>
               </ul>
             </div>
-
             <a href="#" class="aside-service__link link link--icon">
               {{mixins.icon('message')}}
               <div class="aside-service__text">Юридические услуги</div>
@@ -250,8 +245,8 @@
               <div class="aside-service__text">Консультации</div>
             </a>
           </div>
-        </div>
-      </aside>
+        </aside>
+      </div>
     </div>
   </div>
 </section>
@@ -770,7 +765,7 @@
                 «…..».
                 Эта книга (краткое описание)</p>
               <div class="checkmate__btn-container">
-                <a class="btn btn--secondary" href="#">Получить книгу</a>
+                <button class="btn btn--secondary" type="button">Получить книгу</button>
               </div>
             </div>
           </div>

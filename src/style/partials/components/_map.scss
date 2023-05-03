@@ -151,11 +151,12 @@
 
     .page-banner & {
       margin: 0 -20px;
-      width: calc(100% + 40px);
+      width: calc(100% + calc(40 / var(--fz) * var(--fz-em));
+      );
 
       @media (min-width: 960px) {
         margin: 0;
-        width: 860px;
+        width: calc(860 / var(--fz) * var(--fz-em));
       }
     }
   }
