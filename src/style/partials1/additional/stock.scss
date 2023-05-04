@@ -13,7 +13,7 @@
     overflow: hidden;
     padding-bottom: 40%;
     height: 0;
-    margin-bottom: calc(40 / var(--fz) * var(--fz-em));
+
   }
 
   &__img {
@@ -35,9 +35,15 @@
 
   &__description {
 
+    margin-top: calc(40 / var(--fz) * var(--fz-em));
+
     @media (min-width: 960px) {
       padding-right: calc(100 / var(--fz) * var(--fz-em));
       padding-left: calc(100 / var(--fz) * var(--fz-em));
+    }
+
+    & p {
+      line-height: 1.5;
     }
   }
 

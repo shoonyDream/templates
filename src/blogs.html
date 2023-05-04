@@ -1,0 +1,232 @@
+{% set page = 'main' %}
+{% import "template/_mixins.html" as mixins %}
+{% include "template/header.html" %}
+{% include "template/breadcrumbs.html" %}
+<section class="section">
+  <div class="uk-container section__container">
+    <div class="section__header">
+      <div class="section__title">
+        <h1 class="uk-h3">Блог</h1>
+      </div>
+    </div>
+    <div class="section__body uk-grid--small">
+      <div class="tile__list">
+        <div class="tile__item">
+          <article class="tile tile--horizontal">
+            <div class="tile__image">
+              <div class="tile__img">
+                <img src="./img/image23.jpg" alt="">
+              </div>
+            </div>
+            <div class="tile__body">
+              <div class="tile__title"><span>Как принять и оформить иностранца на работу</span></div>
+              <div class="tile__description">
+                <span>It is a long established fact that a reader will be distracted by the readable content of a page
+                  when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                  distribution of letters, as opposed to using 'Content here, content here', making it look like.
+                </span>
+              </div>
+              <div class="tile__link">
+                <a href="#" class="link link--icon">
+                  <span class="link__icon">{{mixins.icon('linkplus')}}</span><span>Читать полностью</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="tile__item">
+          <article class="tile tile--horizontal">
+            <div class="tile__image">
+              <div class="tile__img">
+                <img src="./img/image23.jpg" alt="">
+              </div>
+            </div>
+            <div class="tile__body">
+              <div class="tile__title"><span>Как принять и оформить иностранца на работу</span></div>
+              <div class="tile__description">
+                <span>It is a long established fact that a reader will be distracted by the readable content of a page
+                  when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                  distribution of letters, as opposed to using 'Content here, content here', making it look like.
+                </span>
+              </div>
+              <div class="tile__link">
+                <a href="#" class="link link--icon">
+                  <span class="link__icon">{{mixins.icon('linkplus')}}</span><span>Читать полностью</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="tile__item">
+          <article class="tile tile--horizontal">
+            <div class="tile__image">
+              <div class="tile__img">
+                <img src="./img/image23.jpg" alt="">
+              </div>
+            </div>
+            <div class="tile__body">
+              <div class="tile__title"><span>Как принять и оформить иностранца на работу</span></div>
+              <div class="tile__description">
+                <span>It is a long established fact that a reader will be distracted by the readable content of a page
+                  when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                  distribution of letters, as opposed to using 'Content here, content here', making it look like.
+                </span>
+              </div>
+              <div class="tile__link">
+                <a href="#" class="link link--icon">
+                  <span class="link__icon">{{mixins.icon('linkplus')}}</span><span>Читать полностью</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="tile__item">
+          <article class="tile tile--horizontal">
+            <div class="tile__image">
+              <div class="tile__img">
+                <img src="./img/image23.jpg" alt="">
+              </div>
+            </div>
+            <div class="tile__body">
+              <div class="tile__title"><span>Как принять и оформить иностранца на работу</span></div>
+              <div class="tile__description">
+                <span>It is a long established fact that a reader will be distracted by the readable content of a page
+                  when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                  distribution of letters, as opposed to using 'Content here, content here', making it look like.
+                </span>
+              </div>
+              <div class="tile__link">
+                <a href="#" class="link link--icon">
+                  <span class="link__icon">{{mixins.icon('linkplus')}}</span><span>Читать полностью</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="tile__item">
+          <article class="tile tile--horizontal">
+            <div class="tile__image">
+              <div class="tile__img">
+                <img src="./img/image23.jpg" alt="">
+              </div>
+            </div>
+            <div class="tile__body">
+              <div class="tile__title"><span>Как принять и оформить иностранца на работу</span></div>
+              <div class="tile__description">
+                <span>It is a long established fact that a reader will be distracted by the readable content of a page
+                  when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                  distribution of letters, as opposed to using 'Content here, content here', making it look like.
+                </span>
+              </div>
+              <div class="tile__link">
+                <a href="#" class="link link--icon">
+                  <span class="link__icon">{{mixins.icon('linkplus')}}</span><span>Читать полностью</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="pagination">
+        <ul class="uk-pagination" uk-margin>
+          <li><a href="#"><span uk-pagination-previous></span></a>
+          </li>
+          <li><a href="#">1</a></li>
+          <li class="uk-active"><span>5</span></li>
+          <li class="uk-disabled"><span>...</span></li>
+          <li><a href="#">20</a></li>
+          <li><a href="#"><span uk-pagination-next></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section uk-section-small section--bg">
+  <div class="uk-container section__container">
+    <div class="section__body">
+      {% include "template/consultation.html" %}
+    </div>
+  </div>
+</section>
+<section class="section uk-section">
+  <div class="uk-container section__container">
+    <div class="section__header section__header--centered">
+      <div class="section__title section__title--centered">
+        <h2>Преимущества компании</h2>
+      </div>
+    </div>
+    <div class="section__body">
+      <div uk-grid class="uk-grid-small key-indicators uk-child-width-1-3@m">
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('experience')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> 10 лет опыта на рынке бухгалтерских услуг</div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('workexperience')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> 5 лет средний стаж специалистов в нашей компании
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('penalties')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> 0 штрафов от налоговой за несвоевременно сданную отчетность
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('mens')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> 15 претензий урегулировано в сторону клиентов со стороны
+                налоговой
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('mens')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> Страховка от ошибок бухгалтера
+                на 1 млн. рублей в год
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('mens')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> >75% аутсорсинг бухгалтерии выгоднее, чем содержание штата
+                бухгалтеров
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include "template/footer.html" %}
