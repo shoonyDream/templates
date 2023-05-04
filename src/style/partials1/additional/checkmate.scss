@@ -44,6 +44,13 @@
         padding-left: calc(80 / var(--fz) * var(--fz-em));
       }
     }
+
+    .checkmate--about & {
+      @media (min-width: 960px) {
+        padding-right: calc(64 / var(--fz) * var(--fz-em));
+        padding-left: calc(64 / var(--fz) * var(--fz-em));
+      }
+    }
   }
 
   & .uk-h2 {
@@ -78,6 +85,10 @@
   &__title {
     font-weight: 300;
     line-height: 1.3;
+
+    .checkmate--about & {
+      font-weight: 600;
+    }
   }
 
   &__lead {
@@ -86,6 +97,12 @@
     font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
     line-height: 1.7;
     font-weight: 400;
+
+    .checkmate--about & {
+      --fz: 16;
+
+      font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    }
   }
 
   &__subtitle {
@@ -120,6 +137,13 @@
         padding-bottom: calc(580 / var(--fz) * var(--fz-em));
       }
     }
+
+    .checkmate--about & {
+
+      @media (min-width: 960px) {
+        padding-bottom: calc(440 / var(--fz) * var(--fz-em));
+      }
+    }
   }
 
   &__image {
@@ -140,6 +164,11 @@
       .checkmate--reverse & {
         left: auto;
         right: 0;
+      }
+
+      .checkmate--about & {
+        width: calc(536 / var(--fz) * var(--fz-em));
+        height: calc(400 / var(--fz) * var(--fz-em));
       }
 
       img {

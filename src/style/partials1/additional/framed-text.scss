@@ -1,0 +1,18 @@
+.framed-text {
+  padding-left: 100px;
+  padding-right: 100px;
+
+  .framed-text__container {
+    background-color: var(--bg-2);
+    padding: 20px;
+  }
+
+  &__description {
+    color: var(--primary);
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid var(--primary);
+    padding: 36px 80px;
+  }
+}
