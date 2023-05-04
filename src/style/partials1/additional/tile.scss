@@ -16,6 +16,18 @@ a.tile {
   height: 100%;
   position: relative;
 
+  &__list {
+    &--stocs {
+
+      @media (min-width: 960px) {
+        padding-left: calc(32 / var(--fz) * var(--fz-em));
+      }
+
+
+
+    }
+  }
+
   &__item {
     padding: calc(24 / var(--fz) * var(--fz-em)) 0;
     border-bottom: 1px solid var(--bg-2);
@@ -32,9 +44,16 @@ a.tile {
       border-bottom: none;
       padding: calc(32 / var(--fz) * var(--fz-em));
 
-      &:nth-child(1),
-      &:nth-child(2) {
+      &:nth-child(1) {
         padding-top: 0;
+      }
+
+      @media (min-width: 960px) {
+
+        &:nth-child(1),
+        &:nth-child(2) {
+          padding-top: 0;
+        }
       }
     }
   }
