@@ -1,0 +1,182 @@
+{% set page = 'main' %}
+{% import "template/_mixins.html" as mixins %}
+{% include "template/header.html" %}
+{% include "template/breadcrumbs.html" %}
+<section class="section">
+  <div class="uk-container section__container">
+    <div class="section__header">
+      <div class="section__title">
+        <h1 class="uk-h3">Акции</h1>
+      </div>
+    </div>
+    <div class="section__body uk-grid--small">
+      <div class="tile__list uk-grid uk-child-width-1-2@m">
+        <div class="tile__item tile__item--stocks">
+          <article class="tile">
+            <div class="tile__image">
+              <div class="tile__img">
+                <img src="./img/image23.jpg" alt="">
+              </div>
+            </div>
+            <div class="tile__body">
+              <div class="tile__title"><span>Как принять и оформить иностранца на работу</span></div>
+              <div class="tile__description">
+                <span>С 15 августа по 15 сентября 2022 г.
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="tile__item  tile__item--stocks">
+          <article class="tile">
+            <div class="tile__image">
+              <div class="tile__img">
+                <img src="./img/image23.jpg" alt="">
+              </div>
+            </div>
+            <div class="tile__body">
+              <div class="tile__title"><span>Как принять и оформить иностранца на работу</span></div>
+              <div class="tile__description">
+                <span>С 15 августа по 15 сентября 2022 г.
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="tile__item tile__item--stocks">
+          <article class="tile">
+            <div class="tile__image">
+              <div class="tile__img">
+                <img src="./img/image23.jpg" alt="">
+              </div>
+            </div>
+            <div class="tile__body">
+              <div class="tile__title"><span>Как принять и оформить иностранца на работу</span></div>
+              <div class="tile__description">
+                <span>С 15 августа по 15 сентября 2022 г.
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="tile__item tile__item--stocks">
+          <article class="tile">
+            <div class="tile__image">
+              <div class="tile__img">
+                <img src="./img/image23.jpg" alt="">
+              </div>
+            </div>
+            <div class="tile__body">
+              <div class="tile__title"><span>Как принять и оформить иностранца на работу</span></div>
+              <div class="tile__description">
+                <span>С 15 августа по 15 сентября 2022 г.
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="tile__item tile__item--stocks">
+          <article class="tile">
+            <div class="tile__image">
+              <div class="tile__img">
+                <img src="./img/image23.jpg" alt="">
+              </div>
+            </div>
+            <div class="tile__body">
+              <div class="tile__title"><span>Как принять и оформить иностранца на работу</span></div>
+              <div class="tile__description">
+                <span>С 15 августа по 15 сентября 2022 г.
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="pagination">
+        <ul class="uk-pagination" uk-margin>
+          <li><a href="#"><span uk-pagination-previous></span></a>
+          </li>
+          <li><a href="#">1</a></li>
+          <li class="uk-active"><span>5</span></li>
+          <li class="uk-disabled"><span>...</span></li>
+          <li><a href="#">20</a></li>
+          <li><a href="#"><span uk-pagination-next></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section uk-section-small section--bg">
+  <div class="uk-container section__container">
+    <div class="section__body">
+      {% include "template/consultation.html" %}
+    </div>
+  </div>
+</section>
+<section class="section uk-section">
+  <div class="uk-container section__container">
+    <div class="section__body">
+      <div uk-grid class="uk-grid-small uk-child-width-1-1">
+        <div>
+          <div class="large-card">
+            <div class="large-card__header">
+              <h2>Часто задаваемые вопросы</h2>
+            </div>
+            <div class="large-card__body">
+              <ul uk-accordion class="accordion">
+                <li class="uk-open accordion__item">
+                  <a class="uk-accordion-title accordion__title" href="#">Мы планировали взять
+                    штатного бухгалтера. В чем отличие и удобство бухгалтерского аутсорсинга?</a>
+                  <div class="uk-accordion-content accordion__content">
+                    <p>Тариф рассчитывается индивидуально на каждого клиента и зависит от таких
+                      показателей, как количество бухгалтерских операций в месяц, количество
+                      сотрудников, система налогообложения, вид деятельности и др.</p>
+                    <div class="accordion__subtitle">Стоимость услуг:</div>
+                    <ul class="list list--ul list--ul-dash">
+                      <li><a href="#"><span>Бухгалтерское обслуживание</span></a>
+                      </li>
+                      <li><a href="#"><span>Юридическое обслуживание</span></a>
+                      </li>
+                      <li><a href="#"><span>Аудиторские услуги</span></a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="accordion__item">
+                  <a class="uk-accordion-title accordion__title" href="#">Работает ли центр с
+                    плательщиками торгового сбора? Как правильно оформить документы?</a>
+                  <div class="uk-accordion-content accordion__content">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo
+                      consequat.
+                      Duis aute irure dolor reprehenderit.</p>
+                  </div>
+                </li>
+                <li class="accordion__item">
+                  <a class="uk-accordion-title accordion__title" href="#">С какими налоговыми режимами
+                    работает центр?</a>
+                  <div class="uk-accordion-content accordion__content">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                      eu fugiat nulla
+                      pariatur.
+                      Excepteur sint occaecat cupidatat proident.</p>
+                  </div>
+                </li>
+                <li>
+                  <a class="uk-accordion-title accordion__title" href="#">Какие методы налоговой
+                    оптимизации применяются? Какие гарантии у клиента?</a>
+                  <div class="uk-accordion-content accordion__content">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                      eu fugiat nulla
+                      pariatur.
+                      Excepteur sint occaecat cupidatat proident.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include "template/footer.html" %}

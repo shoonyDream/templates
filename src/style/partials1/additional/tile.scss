@@ -27,6 +27,16 @@ a.tile {
     &:first-child {
       padding-top: 0;
     }
+
+    &--stocks {
+      border-bottom: none;
+      padding: calc(32 / var(--fz) * var(--fz-em));
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        padding-top: 0;
+      }
+    }
   }
 
   &__image {
