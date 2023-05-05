@@ -1,13 +1,29 @@
 .content-typography {
-  h2 {
-    --fz: 18;
+  h1 {
+    --fz: 32;
 
-    --header-color: var(--primary);
     position: relative;
     font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.2;
     text-transform: none;
+    margin-bottom: calc(16 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      --fz: 24;
+
+      font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    }
+  }
+
+  h2 {
+    --fz: 24;
+
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: none;
+    margin-bottom: calc(16 / var(--fz) * var(--fz-em));
 
     @media (min-width: 960px) {
       --fz: 24;
@@ -17,29 +33,25 @@
   }
 
   h3 {
-    --fz: 16;
+    --fz: 18;
 
     font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
-    font-weight: 400;
-    line-height: 1.2;
+    font-weight: 600;
+    line-height: 1.5;
     text-transform: none;
-  }
-
-  h4 {
-    --fz: 14;
-
-    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
-    font-weight: 400;
-    line-height: 1.2;
-    text-transform: none;
+    margin-bottom: calc(16 / var(--fz) * var(--fz-em));
   }
 
   p {
+    font-weight: 400;
     line-height: 1.5;
   }
 
+  p+p {
+    margin-top: calc(16 / var(--fz) * var(--fz-em));
+  }
+
   .figure {
-    margin-top: calc(40 / var(--fz) * var(--fz-em));
     height: 100%;
     position: relative;
     display: flex;
@@ -49,7 +61,7 @@
     &__image {
       position: relative;
       overflow: hidden;
-      padding-bottom: 56.8%;
+      padding-bottom: 42.3%;
       height: 0;
     }
 
@@ -83,32 +95,87 @@
     margin-right: 0;
     margin-top: calc(10 / var(--fz) * var(--fz-em));
 
+    &+* {
+      margin-top: calc(24 / var(--fz) * var(--fz-em));
+    }
+
     & li {
       position: relative;
-      padding-left: calc(10 / var(--fz) * var(--fz-em));
+      padding-left: calc(20 / var(--fz) * var(--fz-em));
 
       &:before {
-        position: absolute;
-        top: calc(7 / var(--fz) * var(--fz-em));
         left: 0;
-        border-radius: 50%;
-        background: var(--primary);
-        width: calc(4 / var(--fz) * var(--fz-em));
-        height: calc(4 / var(--fz) * var(--fz-em));
-        content: "";
+        top: calc(10 / var(--fz) * var(--fz-em));
+        content: '';
+        width: calc(8 / var(--fz) * var(--fz-em));
+        height: calc(2 / var(--fz) * var(--fz-em));
+        position: absolute;
+        background-color: var(--primary);
       }
+    }
+
+    li+li {
+      margin-top: calc(20 / var(--fz) * var(--fz-em));
     }
   }
 
   ol {
-    list-style-type: decimal;
-    line-height: 1.5;
-    margin-left: calc(15 / var(--fz) * var(--fz-em));
-    margin-right: 0;
-    margin-top: calc(10 / var(--fz) * var(--fz-em));
+    counter-reset: list;
+
 
     & li {
-      padding-left: calc(5 / var(--fz) * var(--fz-em));
+      --fz: 14;
+
+      font-weight: 400;
+      font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+      color: var(--text-color);
+      line-height: 1.5;
+      padding-left: calc(40 / var(--fz) * var(--fz-em));
+      padding-bottom: calc(40 / var(--fz) * var(--fz-em));
+      position: relative;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      &::before {
+        --fz-before: 12;
+
+        position: absolute;
+        left: 0;
+        top: calc(0 / var(--fz-before) * var(--fz-em));
+        font-size: calc(var(--fz-before)/ var(--fz) * var(--fz-em));
+        font-weight: 600;
+        counter-increment: list;
+        content: counter(list, decimal);
+        color: var(--primary);
+        line-height: 1;
+        z-index: 1;
+        width: calc(24 / var(--fz-before) * var(--fz-em));
+        height: calc(24 / var(--fz-before) * var(--fz-em));
+        border-radius: 50%;
+        background-color: var(--bg-2);
+        text-align: center;
+        padding-top: calc(6 / var(--fz-before) * var(--fz-em));
+      }
+
+      &::after {
+        content: '';
+        width: calc(2 / var(--fz) * var(--fz-em));
+        height: 100%;
+        position: absolute;
+        top: calc(12 / var(--fz) * var(--fz-em));
+        left: calc(11 / var(--fz) * var(--fz-em));
+        background-color: var(--bg-2);
+        z-index: 0;
+      }
+
+      &:last-child {
+
+        &::after {
+          display: none;
+        }
+      }
     }
   }
 

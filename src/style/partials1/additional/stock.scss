@@ -5,6 +5,7 @@
 
     @media (min-width: 960px) {
       padding: calc(32 / var(--fz) * var(--fz-em));
+      padding-top: calc(12 / var(--fz) * var(--fz-em));
     }
   }
 
