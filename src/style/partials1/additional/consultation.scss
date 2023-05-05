@@ -5,6 +5,10 @@
   background-position: right;
   background-color: var(--bg-2);
 
+  &--reverse {
+    background: url(../../img/bg-acc.png);
+  }
+
   &__image {
     position: relative;
     overflow: hidden;
@@ -16,6 +20,19 @@
         overflow: unset;
         padding-bottom: 85%;
       }
+    }
+
+    .consultation--reverse & {
+      padding-bottom: 115%;
+    }
+  }
+
+  &__image-container {
+
+    .consultation--reverse & {
+
+      padding-top: calc(32 / var(--fz) * var(--fz-em));
+      padding-right: calc(100 / var(--fz) * var(--fz-em));
     }
   }
 
@@ -34,6 +51,8 @@
         transform: translateY(-50%);
       }
     }
+
+
 
     & img {
       position: absolute;
@@ -66,6 +85,13 @@
         margin-left: 0;
         padding-right: calc(10 / var(--fz) * var(--fz-em));
       }
+    }
+  }
+
+  &__description-container {
+
+    .consultation--reverse & {
+      order: -1;
     }
   }
 
