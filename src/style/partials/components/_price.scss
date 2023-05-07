@@ -6,6 +6,15 @@
   color: var(--text-color);
   font-weight: 600;
 
+  &__container {
+    box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.08);
+    padding: calc(40 / var(--fz) * var(--fz-em)) calc(28 / var(--fz) * var(--fz-em));
+
+    &+* {
+      margin-bottom: calc(24 / var(--fz) * var(--fz-em));
+    }
+  }
+
   &__unit {
     --fz: 24;
 
@@ -36,5 +45,11 @@
 
   &--accent {
     color: var(--primary);
+  }
+
+  &__text {
+    --fz: 12;
+
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
   }
 }

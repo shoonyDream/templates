@@ -108,7 +108,16 @@ button {
   justify-content: center;
 
   @media (min-width: 960px) {
-
     flex-direction: row;
+  }
+
+  &--column {
+    flex-direction: column;
+    gap: calc(24 / var(--fz) * var(--fz-em));
+    margin-top: calc(24 / var(--fz) * var(--fz-em));
+
+    &+* {
+      margin-top: calc(24 / var(--fz) * var(--fz-em));
+    }
   }
 }

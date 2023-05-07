@@ -5,8 +5,14 @@
     height: 100%;
   }
 
+  &__container {
+    padding: calc(60 / var(--fz) * var(--fz-em));
+    padding-top: 0;
+    box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.08);
+  }
+
   &__item+&__item {
-    margin-top: calc(20 / var(--fz) * var(--fz-em));
+    margin-top: calc(24 / var(--fz) * var(--fz-em));
   }
 
   &__body {
@@ -67,7 +73,7 @@ input::-webkit-inner-spin-button {
   align-items: center;
   position: relative;
   border: 1px solid var(--line);
-  padding: calc(10 / var(--fz) * var(--fz-em)) calc(15 / var(--fz) * var(--fz-em));
+  padding: calc(12 / var(--fz) * var(--fz-em)) calc(16 / var(--fz) * var(--fz-em));
   line-height: 1.5;
   background-color: var(--z-white);
 
@@ -399,7 +405,7 @@ input::-webkit-inner-spin-button {
 
     #{$self}__input:checked+& {
       border-color: var(--primary);
-      background-color: var(--primary);
+      /*background-color: var(--primary);*/
     }
 
     &::after {
@@ -419,7 +425,7 @@ input::-webkit-inner-spin-button {
         background-repeat: no-repeat;
         transform: translate(-50%, -50%);
         background-size: contain;
-        background-image: url("data:image/svg+xml,%3Csvg width='3' height='3' viewBox='0 0 3 3' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='3' cy='3' r='3' fill='%23213966'/%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='3' cy='3' r='3' fill='%23213966'/%3E%3C/svg%3E");
       }
     }
 
