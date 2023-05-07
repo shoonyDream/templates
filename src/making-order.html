@@ -1,0 +1,327 @@
+{% set page = 'main' %}
+{% import "template/_mixins.html" as mixins %}
+{% include "template/header.html" %}
+{% include "template/breadcrumbs.html" %}
+<section class="section uk-section-small">
+  <div class="uk-container section__container">
+    <div uk-grid class="uk-grid-small">
+      <div class="section__body uk-width-3-4@m making-order">
+        <h3>Оформление заказа</h3>
+        <h3 style="color: var(--primary);">Бухгалтерское сопровождение ООО</h3>
+        <p class="making-order__lead">Описание услуги За всю бухгалтерию на основной системе налогообложения ОСНО, (с НДС) для ООО и ИП Мы предлагаем особые условия для компаний «НА СТАРТЕ» деятельности и для тех, у кого наступило «ЗАТИШЬЕ» в активности. Если численность сотрудников у вас только один человек (руководитель компании), количество хозяйственных операций</p>
+        <section class="section uk-section-small">
+          <div class="uk-container section__container">
+            <div class="section__body">
+              <div class="table-price">
+                <div class="table-price__header">
+                  <div class="table-price__row">
+                    <div class="table-price__title table-price__gell table-price__gell--border">
+                      <p>Наименование</p>
+                    </div>
+                    <div class="table-price__title table-price__gell">
+                      <p>Стоимость</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-price__body">
+                  <div class="table-price__row">
+                    <div class="table-price__gell table-price__gell--border">
+                      <p>Подготовка сведений по индивидуальному Персонифицированному учету</p>
+                    </div>
+                    <div class="table-price__gell">
+                      <p class="table-price__unit">3 000 - 15 000 руб</p>
+                      <p>(в зависимости от вида деятельности)</p>
+                    </div>
+                  </div>
+                  <div class="table-price__row">
+                    <div class="table-price__gell table-price__gell--border">
+                      <p>Подготовка сведений 2НДФЛ</p>
+                    </div>
+                    <div class="table-price__gell">
+                      <p class="table-price__unit">3 000 - 15 000 руб</p>
+                      <p>(в зависимости от наличия разногласий с ИФНС)</p>
+                    </div>
+                  </div>
+                  <div class="table-price__row">
+                    <div class="table-price__gell table-price__gell--border">
+                      <p>Подготовка Учетной политики</p>
+                    </div>
+                    <div class="table-price__gell">
+                      <p class="table-price__unit">150 руб</p>
+                      <p>(за документ)</p>
+                    </div>
+                  </div>
+                  <div class="table-price__row">
+                    <div class="table-price__gell table-price__gell--border">
+                      <p>Подготовка сведений по индивидуальному Персонифицированному учету</p>
+                    </div>
+                    <div class="table-price__gell">
+                      <p class="table-price__unit">3 000 - 15 000 руб</p>
+                      <p>(в зависимости от вида деятельности)</p>
+                    </div>
+                  </div>
+                  <div class="table-price__row">
+                    <div class="table-price__gell table-price__gell--border">
+                      <p>Подготовка сведений 2НДФЛ</p>
+                    </div>
+                    <div class="table-price__gell">
+                      <p class="table-price__unit">3 000 - 15 000 руб</p>
+                      <p>(в зависимости от наличия разногласий с ИФНС)</p>
+                    </div>
+                  </div>
+                  <div class="table-price__row">
+                    <div class="table-price__gell table-price__gell--border">
+                      <p>Подготовка сведений 2НДФЛ</p>
+                    </div>
+                    <div class="table-price__gell">
+                      <p class="table-price__unit">3 000 - 15 000 руб</p>
+                      <p>(в зависимости от наличия разногласий с ИФНС)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="button__container">
+                <a class="btn  btn--secondary" type="submit"><span>Ознакомиться с договором</span></a>
+                <a class="btn" type="submit"><span>Заключить договор</span></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="section__header">
+            <div class="section__title">
+              <h4>Выберите способ заключения договора</h4>
+            </div>
+          </div>
+          <div class="section__body">
+            <div class="uk-grid uk-child-width-1-4@m card__list-4">
+              <article href="#" class="card card--small card--radio card--shadow">
+                <div class="card__header">
+                  <div class="card__icon">{{mixins.icon('payinvoice')}}</div>
+                  <div class="card__title">Путем оплаты первого счета</div>
+                  <label class="radio card__radio">
+                    <div class="radio__label">
+                      <input type="radio" class="radio__input" value="1" name="radio" />
+                      <span class="radio__mark radio__mark--small"></span>
+                    </div>
+                  </label>
+                </div>
+              </article>
+              <article href="#" class="card card--small card--radio card--shadow">
+                <div class="card__header">
+                  <div class="card__icon">{{mixins.icon('paperdoc')}}</div>
+                  <div class="card__title">Подписание в бумажном виде</div>
+                  <label class="radio card__radio">
+                    <div class="radio__label">
+                      <input type="radio" class="radio__input" value="1" name="radio" />
+                      <span class="radio__mark radio__mark--small"></span>
+                    </div>
+                  </label>
+                </div>
+              </article>
+              <article href="#" class="card card--small card--radio card--shadow">
+                <div class="card__header">
+                  <div class="card__icon">{{mixins.icon('scan')}}</div>
+                  <div class="card__title">Путем обмена сканами</div>
+                  <label class="radio card__radio">
+                    <div class="radio__label">
+                      <input type="radio" class="radio__input" value="1" name="radio" />
+                      <span class="radio__mark radio__mark--small"></span>
+                    </div>
+                  </label>
+                </div>
+              </article>
+              <article href="#" class="card card--small card--radio card--shadow">
+                <div class="card__header">
+                  <div class="card__icon">{{mixins.icon('electronicdoc')}}</div>
+                  <div class="card__title">Электронный документооборот</div>
+                  <label class="radio card__radio">
+                    <div class="radio__label">
+                      <input type="radio" class="radio__input" value="1" name="radio" />
+                      <span class="radio__mark radio__mark--small"></span>
+                    </div>
+                  </label>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="section uk-section-small">
+          <div class="section__header">
+            <div class="section__title">
+              <h4>Выберите способ оплаты</h4>
+            </div>
+          </div>
+          <div class="section__body">
+            <div class="uk-grid uk-child-width-1-3@m card__list-4">
+              <article href="#" class="card card--small card--radio card--shadow">
+                <div class="card__header">
+                  <div class="card__icon">{{mixins.icon('cardbank')}}</div>
+                  <div class="card__title">Картой</div>
+                  <p>Онлайн оплата</p>
+                  <label class="radio card__radio">
+                    <div class="radio__label">
+                      <input type="radio" class="radio__input" value="1" name="radio" />
+                      <span class="radio__mark radio__mark--small"></span>
+                    </div>
+                  </label>
+                </div>
+              </article>
+              <article href="#" class="card card--small card--radio card--shadow">
+                <div class="card__header">
+                  <div class="card__icon">{{mixins.icon('yandex')}}</div>
+                  <div class="card__title">Yandex Pay</div>
+                  <p>Бесконтактная оплата</p>
+                  <label class="radio card__radio">
+                    <div class="radio__label">
+                      <input type="radio" class="radio__input" value="1" name="radio" />
+                      <span class="radio__mark radio__mark--small"></span>
+                    </div>
+                  </label>
+                </div>
+              </article>
+              <article href="#" class="card card--small card--radio card--shadow">
+                <div class="card__header">
+                  <div class="card__icon">{{mixins.icon('buh')}}</div>
+                  <div class="card__title">По счёту</div>
+                  <p>Физ. лицо / Юр. лицо</p>
+                  <label class="radio card__radio">
+                    <div class="radio__label">
+                      <input type="radio" class="radio__input" value="1" name="radio" />
+                      <span class="radio__mark radio__mark--small"></span>
+                    </div>
+                  </label>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="uk-width-1-4@m">
+        <aside class="aside-service">
+          <div class="aside-service__body">
+            <a href="#" class="aside-service__link link link--icon">
+              {{mixins.icon('linkdoc')}}
+              <span class="aside-service__text">Бухгалтерские услуги</span>
+            </a>
+            <div class="aside-service__accordion">
+              <ul uk-accordion class="accordion">
+                <li class="uk-open accordion__item">
+                  <a class="uk-accordion-title accordion__title" href="#">Бухгалтерские услуги для ООО</a>
+                  <div class="uk-accordion-content accordion__content">
+                    <p><a href="#" class="link">Бухгалтерское сопровождение ООО
+                      </a></p>
+                    <p><a href="#" class="link">Бухгалтерское обслуживание ООО
+                      </a></p>
+                    <p><a href="#" class="link">Нулевая отчетность ООО
+                      </a></p>
+                    <p><a href="#" class="link">Бухгалтерский учет в ООО
+                      </a></p>
+                  </div>
+                </li>
+                <li class="accordion__item">
+                  <a class="uk-accordion-title accordion__title" href="#">Бухгалтерские услуги для ИП</a>
+                  <div class="uk-accordion-content accordion__content">
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat.
+                      Duis aute irure dolor reprehenderit.</p>
+                    <div class="accordion__subtitle">Стоимость услуг:</div>
+                    <ul class="list list--ul list--ul-dash">
+                      <li>Бухгалтерское обслуживание
+                      </li>
+                      <li>Юридическое обслуживание
+                      </li>
+                      <li>Аудиторские услуги</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="accordion__item">
+                  <a class="uk-accordion-title accordion__title" href="#">Бухгалтерская отчетность</a>
+                  <div class="uk-accordion-content accordion__content">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                      pariatur.
+                      Excepteur sint occaecat cupidatat proident.</p>
+                  </div>
+                </li>
+                <li>
+                  <a class="uk-accordion-title accordion__title" href="#">Бухгалтерский учет</a>
+                  <div class="uk-accordion-content accordion__content">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                      pariatur.
+                      Excepteur sint occaecat cupidatat proident.</p>
+                  </div>
+                </li>
+                <li>
+                  <a class="uk-accordion-title accordion__title" href="#">Бухгалтерское обслуживание</a>
+                  <div class="uk-accordion-content accordion__content">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                      pariatur.
+                      Excepteur sint occaecat cupidatat proident.</p>
+                  </div>
+                </li>
+                <li>
+                  <a class="uk-accordion-title accordion__title" href="#">Кадровый учет
+                  </a>
+                  <div class="uk-accordion-content accordion__content">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                      pariatur.
+                      Excepteur sint occaecat cupidatat proident.</p>
+                  </div>
+                </li>
+                <li>
+                  <a class="uk-accordion-title accordion__title" href="#">Бухгалтерское сопровождение
+                  </a>
+                  <div class="uk-accordion-content accordion__content">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                      pariatur.
+                      Excepteur sint occaecat cupidatat proident.</p>
+                  </div>
+                </li>
+                <li>
+                  <a class="uk-accordion-title accordion__title" href="#">Выписка из ЕГРЮЛ
+                  </a>
+                  <div class="uk-accordion-content accordion__content">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                      pariatur.
+                      Excepteur sint occaecat cupidatat proident.</p>
+                  </div>
+                </li>
+                <li>
+                  <a class="uk-accordion-title accordion__title" href="#">Аутсорсинг бухгалтерии
+                  </a>
+                  <div class="uk-accordion-content accordion__content">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                      pariatur.
+                      Excepteur sint occaecat cupidatat proident.</p>
+                  </div>
+                </li>
+                <li>
+                  <a class="uk-accordion-title accordion__title" href="#">Налоговый консалтинг
+                  </a>
+                  <div class="uk-accordion-content accordion__content">
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                      pariatur.
+                      Excepteur sint occaecat cupidatat proident.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="aside-service__link link link--icon">
+              {{mixins.icon('message')}}
+              <div class="aside-service__text">Юридические услуги</div>
+            </a>
+            <a href="#" class="aside-service__link link link--icon">
+              {{mixins.icon('scales')}}
+              <div class="aside-service__text">Аудиторские услуги</div>
+            </a>
+            <a href="#" class="aside-service__link link link--icon">
+              {{mixins.icon('consult')}}
+              <div class="aside-service__text">Консультации</div>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>
+{% include "template/footer.html" %}
