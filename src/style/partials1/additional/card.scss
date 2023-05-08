@@ -165,6 +165,12 @@ a.card__title {
         color: var(--primary);
       }
     }
+
+    .card--icon-bottom & {
+      position: absolute;
+      bottom: calc(15 / var(--fz) * var(--fz-em));
+      right: calc(20 / var(--fz) * var(--fz-em));
+    }
   }
 
   &--accent {
