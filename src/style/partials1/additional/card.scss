@@ -213,7 +213,8 @@ a.card__title {
       }
     }
 
-    .card--radio & {
+    .card--radio &,
+    .card--icon-bottom & {
       text-transform: none;
       font-weight: 600;
     }
