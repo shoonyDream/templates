@@ -298,7 +298,9 @@ p+p {
   }
 
   +.uk-section-small {
-    --gutter-top: 40;
+    .section & {
+      --gutter-top: 40;
+    }
   }
 }
 
