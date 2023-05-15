@@ -12,6 +12,10 @@ a.card {
   }
 }
 
+label.card {
+  cursor: pointer;
+}
+
 a.card__title {
   text-decoration: none;
   color: var(--text-color);
@@ -39,14 +43,6 @@ a.card__title {
 
   @media (min-width: 960px) {
     padding: calc(40 / var(--fz) * var(--fz-em)) calc(32 / var(--fz) * var(--fz-em));
-  }
-
-  &__list-4 {
-
-    @media (min-width: 960px) {
-      gap: calc(20 / var(--fz) * var(--fz-em));
-      flex-wrap: nowrap;
-    }
   }
 
   &--small {
@@ -137,6 +133,11 @@ a.card__title {
   &--accent {
     background-color: var(--primary);
     color: var(--z-white);
+  }
+
+  &--icon-bottom {
+    padding-left: calc(20 / var(--fz) * var(--fz-em));
+    padding-right: calc(20 / var(--fz) * var(--fz-em));
   }
 
   & &__header {
@@ -232,6 +233,7 @@ a.card__title {
     &--large {
       @media (min-width: 960px) {
         --fz: 16;
+        margin-top: calc(8 / var(--fz) * var(--fz-em));
       }
 
       font-size: calc(var(--fz)/ var(--fz-base) * var(--fz-em));

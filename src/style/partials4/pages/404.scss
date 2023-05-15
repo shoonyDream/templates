@@ -36,17 +36,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   &__lead {
-    --fz: 24;
-
     font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
     font-weight: 400;
     line-height: 1.5;
     margin-top: calc(16 / var(--fz) * var(--fz-em));
 
     @media (min-width: 960px) {
+      --fz: 24;
       margin-top: calc(24 / var(--fz) * var(--fz-em));
     }
   }

@@ -2,34 +2,45 @@
 {% import "template/_mixins.html" as mixins %}
 {% include "template/header.html" %}
 {% include "template/breadcrumbs.html" %}
-<section class="section">
+<section class="uk-section-small section section--collapse-top">
   <div class="uk-container section__container">
     <div class="section__header">
       <div class="section__title">
         <h1 class="uk-h3">О компании</h1>
       </div>
     </div>
-    <div class="section__body uk-grid--small stock">
-      <div class="stock__image-container">
-        <div uk-lightbox class="feedback__video">
-          <a class="tile tile--play" href="https://www.youtube.com/watch?v=YE7VzlLtp-4">
-            <div class="tile__image">
-              <div class="tile__img">
-                <img src="./img/videoposter.png" alt="">
+    <div class="section__body">
+      <div class="stock">
+        <div class="stock__image-container">
+          <div uk-lightbox class="feedback__video">
+            <a class="tile tile--play tile--play-large" href="https://www.youtube.com/watch?v=YE7VzlLtp-4">
+              <div class="tile__image">
+                <div class="tile__img">
+                  <img src="./img/videoposter.png" alt="">
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
+        </div>
+        <div class="stock__description">
+          <p>Ключевая цель БЦ «Актив» – обеспечение доступной и профессиональной помощи представителям российского
+            бизнеса. Как опытный участник рынка, центр стремится внести вклад в формирование оптимальной среды для
+            ведения
+            успешной предпринимательской деятельности. Приоритетами команды стали всесторонняя защита клиента от рисков,
+            законность и индивидуальный подход.</p>
+          <p>Находить эффективные и законные варианты решения позволяет постоянное изучение арбитражной практики.
+            Специалисты внимательно следят за изменениями правовой позиции государственных органов и судов. </p>
+          <p>Философия компании требует ведения открытого и честного диалога с клиентами. Руководство ответственно
+            подходит к выбору схемы сотрудничества, отказываясь от жестких шаблонов. При составлении соглашений
+            учитываются интересы обеих сторон. Никаких рамок – только индивидуальный подход.</p>
         </div>
       </div>
-      <div class="stock__description">
-        <p>Ключевая цель БЦ «Актив» – обеспечение доступной и профессиональной помощи представителям российского бизнеса. Как опытный участник рынка, центр стремится внести вклад в формирование оптимальной среды для ведения успешной предпринимательской деятельности. Приоритетами команды стали всесторонняя защита клиента от рисков, законность и индивидуальный подход.</p>
-        <p>Находить эффективные и законные варианты решения позволяет постоянное изучение арбитражной практики. Специалисты внимательно следят за изменениями правовой позиции государственных органов и судов. </p>
-        <p>Философия компании требует ведения открытого и честного диалога с клиентами. Руководство ответственно подходит к выбору схемы сотрудничества, отказываясь от жестких шаблонов. При составлении соглашений учитываются интересы обеих сторон. Никаких рамок – только индивидуальный подход.</p>
-      </div>
+
     </div>
   </div>
 </section>
-<section class="section uk-section" style="background-color: var(--bg-2); background-image: url(./img/bg-about.png);">
+<section class="section uk-section-small"
+  style="background-color: var(--bg-2); background-image: url(./img/bg-about.png);">
   <div class="uk-container section__container">
     <div class="section__header section__header--centered">
       <div class="section__title section__title--centered">
@@ -112,18 +123,18 @@
 </section>
 <section class="section uk-section-small">
   <div class="uk-container section__container">
-    <div uk-grid class="uk-grid-small uk-child-width-1-1">
-      <div class="section__body">
-        <article class="card card--centered card--centered-decor">
-          <div class="card__header">
-            <h4>Территория финансовой безопасности</h4>
+    <div class="section__body">
+      <article class="card card--centered card--centered-decor">
+        <div class="card__header">
+          <h4>Территория финансовой безопасности</h4>
+        </div>
+        <div class="card__body">
+          <div class="card__description card__description--large">На благо деловых партнеров трудятся лучшие
+            специалисты Москвы и Подмосковья. Штат компании превратился в предмет гордости. Настоящие профессионалы
+            своего дела на протяжении многих лет занимаются:
           </div>
-          <div class="card__body">
-            <div class="card__description card__description--large">На благо деловых партнеров трудятся лучшие специалисты Москвы и Подмосковья. Штат компании превратился в предмет гордости. Настоящие профессионалы своего дела на протяжении многих лет занимаются:
-            </div>
-          </div>
-        </article>
-      </div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -282,7 +293,8 @@
     <div class="section__body framed-text">
       <div class="framed-text__container">
         <div class="framed-text__description">
-          <span>Сотрудничество с клиентами строится на доверии. К каждому обратившемуся специалисты относятся как к равноправному партнеру. Решение же поставленных задач превращается в дело чести.</span>
+          <span>Сотрудничество с клиентами строится на доверии. К каждому обратившемуся специалисты относятся как к
+            равноправному партнеру. Решение же поставленных задач превращается в дело чести.</span>
         </div>
       </div>
     </div>
@@ -299,7 +311,7 @@
       <div class="slider uk-slider slider--arr-outside" uk-slider>
         <div class="uk-position-relative">
           <div class="slider__container uk-slider-container">
-            <ul class="slider__list uk-slider-items uk-grid uk-grid-small uk-child-width-1-4@m">
+            <ul class="slider__list uk-slider-items uk-grid uk-grid-small uk-child-width-1-2@s uk-child-width-1-4@m">
               <li class="slider__item">
                 <article class="person person--vertical person--decor">
                   <div class="person__image">
@@ -428,7 +440,7 @@
     <div class="section__body">
       <div uk-grid class="uk-grid-collapse uk-child-width-1-4@l uk-child-width-1-2@s">
         <div>
-          <article href="#" class="card card--decor">
+          <article class="card card--decor">
             <div class="card__header">
               <div class="card__icon">{{mixins.icon('paperdoc')}}</div>
               <div class="card__title bold">Подписание в бумажном
@@ -444,7 +456,7 @@
           </article>
         </div>
         <div>
-          <article href="#" class="card card--decor">
+          <article class="card card--decor">
             <div class="card__header">
               <div class="card__icon">{{mixins.icon('scan')}}</div>
               <div class="card__title bold">Путем обмена
@@ -481,7 +493,7 @@
           </article>
         </div>
         <div>
-          <article href="#" class="card card--bg card--decor">
+          <article class="card card--bg card--decor">
             <div class="card__header">
               <div class="card__icon">{{mixins.icon('payinvoice')}}</div>
               <div class="card__title bold">Путем оплаты первого счета</div>
@@ -506,75 +518,71 @@
     </div>
   </div>
 </section>
-<section class="section">
+<section class="section uk-section">
   <div class="uk-container section__container">
     <div class="section__body">
-      <div uk-grid class="uk-grid-small uk-child-width-1-1">
-        <div>
-          <div class="large-card">
-            <div class="large-card__header">
-              <h2>Часто задаваемые вопросы</h2>
-            </div>
-            <div class="large-card__body">
-              <ul uk-accordion class="accordion">
-                <li class="uk-open accordion__item">
-                  <a class="uk-accordion-title accordion__title" href="#">Мы планировали взять
-                    штатного бухгалтера. В чем отличие и удобство бухгалтерского аутсорсинга?</a>
-                  <div class="uk-accordion-content accordion__content">
-                    <p>Тариф рассчитывается индивидуально на каждого клиента и зависит от таких
-                      показателей, как количество бухгалтерских операций в месяц, количество
-                      сотрудников, система налогообложения, вид деятельности и др.</p>
-                    <div class="accordion__subtitle">Стоимость услуг:</div>
-                    <ul class="list list--ul list--ul-dash">
-                      <li><a href="#"><span>Бухгалтерское обслуживание</span></a>
-                      </li>
-                      <li><a href="#"><span>Юридическое обслуживание</span></a>
-                      </li>
-                      <li><a href="#"><span>Аудиторские услуги</span></a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="accordion__item">
-                  <a class="uk-accordion-title accordion__title" href="#">Работает ли центр с
-                    плательщиками торгового сбора? Как правильно оформить документы?</a>
-                  <div class="uk-accordion-content accordion__content">
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                      aliquip ex ea commodo
-                      consequat.
-                      Duis aute irure dolor reprehenderit.</p>
-                  </div>
-                </li>
-                <li class="accordion__item">
-                  <a class="uk-accordion-title accordion__title" href="#">С какими налоговыми режимами
-                    работает центр?</a>
-                  <div class="uk-accordion-content accordion__content">
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                      eu fugiat nulla
-                      pariatur.
-                      Excepteur sint occaecat cupidatat proident.</p>
-                  </div>
-                </li>
-                <li>
-                  <a class="uk-accordion-title accordion__title" href="#">Какие методы налоговой
-                    оптимизации применяются? Какие гарантии у клиента?</a>
-                  <div class="uk-accordion-content accordion__content">
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                      eu fugiat nulla
-                      pariatur.
-                      Excepteur sint occaecat cupidatat proident.</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
+      <div class="large-card">
+        <div class="large-card__header">
+          <h2>Часто задаваемые вопросы</h2>
+        </div>
+        <div class="large-card__body">
+          <ul uk-accordion class="accordion">
+            <li class="uk-open accordion__item">
+              <a class="uk-accordion-title accordion__title" href="#">Мы планировали взять
+                штатного бухгалтера. В чем отличие и удобство бухгалтерского аутсорсинга?</a>
+              <div class="uk-accordion-content accordion__content">
+                <p>Тариф рассчитывается индивидуально на каждого клиента и зависит от таких
+                  показателей, как количество бухгалтерских операций в месяц, количество
+                  сотрудников, система налогообложения, вид деятельности и др.</p>
+                <div class="accordion__subtitle">Стоимость услуг:</div>
+                <ul class="list list--ul list--ul-dash">
+                  <li><a href="#"><span>Бухгалтерское обслуживание</span></a>
+                  </li>
+                  <li><a href="#"><span>Юридическое обслуживание</span></a>
+                  </li>
+                  <li><a href="#"><span>Аудиторские услуги</span></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="accordion__item">
+              <a class="uk-accordion-title accordion__title" href="#">Работает ли центр с
+                плательщиками торгового сбора? Как правильно оформить документы?</a>
+              <div class="uk-accordion-content accordion__content">
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo
+                  consequat.
+                  Duis aute irure dolor reprehenderit.</p>
+              </div>
+            </li>
+            <li class="accordion__item">
+              <a class="uk-accordion-title accordion__title" href="#">С какими налоговыми режимами
+                работает центр?</a>
+              <div class="uk-accordion-content accordion__content">
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                  eu fugiat nulla
+                  pariatur.
+                  Excepteur sint occaecat cupidatat proident.</p>
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title accordion__title" href="#">Какие методы налоговой
+                оптимизации применяются? Какие гарантии у клиента?</a>
+              <div class="uk-accordion-content accordion__content">
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                  eu fugiat nulla
+                  pariatur.
+                  Excepteur sint occaecat cupidatat proident.</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section class="section uk-section-small">
+<section class="section section--collapse-top uk-section">
   <div class="uk-container section__container">
-    <div class="section__header">
+    <div class="section__header section__header--centered">
       <div class="section__title section__title--centered">
         <h2>Банки - партнеры</h2>
       </div>

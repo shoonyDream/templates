@@ -9,9 +9,9 @@
         <h1 class="uk-h3">Акции</h1>
       </div>
     </div>
-    <div class="section__body uk-grid--small">
-      <div class="tile__list tile__list--stocs uk-grid uk-child-width-1-2@m">
-        <div class="tile__item tile__item--stocks">
+    <div class="section__body">
+      <div class="tile__list tile__list--stocks uk-child-width-1-2@s" uk-grid>
+        <div>
           <a href="#" class="tile">
             <div class="tile__image">
               <div class="tile__img">
@@ -27,7 +27,7 @@
             </div>
           </a>
         </div>
-        <div class="tile__item  tile__item--stocks">
+        <div>
           <a href="#" class="tile">
             <div class="tile__image">
               <div class="tile__img">
@@ -43,7 +43,7 @@
             </div>
           </a>
         </div>
-        <div class="tile__item tile__item--stocks">
+        <div>
           <a href="#" class="tile">
             <div class="tile__image">
               <div class="tile__img">
@@ -59,7 +59,7 @@
             </div>
           </a>
         </div>
-        <div class="tile__item tile__item--stocks">
+        <div>
           <a href="#" class="tile">
             <div class="tile__image">
               <div class="tile__img">
@@ -75,7 +75,7 @@
             </div>
           </a>
         </div>
-        <div class="tile__item tile__item--stocks">
+        <div>
           <a href="#" class="tile">
             <div class="tile__image">
               <div class="tile__img">
@@ -116,64 +116,60 @@
 <section class="section uk-section">
   <div class="uk-container section__container">
     <div class="section__body">
-      <div uk-grid class="uk-grid-small uk-child-width-1-1">
-        <div>
-          <div class="large-card">
-            <div class="large-card__header">
-              <h2>Часто задаваемые вопросы</h2>
-            </div>
-            <div class="large-card__body">
-              <ul uk-accordion class="accordion">
-                <li class="uk-open accordion__item">
-                  <a class="uk-accordion-title accordion__title" href="#">Мы планировали взять
-                    штатного бухгалтера. В чем отличие и удобство бухгалтерского аутсорсинга?</a>
-                  <div class="uk-accordion-content accordion__content">
-                    <p>Тариф рассчитывается индивидуально на каждого клиента и зависит от таких
-                      показателей, как количество бухгалтерских операций в месяц, количество
-                      сотрудников, система налогообложения, вид деятельности и др.</p>
-                    <div class="accordion__subtitle">Стоимость услуг:</div>
-                    <ul class="list list--ul list--ul-dash">
-                      <li><a href="#"><span>Бухгалтерское обслуживание</span></a>
-                      </li>
-                      <li><a href="#"><span>Юридическое обслуживание</span></a>
-                      </li>
-                      <li><a href="#"><span>Аудиторские услуги</span></a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="accordion__item">
-                  <a class="uk-accordion-title accordion__title" href="#">Работает ли центр с
-                    плательщиками торгового сбора? Как правильно оформить документы?</a>
-                  <div class="uk-accordion-content accordion__content">
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                      aliquip ex ea commodo
-                      consequat.
-                      Duis aute irure dolor reprehenderit.</p>
-                  </div>
-                </li>
-                <li class="accordion__item">
-                  <a class="uk-accordion-title accordion__title" href="#">С какими налоговыми режимами
-                    работает центр?</a>
-                  <div class="uk-accordion-content accordion__content">
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                      eu fugiat nulla
-                      pariatur.
-                      Excepteur sint occaecat cupidatat proident.</p>
-                  </div>
-                </li>
-                <li>
-                  <a class="uk-accordion-title accordion__title" href="#">Какие методы налоговой
-                    оптимизации применяются? Какие гарантии у клиента?</a>
-                  <div class="uk-accordion-content accordion__content">
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                      eu fugiat nulla
-                      pariatur.
-                      Excepteur sint occaecat cupidatat proident.</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
+      <div class="large-card">
+        <div class="large-card__header">
+          <h2>Часто задаваемые вопросы</h2>
+        </div>
+        <div class="large-card__body">
+          <ul uk-accordion class="accordion">
+            <li class="uk-open accordion__item">
+              <a class="uk-accordion-title accordion__title" href="#">Мы планировали взять
+                штатного бухгалтера. В чем отличие и удобство бухгалтерского аутсорсинга?</a>
+              <div class="uk-accordion-content accordion__content">
+                <p>Тариф рассчитывается индивидуально на каждого клиента и зависит от таких
+                  показателей, как количество бухгалтерских операций в месяц, количество
+                  сотрудников, система налогообложения, вид деятельности и др.</p>
+                <div class="accordion__subtitle">Стоимость услуг:</div>
+                <ul class="list list--ul list--ul-dash">
+                  <li><a href="#"><span>Бухгалтерское обслуживание</span></a>
+                  </li>
+                  <li><a href="#"><span>Юридическое обслуживание</span></a>
+                  </li>
+                  <li><a href="#"><span>Аудиторские услуги</span></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="accordion__item">
+              <a class="uk-accordion-title accordion__title" href="#">Работает ли центр с
+                плательщиками торгового сбора? Как правильно оформить документы?</a>
+              <div class="uk-accordion-content accordion__content">
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo
+                  consequat.
+                  Duis aute irure dolor reprehenderit.</p>
+              </div>
+            </li>
+            <li class="accordion__item">
+              <a class="uk-accordion-title accordion__title" href="#">С какими налоговыми режимами
+                работает центр?</a>
+              <div class="uk-accordion-content accordion__content">
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                  eu fugiat nulla
+                  pariatur.
+                  Excepteur sint occaecat cupidatat proident.</p>
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title accordion__title" href="#">Какие методы налоговой
+                оптимизации применяются? Какие гарантии у клиента?</a>
+              <div class="uk-accordion-content accordion__content">
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                  eu fugiat nulla
+                  pariatur.
+                  Excepteur sint occaecat cupidatat proident.</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

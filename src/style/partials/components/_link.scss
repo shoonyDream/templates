@@ -36,6 +36,10 @@ a.link {
     border: none;
   }
 
+  &__icon {
+    flex-shrink: 0;
+  }
+
   .uk-offcanvas-bar &:not(.social__link):not(.main-nav__link) {
     color: var(--link-color);
     font-weight: 400;

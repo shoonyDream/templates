@@ -2,9 +2,22 @@
   display: flex;
   flex-wrap: wrap;
   gap: calc(20 / var(--fz) * var(--fz-em));
+  padding: calc(50 / var(--fz) * var(--fz-em)) 0;
 
   @media (min-width: 960px) {
     flex-wrap: nowrap;
+    padding: 0;
+    gap: calc(64 / var(--fz) * var(--fz-em));
+  }
+
+  &--about {
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
   }
 
   &--reverse {
@@ -14,7 +27,9 @@
   }
 
   &+& {
-    margin-top: calc(30 / var(--fz) * var(--fz-em));
+    @media (min-width: 960px) {
+      margin-top: calc(100 / var(--fz) * var(--fz-em));
+    }
   }
 
   &__description,
@@ -32,25 +47,7 @@
     display: flex;
     flex-direction: column;
     align-self: center;
-
-    @media (min-width: 960px) {
-      padding-right: calc(80 / var(--fz) * var(--fz-em));
-    }
-
-    .checkmate--reverse & {
-
-      @media (min-width: 960px) {
-        padding-right: calc(85 / var(--fz) * var(--fz-em));
-        padding-left: calc(80 / var(--fz) * var(--fz-em));
-      }
-    }
-
-    .checkmate--about & {
-      @media (min-width: 960px) {
-        padding-right: calc(64 / var(--fz) * var(--fz-em));
-        padding-left: calc(64 / var(--fz) * var(--fz-em));
-      }
-    }
+    flex-grow: 1;
   }
 
   & .uk-h2 {
@@ -99,7 +96,9 @@
     font-weight: 400;
 
     .checkmate--about & {
-      --fz: 16;
+      @media (min-width: 960px) {
+        --fz: 16;
+      }
 
       font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
     }
@@ -141,7 +140,7 @@
     .checkmate--about & {
 
       @media (min-width: 960px) {
-        padding-bottom: calc(440 / var(--fz) * var(--fz-em));
+        padding-bottom: calc(400 / var(--fz) * var(--fz-em));
       }
     }
   }
@@ -167,7 +166,7 @@
       }
 
       .checkmate--about & {
-        width: calc(536 / var(--fz) * var(--fz-em));
+        width: calc(565 / var(--fz) * var(--fz-em));
         height: calc(400 / var(--fz) * var(--fz-em));
       }
 
@@ -179,6 +178,13 @@
         height: 100%;
         object-fit: cover;
       }
+    }
+  }
+
+  &__header,
+  &__body {
+    @media (min-width: 960px) {
+      max-width: calc(500 / var(--fz) * var(--fz-em));
     }
   }
 }

@@ -1,0 +1,131 @@
+<div class="calculator">
+  <div class="calculator__image-container">
+    <div class="calculator__image">
+      <div class="calculator__img">
+        <img src="./img/calculator.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="calculator__content">
+    <div class="calculator__header">
+      <h2 class="calculator__title">Расcчитать стоимость бухгалтерского обслуживания</h2>
+    </div>
+    <div class="calculator__body">
+      <form class="calculator-form">
+        <input type="hidden" name="total_sum" value="0">
+        <div class="calculator-form__body uk-grid-small" uk-grid>
+          <div class="calculator-form__item">
+            <div class="calculator-form-item">
+              <div class="calculator-form-item__label">
+                Система налогообложения
+              </div>
+              <div class="calculator-form-item__body">
+                <fieldset id="work_type">
+                  <div uk-grid class="uk-grid-small">
+                    <div class="calculator-form-item__radio">
+                      <label class="radio">
+                        <div class="radio__label">
+                          <input type="radio" class="radio__input" value="1" name="work_type" checked />
+                          <span class="radio__mark"></span>
+                          <div class="radio__text">ОСНО</div>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="calculator-form-item__radio">
+                      <label class="radio">
+                        <div class="radio__label">
+                          <input type="radio" class="radio__input" value="2" name="work_type" />
+                          <span class="radio__mark"></span>
+                          <div class="radio__text">УСН 15%</div>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="calculator-form-item__radio">
+                      <label class="radio">
+                        <div class="radio__label">
+                          <input type="radio" class="radio__input" value="3" name="work_type" />
+                          <span class="radio__mark"></span>
+                          <div class="radio__text">УСН 6%</div>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="calculator-form-item__radio">
+                      <label class="radio">
+                        <div class="radio__label">
+                          <input type="radio" class="radio__input" value="4" name="work_type" />
+                          <span class="radio__mark"></span>
+                          <div class="radio__text">Нулевая отчётность</div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+          <div class="calculator-form__item uk-width-1-2@m">
+            <div class="calculator-form-item">
+              <div class="calculator-form-item__label">
+                Количество операций в месяц
+              </div>
+              <div class="calculator-form-item__body">
+                <div class="calculator-form-item__group">
+                  <div class="calculator-form-item__range">
+                    <input id="monthOperation" class="range styled-slider slider-progress" type="range" value="350"
+                      min="0" max="1000" step="1">
+                  </div>
+                  <div class="calculator-form-item__count">
+                    <div class="total-form total-form-operation">
+                      <button class="total-form__btn js__count minus" uk-icon="icon: minus; ratio: .75"></button>
+                      <input class="total-form__input" name="square" id="monthOperationValue" type="text" value="350"
+                        min="0" max="1000">
+                      <button class="total-form__btn js__count plus" uk-icon="icon: plus; ratio: .75"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="calculator-form__item uk-width-1-2@m">
+            <div class="calculator-form-item">
+              <div class="calculator-form-item__label">
+                Численность сотрудников
+              </div>
+              <div class="calculator-form-item__body">
+                <div class="calculator-form-item__group">
+                  <div class="calculator-form-item__range">
+                    <input id="persons" class="range styled-slider slider-progress" type="range" value="20" min="0"
+                      max="100" step="1">
+                  </div>
+                  <div class="calculator-form-item__count">
+                    <div class="total-form total-form-persons">
+                      <button class="total-form__btn js__count minus" uk-icon="icon: minus; ratio: .75"></button>
+                      <input class="total-form__input" name="square" id="personsValue" type="text" value="20" min="0"
+                        max="100">
+                      <button class="total-form__btn js__count plus" uk-icon="icon: plus; ratio: .75"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="calculator-form__footer">
+          <div class="uk-grid-small" uk-grid>
+            <div class="calculator-form__price">
+              <div class="price">
+                <div class="price__label">Итого: </div>
+                <div class="price__unit" id="totalSum"></div>
+                <div class="price__label">/мес</div>
+              </div>
+              <p class="calculator-form__note">* Стоимость услуг ориентировочная</p>
+            </div>
+            <div class="calculator-form__btn">
+              <button class="btn btn--primary">Заказать услуги</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

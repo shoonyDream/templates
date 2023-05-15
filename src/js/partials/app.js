@@ -161,3 +161,103 @@ $(function () {
     })
   })();
 });
+
+// цели
+function goal(target) {
+  ym(89764703, 'reachGoal', target);
+  //	console.log(target);
+}
+
+$(function () {
+
+  // калькулятор
+
+  for (let e of document.querySelectorAll('input[type="range"].slider-progress')) {
+    e.style.setProperty('--value', e.value);
+    e.style.setProperty('--min', e.min == '' ? '0' : e.min);
+    e.style.setProperty('--max', e.max == '' ? '100' : e.max);
+    e.addEventListener('input', () => e.style.setProperty('--value', e.value));
+  }
+
+  function totalSum() {
+    let sum = $('#monthOperationValue').val() * $('#personsValue').val() * $('[name=work_type]:checked').val();
+
+    sum = parseFloat(sum).toLocaleString(window.document.documentElement.lang);
+    $('#totalSum').text(sum + ' ₽');
+    $('[name=total_sum]').val(sum);
+  }
+
+  totalSum();
+
+  $('#monthOperation').on('mousemove touchmove', (function () {
+    $('#monthOperationValue').val($(this).val());
+    totalSum();
+  }));
+
+  $('#monthOperationValue').change(function () {
+    $('#monthOperation').val($(this).val());
+    totalSum();
+  });
+
+  $('#persons').on('mousemove touchmove', (function () {
+    $('#personsValue').val($(this).val());
+    totalSum();
+  }));
+
+  $('#personsValue').change(function () {
+    $('#persons').val($(this).val());
+    totalSum();
+  });
+
+  $('[name=work_type]').change(function () {
+    $(this).trigger('click');
+    totalSum();
+  });
+
+  $('#monthOperationValue').keyup(function () {
+    var value = $(this).val();
+    value = value.replace(/[^\d]/, '');
+    $(this).val(value);
+  });
+
+  $('#personsValue').keyup(function () {
+    var value = $(this).val();
+    value = value.replace(/[^\d]/, '');
+    $(this).val(value);
+  });
+
+  $('.total-form-operation .js__count').click(function () {
+    var input = $(this).parent().parent().find('input');
+    var count = parseInt(input.val());
+    if ($(this).hasClass('minus')) {
+      count = count - 1;
+      count = count < 0 ? 0 : count;
+      input.val(count);
+    }
+    else {
+      count = count + 1;
+      count = count > 1000 ? 1000 : count;
+      input.val(count);
+    }
+    input.change();
+    return false;
+  });
+
+  $('.total-form-persons .js__count').click(function () {
+    var input = $(this).parent().parent().find('input');
+    var count = parseInt(input.val());
+    if ($(this).hasClass('minus')) {
+      count = count - 1;
+      count = count < 0 ? 0 : count;
+      input.val(count);
+    }
+    else {
+      count = count + 1;
+      count = count > 100 ? 100 : count;
+      input.val(count);
+    }
+    input.change();
+    return false;
+  });
+})
+

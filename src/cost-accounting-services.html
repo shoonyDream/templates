@@ -31,93 +31,129 @@
   <div class="uk-container section__container">
     <div class="section__body">
       <div class="large-card">
+        <div class="large-card__header">
+          <h2>Прайс-лист</h2>
+          <div class="large-card__description-header large-card__description-header--full">
+            Выберите категорию или воспользуйтесь поиском:
+          </div>
+          <div class="large-card__filters">
+            <section class="filter-section">
+              <div class="filter-section__tabs">
+                <div class="filter-section-tabs">
+                  <ul uk-tab>
+                    <li class="uk-active"><a href="#">Все</a></li>
+                    <li><a href="#">Торговля</a></li>
+                    <li><a href="#">Медицина</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">IT</a></li>
+                    <li>
+                      <div class="filter-section-clear">
+                        <a href="#" class="link link--icon">
+                          <span class="link__icon">{{mixins.icon('clock')}}</span><span>Сбросить</span>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="filter-section__search">
+                <div class="filter-section-search">
+                  <div class="filter-section-search__input">
+                    <div class="input">
+                      <input type="text" class="input__field" placeholder="Поиск по наименованию">
+                    </div>
+                  </div>
+                  <div class="filter-section-search__btn">
+                    <a class="btn btn--icon btn--square" href="#" role="button">{{mixins.icon('search')}}</a>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
         <div class="large-card__body">
-          <section class="section">
-            <div class="section__header">
-              <div class="section__title">
-                <h2 class="uk-h3">Прайс-лист</h2>
-                <p>Выберите категорию или воспользуйтесь поиском:</p>
-              </div>
-            </div>
-            <div class="section__body">
-              <div class="table-price">
-                <div class="table-price__header">
-                  <div class="table-price__row">
-                    <div class="table-price__title table-price__gell table-price__gell--border">
-                      <p>Наименование</p>
-                    </div>
-                    <div class="table-price__title table-price__gell">
-                      <p>Стоимость</p>
-                    </div>
-                  </div>
+          <div class="table-price">
+            <div class="table-price__header">
+              <div class="table-price__row">
+                <div class="table-price__title table-price__gell table-price__gell--border">
+                  <p>Наименование</p>
                 </div>
-                <div class="table-price__body">
-                  <div class="table-price__row">
-                    <div class="table-price__gell table-price__gell--border">
-                      <p>Подготовка сведений по индивидуальному Персонифицированному учету</p>
-                    </div>
-                    <div class="table-price__gell">
-                      <p class="table-price__unit">3 000 - 15 000 руб</p>
-                      <p>(в зависимости от вида деятельности)</p>
-                    </div>
-                  </div>
-                  <div class="table-price__row">
-                    <div class="table-price__gell table-price__gell--border">
-                      <p>Подготовка сведений 2НДФЛ</p>
-                    </div>
-                    <div class="table-price__gell">
-                      <p class="table-price__unit">3 000 - 15 000 руб</p>
-                      <p>(в зависимости от наличия разногласий с ИФНС)</p>
-                    </div>
-                  </div>
-                  <div class="table-price__row">
-                    <div class="table-price__gell table-price__gell--border">
-                      <p>Подготовка Учетной политики</p>
-                    </div>
-                    <div class="table-price__gell">
-                      <p class="table-price__unit">150 руб</p>
-                      <p>(за документ)</p>
-                    </div>
-                  </div>
-                  <div class="table-price__row">
-                    <div class="table-price__gell table-price__gell--border">
-                      <p>Подготовка сведений по индивидуальному Персонифицированному учету</p>
-                    </div>
-                    <div class="table-price__gell">
-                      <p class="table-price__unit">3 000 - 15 000 руб</p>
-                      <p>(в зависимости от вида деятельности)</p>
-                    </div>
-                  </div>
-                  <div class="table-price__row">
-                    <div class="table-price__gell table-price__gell--border">
-                      <p>Подготовка сведений 2НДФЛ</p>
-                    </div>
-                    <div class="table-price__gell">
-                      <p class="table-price__unit">3 000 - 15 000 руб</p>
-                      <p>(в зависимости от наличия разногласий с ИФНС)</p>
-                    </div>
-                  </div>
-                  <div class="table-price__row">
-                    <div class="table-price__gell table-price__gell--border">
-                      <p>Подготовка сведений 2НДФЛ</p>
-                    </div>
-                    <div class="table-price__gell">
-                      <p class="table-price__unit">3 000 - 15 000 руб</p>
-                      <p>(в зависимости от наличия разногласий с ИФНС)</p>
-                    </div>
-                  </div>
+                <div class="table-price__title table-price__gell">
+                  <p>Стоимость</p>
                 </div>
               </div>
-              <div class="button__container">
-                <a class="btn  btn--secondary" type="submit"><span>Ознакомиться с договором</span></a>
-                <a class="btn" type="submit"><span>Заключить договор</span></a>
+            </div>
+            <div class="table-price__body">
+              <div class="table-price__row">
+                <div class="table-price__gell table-price__gell--border">
+                  <p>Подготовка сведений по индивидуальному Персонифицированному учету</p>
+                </div>
+                <div class="table-price__gell">
+                  <p class="table-price__unit">3 000 - 15 000 руб</p>
+                  <p>(в зависимости от вида деятельности)</p>
+                </div>
+              </div>
+              <div class="table-price__row">
+                <div class="table-price__gell table-price__gell--border">
+                  <p>Подготовка сведений 2НДФЛ</p>
+                </div>
+                <div class="table-price__gell">
+                  <p class="table-price__unit">3 000 - 15 000 руб</p>
+                  <p>(в зависимости от наличия разногласий с ИФНС)</p>
+                </div>
+              </div>
+              <div class="table-price__row">
+                <div class="table-price__gell table-price__gell--border">
+                  <p>Подготовка Учетной политики</p>
+                </div>
+                <div class="table-price__gell">
+                  <p class="table-price__unit">150 руб</p>
+                  <p>(за документ)</p>
+                </div>
+              </div>
+              <div class="table-price__row">
+                <div class="table-price__gell table-price__gell--border">
+                  <p>Подготовка сведений по индивидуальному Персонифицированному учету</p>
+                </div>
+                <div class="table-price__gell">
+                  <p class="table-price__unit">3 000 - 15 000 руб</p>
+                  <p>(в зависимости от вида деятельности)</p>
+                </div>
+              </div>
+              <div class="table-price__row">
+                <div class="table-price__gell table-price__gell--border">
+                  <p>Подготовка сведений 2НДФЛ</p>
+                </div>
+                <div class="table-price__gell">
+                  <p class="table-price__unit">3 000 - 15 000 руб</p>
+                  <p>(в зависимости от наличия разногласий с ИФНС)</p>
+                </div>
+              </div>
+              <div class="table-price__row">
+                <div class="table-price__gell table-price__gell--border">
+                  <p>Подготовка сведений 2НДФЛ</p>
+                </div>
+                <div class="table-price__gell">
+                  <p class="table-price__unit">3 000 - 15 000 руб</p>
+                  <p>(в зависимости от наличия разногласий с ИФНС)</p>
+                </div>
               </div>
             </div>
-            <div class="table-price__footer">
-              <p>Считаете, что главное – это цены на бухгалтерские услуги? Важнее состав услуг и их качество. Экономия на специалистах в сфере бухучета может обернуться для фирмы штрафами и лишними расходами на исправление ошибок. По этой причине следует воспринимать стоимость бухгалтерских услуг, как плату за минимизацию рисков и за избавление от возможных неприятных расходов. </p>
-              <p>У вас в штате нет опытного бухгалтера высокой квалификации – обращайтесь к нам, ведь в нашей компании такие сотрудники есть. Наш прайс на бухгалтерские услуги окажется для вас намного выгодней, чем содержание такого высокооплачиваемого работника в своей фирме. Просто закажите нужные услуги у нас.</p>
-            </div>
-          </section>
+          </div>
+          <div class="button-container">
+            <a class="btn  btn--secondary" type="submit"><span>Ознакомиться с договором</span></a>
+            <a class="btn" type="submit"><span>Заключить договор</span></a>
+          </div>
+          <div class="table-price-note">
+            <p>Считаете, что главное – это цены на бухгалтерские услуги? Важнее состав услуг и их качество. Экономия
+              на специалистах в сфере бухучета может обернуться для фирмы штрафами и лишними расходами на исправление
+              ошибок. По этой причине следует воспринимать стоимость бухгалтерских услуг, как плату за минимизацию
+              рисков и за избавление от возможных неприятных расходов. </p>
+            <p>У вас в штате нет опытного бухгалтера высокой квалификации – обращайтесь к нам, ведь в нашей компании
+              такие сотрудники есть. Наш прайс на бухгалтерские услуги окажется для вас намного выгодней, чем
+              содержание такого высокооплачиваемого работника в своей фирме. Просто закажите нужные услуги у нас.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -125,11 +161,12 @@
 </section>
 <section class="section uk-section">
   <div class="uk-container section__container">
-    <h2>Расcчитать стоимость
-      бухгалтерского обслуживания</h2>
+    <div class="section__body">
+      {% include "template/calculator.html" %}
+    </div>
   </div>
 </section>
-<section class="section uk-section section--bordered-vertical section--bordered-vertical-quatro">
+<section class="section uk-section">
   <div class="uk-container section__container">
     <div class="section__header">
       <div class="section__title">
@@ -139,7 +176,7 @@
     <div class="section__body">
       <div uk-grid class="uk-grid-collapse uk-child-width-1-4@l uk-child-width-1-2@s">
         <div>
-          <article href="#" class="card card--decor">
+          <article class="card card--decor">
             <div class="card__header">
               <div class="card__icon">{{mixins.icon('paperdoc')}}</div>
               <div class="card__title bold">Подписание в бумажном
@@ -155,7 +192,7 @@
           </article>
         </div>
         <div>
-          <article href="#" class="card card--decor">
+          <article class="card card--decor">
             <div class="card__header">
               <div class="card__icon">{{mixins.icon('scan')}}</div>
               <div class="card__title bold">Путем обмена
@@ -192,7 +229,7 @@
           </article>
         </div>
         <div>
-          <article href="#" class="card card--bg card--decor">
+          <article class="card card--bg card--decor">
             <div class="card__header">
               <div class="card__icon">{{mixins.icon('payinvoice')}}</div>
               <div class="card__title bold">Путем оплаты первого счета</div>
