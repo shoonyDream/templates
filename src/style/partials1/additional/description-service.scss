@@ -2,7 +2,8 @@
 
   &__list {
     @media (min-width: 960px) {
-      padding-right: calc(60 / var(--fz) * var(--fz-em));
+      max-width: calc(1000 / var(--fz) * var(--fz-em));
+      margin: 0 auto;
     }
   }
 

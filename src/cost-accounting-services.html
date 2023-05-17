@@ -1,0 +1,340 @@
+{% set page = 'main' %}
+{% import "template/_mixins.html" as mixins %}
+{% include "template/header.html" %}
+<section class="section page-banner">
+  <div class="page-banner__bg" style="background-color: #FAFBFC"></div>
+  {% include "template/breadcrumbs.html" %}
+  <div class="uk-container section__container">
+    <div uk-grid class="uk-grid-small uk-flex-middle">
+      <div class="uk-width-1-2@m uk-flex-last@m">
+        <div class="page-banner__image">
+          <div class="page-banner__img">
+            <img src="./img/cost.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="uk-width-1-2@m">
+        <div class="page-banner__container">
+          <h1>Стоимость бухгалтерских услуг</h1>
+          <div class="page-banner__text"><span>Time Asset - это ваша четкая бухгалтерия на аутсорсинге,
+              которая работает лучше, чем штатный бухгалтер</span></div>
+          <div class="page-banner__buttons">
+            <a class="btn" href="#"><span>Заключить договор</span></a>
+            <a class="btn btn--secondary" href="#"><span>Расcчитать стоимость</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section uk-section-small section--outside">
+  <div class="uk-container section__container">
+    <div class="section__body">
+      <div class="large-card">
+        <div class="large-card__header">
+          <h2>Прайс-лист</h2>
+          <div class="large-card__description-header large-card__description-header--full">
+            Выберите категорию или воспользуйтесь поиском:
+          </div>
+          <div class="large-card__filters">
+            <section class="filter-section">
+              <div class="filter-section__tabs">
+                <div class="filter-section-tabs">
+                  <ul uk-tab>
+                    <li class="uk-active"><a href="#">Все</a></li>
+                    <li><a href="#">Торговля</a></li>
+                    <li><a href="#">Медицина</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">IT</a></li>
+                    <li>
+                      <div class="filter-section-clear">
+                        <a href="#" class="link link--icon">
+                          <span class="link__icon">{{mixins.icon('clock')}}</span><span>Сбросить</span>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="filter-section__search">
+                <div class="filter-section-search">
+                  <div class="filter-section-search__input">
+                    <div class="input">
+                      <input type="text" class="input__field" placeholder="Поиск по наименованию">
+                    </div>
+                  </div>
+                  <div class="filter-section-search__btn">
+                    <a class="btn btn--icon btn--square" href="#" role="button">{{mixins.icon('search')}}</a>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="large-card__body">
+          <div class="table-price">
+            <div class="table-price__header">
+              <div class="table-price__row">
+                <div class="table-price__title table-price__gell table-price__gell--border">
+                  <p>Наименование</p>
+                </div>
+                <div class="table-price__title table-price__gell">
+                  <p>Стоимость</p>
+                </div>
+              </div>
+            </div>
+            <div class="table-price__body">
+              <div class="table-price__row">
+                <div class="table-price__gell table-price__gell--border">
+                  <p>Подготовка сведений по индивидуальному Персонифицированному учету</p>
+                </div>
+                <div class="table-price__gell">
+                  <p class="table-price__unit">3 000 - 15 000 руб</p>
+                  <p>(в зависимости от вида деятельности)</p>
+                </div>
+              </div>
+              <div class="table-price__row">
+                <div class="table-price__gell table-price__gell--border">
+                  <p>Подготовка сведений 2НДФЛ</p>
+                </div>
+                <div class="table-price__gell">
+                  <p class="table-price__unit">3 000 - 15 000 руб</p>
+                  <p>(в зависимости от наличия разногласий с ИФНС)</p>
+                </div>
+              </div>
+              <div class="table-price__row">
+                <div class="table-price__gell table-price__gell--border">
+                  <p>Подготовка Учетной политики</p>
+                </div>
+                <div class="table-price__gell">
+                  <p class="table-price__unit">150 руб</p>
+                  <p>(за документ)</p>
+                </div>
+              </div>
+              <div class="table-price__row">
+                <div class="table-price__gell table-price__gell--border">
+                  <p>Подготовка сведений по индивидуальному Персонифицированному учету</p>
+                </div>
+                <div class="table-price__gell">
+                  <p class="table-price__unit">3 000 - 15 000 руб</p>
+                  <p>(в зависимости от вида деятельности)</p>
+                </div>
+              </div>
+              <div class="table-price__row">
+                <div class="table-price__gell table-price__gell--border">
+                  <p>Подготовка сведений 2НДФЛ</p>
+                </div>
+                <div class="table-price__gell">
+                  <p class="table-price__unit">3 000 - 15 000 руб</p>
+                  <p>(в зависимости от наличия разногласий с ИФНС)</p>
+                </div>
+              </div>
+              <div class="table-price__row">
+                <div class="table-price__gell table-price__gell--border">
+                  <p>Подготовка сведений 2НДФЛ</p>
+                </div>
+                <div class="table-price__gell">
+                  <p class="table-price__unit">3 000 - 15 000 руб</p>
+                  <p>(в зависимости от наличия разногласий с ИФНС)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <a class="btn  btn--secondary" type="submit"><span>Ознакомиться с договором</span></a>
+            <a class="btn" type="submit"><span>Заключить договор</span></a>
+          </div>
+          <div class="table-price-note">
+            <p>Считаете, что главное – это цены на бухгалтерские услуги? Важнее состав услуг и их качество. Экономия
+              на специалистах в сфере бухучета может обернуться для фирмы штрафами и лишними расходами на исправление
+              ошибок. По этой причине следует воспринимать стоимость бухгалтерских услуг, как плату за минимизацию
+              рисков и за избавление от возможных неприятных расходов. </p>
+            <p>У вас в штате нет опытного бухгалтера высокой квалификации – обращайтесь к нам, ведь в нашей компании
+              такие сотрудники есть. Наш прайс на бухгалтерские услуги окажется для вас намного выгодней, чем
+              содержание такого высокооплачиваемого работника в своей фирме. Просто закажите нужные услуги у нас.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section uk-section">
+  <div class="uk-container section__container">
+    <div class="section__body">
+      {% include "template/calculator.html" %}
+    </div>
+  </div>
+</section>
+<section class="section uk-section">
+  <div class="uk-container section__container">
+    <div class="section__header">
+      <div class="section__title">
+        <h2>Способы заключения договора</h2>
+      </div>
+    </div>
+    <div class="section__body">
+      <div uk-grid class="uk-grid-collapse uk-child-width-1-4@l uk-child-width-1-2@s">
+        <div>
+          <article class="card card--decor">
+            <div class="card__header">
+              <div class="card__icon">{{mixins.icon('paperdoc')}}</div>
+              <div class="card__title bold">Подписание в бумажном
+                виде</div>
+            </div>
+            <div class="card__body">
+              <div class="card__description">There are many variations of passages of Lorem Ipsum
+                available,
+                but
+                the
+              </div>
+            </div>
+          </article>
+        </div>
+        <div>
+          <article class="card card--decor">
+            <div class="card__header">
+              <div class="card__icon">{{mixins.icon('scan')}}</div>
+              <div class="card__title bold">Путем обмена
+                сканами
+              </div>
+            </div>
+            <div class="card__body">
+              <div class="card__description">There are many variations of passages of Lorem Ipsum
+                available,
+                but
+                the
+              </div>
+            </div>
+          </article>
+        </div>
+        <div>
+          <article class="card dark-theme card--accent">
+            <div class="card__header">
+              <div class="card__icon">{{mixins.icon('electronicdoc')}}</div>
+              <div class="card__title bold">Электронный документооборот</div>
+            </div>
+            <div class="card__body">
+              <div class="card__description">There are many variations of passages of Lorem Ipsum
+                available,
+                but
+                the
+              </div>
+            </div>
+            <div class="card__footer">
+              <div class="card__btn">
+                <a href="#" class="btn btn--secondary">Заключить договор</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div>
+          <article class="card card--bg card--decor">
+            <div class="card__header">
+              <div class="card__icon">{{mixins.icon('payinvoice')}}</div>
+              <div class="card__title bold">Путем оплаты первого счета</div>
+            </div>
+            <div class="card__body">
+              <div class="card__description">There are many variations of passages of Lorem Ipsum
+                available,
+                but
+                the
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section uk-section section--bg">
+  <div class="uk-container section__container">
+    <div class="section__body">
+      {% include "template/consultation.html" %}
+    </div>
+  </div>
+</section>
+<section class="section uk-section">
+  <div class="uk-container section__container">
+    <div class="section__header section__header--centered">
+      <div class="section__title section__title--centered">
+        <h2>Преимущества компании</h2>
+      </div>
+    </div>
+    <div class="section__body">
+      <div uk-grid class="uk-grid-small key-indicators uk-child-width-1-3@m">
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('experience')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> 10 лет
+                опыта на рынке
+                бухгалтерских услуг</div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('workexperience')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> 5 лет средний стаж специалистов в нашей компании
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('penalties')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> 0 штрафов от налоговой за несвоевременно сданную отчетность
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('mens')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> 15 претензий урегулировано в сторону клиентов со стороны
+                налоговой
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('mens')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> Страховка от ошибок бухгалтера
+                на 1 млн. рублей в год
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('mens')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> >75% аутсорсинг бухгалтерии выгоднее, чем содержание штата
+                бухгалтеров
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include "template/footer.html" %}

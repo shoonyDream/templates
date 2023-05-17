@@ -15,15 +15,17 @@
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid var(--bg-2);
+    padding: calc(10 / var(--fz) * var(--fz-em)) 0;
 
     @media (min-width: 960px) {
+      padding: 0;
       flex-direction: row;
       gap: calc(20 / var(--fz) * var(--fz-em));
     }
   }
 
   &__gell {
-    padding: calc(10 / var(--fz) * var(--fz-em)) calc(10 / var(--fz) * var(--fz-em));
+    padding: calc(10 / var(--fz) * var(--fz-em));
     vertical-align: middle;
 
     @media (min-width: 960px) {
@@ -58,6 +60,11 @@
 
   &__unit {
     font-weight: 600;
+  }
+
+  &-note {
+    margin-top: calc(60 / var(--fz) * var(--fz-em));
+    line-height: 1.5;
   }
 }
 

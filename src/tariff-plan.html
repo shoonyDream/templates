@@ -1,0 +1,586 @@
+{% set page = 'main' %}
+{% import "template/_mixins.html" as mixins %}
+{% include "template/header.html" %}
+<section class="section page-banner">
+  <div class="page-banner__bg" style="background-image: url(./img/bg-acc.png);"></div>
+  {% include "template/breadcrumbs.html" %}
+  <div class="uk-container section__container">
+    <div uk-grid class="uk-grid-small uk-flex-middle">
+      <div class="uk-width-1-2@m uk-flex-last@m">
+        <div class="page-banner__image">
+          <div class="page-banner__img">
+            <img src="./img/tariffplan.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="uk-width-1-2@m">
+        <div class="page-banner__container">
+          <h1>Тарифный план «Актив Основной»</h1>
+          <div class="page-banner__text"><span>Time Asset - это ваша четкая бухгалтерия на аутсорсинге,
+              которая работает лучше, чем штатный бухгалтер</span></div>
+          <div class="page-banner__buttons">
+            <a class="btn" href="#"><span>Заключить договор</span></a>
+            <a class="btn btn--secondary" href="#"><span>Смотреть договор</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section uk-section section--outside">
+  <div class="uk-container section__container">
+    <div class="section__body">
+      <div class="large-card">
+        <div class="large-card__header">
+          <h2>Что входит в стоимость аутсорсинга бухгалтерии?</h2>
+          <div class="large-card__description-header large-card__description-header--full">
+            За всю бухгалтерию на основной системе налогообложения ОСНО, (с НДС) для ООО
+            и ИП Мы предлагаем особые условия для компаний «НА СТАРТЕ» деятельности и для тех, у кого наступило
+            «ЗАТИШЬЕ» в активности. Если численность сотрудников у вас только один человек (руководитель компании),
+            количество хозяйственных операций до 10-ти в месяц и компания на ОСНО (с НДС).
+          </div>
+        </div>
+        <div class="large-card__body">
+          <div class="table-price">
+            <div class="table-price__header">
+              <div class="table-price__row">
+                <div class="table-price__title table-price__gell table-price__gell--border">
+                  <p>Наименование</p>
+                </div>
+                <div class="table-price__title table-price__gell">
+                  <p>Стоимость</p>
+                </div>
+              </div>
+            </div>
+            <div class="table-price__body">
+              <div class="table-price__row">
+                <div class="table-price__gell table-price__gell--border">
+                  <p>Подготовка сведений по индивидуальному Персонифицированному учету</p>
+                </div>
+                <div class="table-price__gell">
+                  <p class="table-price__unit">3 000 - 15 000 руб</p>
+                  <p>(в зависимости от вида деятельности)</p>
+                </div>
+              </div>
+              <div class="table-price__row">
+                <div class="table-price__gell table-price__gell--border">
+                  <p>Подготовка сведений 2НДФЛ</p>
+                </div>
+                <div class="table-price__gell">
+                  <p class="table-price__unit">3 000 - 15 000 руб</p>
+                  <p>(в зависимости от наличия разногласий с ИФНС)</p>
+                </div>
+              </div>
+              <div class="table-price__row">
+                <div class="table-price__gell table-price__gell--border">
+                  <p>Подготовка Учетной политики</p>
+                </div>
+                <div class="table-price__gell">
+                  <p class="table-price__unit">150 руб</p>
+                  <p>(за документ)</p>
+                </div>
+              </div>
+              <div class="table-price__row">
+                <div class="table-price__gell table-price__gell--border">
+                  <p>Подготовка сведений по индивидуальному Персонифицированному учету</p>
+                </div>
+                <div class="table-price__gell">
+                  <p class="table-price__unit">3 000 - 15 000 руб</p>
+                  <p>(в зависимости от вида деятельности)</p>
+                </div>
+              </div>
+              <div class="table-price__row">
+                <div class="table-price__gell table-price__gell--border">
+                  <p>Подготовка сведений 2НДФЛ</p>
+                </div>
+                <div class="table-price__gell">
+                  <p class="table-price__unit">3 000 - 15 000 руб</p>
+                  <p>(в зависимости от наличия разногласий с ИФНС)</p>
+                </div>
+              </div>
+              <div class="table-price__row">
+                <div class="table-price__gell table-price__gell--border">
+                  <p>Подготовка сведений 2НДФЛ</p>
+                </div>
+                <div class="table-price__gell">
+                  <p class="table-price__unit">3 000 - 15 000 руб</p>
+                  <p>(в зависимости от наличия разногласий с ИФНС)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <a class="btn  btn--secondary" type="submit"><span>Ознакомиться с договором</span></a>
+            <a class="btn" type="submit"><span>Заключить договор</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="uk-container section__container">
+    <div class="section__header">
+      <div class="section__title">
+        <h2>Экспертная поддержка каждый день</h2>
+      </div>
+    </div>
+    <div class="section__body">
+      <div class="slider uk-slider slider--arr-outside" uk-slider>
+        <div class="uk-position-relative">
+          <div class="slider__container uk-slider-container">
+            <ul class="slider__list uk-slider-items uk-grid uk-grid-small uk-child-width-1-4@m uk-child-width-1-2@s">
+              <li class="slider__item">
+                <article class="person person--vertical person--decor">
+                  <div class="person__image">
+                    <div class="person__img">
+                      <img src="./img/victoria.jpg" alt="product">
+                    </div>
+                  </div>
+                  <div class="person__body">
+                    <div class="person__name">Виктория Жукова</div>
+                    <div class="person__info">
+                      <p class="person__post">Главный бухгалтер</p>
+                      <p class="person__experience">Опыт работы 16 лет</p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="slider__item">
+                <article class="person person--vertical person--decor">
+                  <div class="person__image">
+                    <div class="person__img">
+                      <img src="./img/liza.jpg" alt="product">
+                    </div>
+                  </div>
+                  <div class="person__body">
+                    <div class="person__name">Елизавета Мильштейн</div>
+                    <div class="person__info">
+                      <p class="person__post">Ведущий бухгалтер</p>
+                      <p class="person__experience">Опыт работы 12 лет</p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="slider__item">
+                <article class="person person--vertical person--decor">
+                  <div class="person__image">
+                    <div class="person__img">
+                      <img src="./img/alex.jpg" alt="product">
+                    </div>
+                  </div>
+                  <div class="person__body">
+                    <div class="person__name">Алексей Крохалев</div>
+                    <div class="person__info">
+                      <p class="person__post">Юрист</p>
+                      <p class="person__experience">Опыт работы 17 лет</p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="slider__item">
+                <article class="person person--vertical person--decor">
+                  <div class="person__image">
+                    <div class="person__img">
+                      <img src="./img/anna.jpg" alt="product">
+                    </div>
+                  </div>
+                  <div class="person__body">
+                    <div class="person__name">Анна Ченокал</div>
+                    <div class="person__info">
+                      <p class="person__post">Персональный менеджер</p>
+                      <p class="person__experience">Опыт работы 8 лет</p>
+                    </div>
+                </article>
+              </li>
+              <li class="slider__item">
+                <article class="person person--vertical person--decor">
+                  <div class="person__image">
+                    <div class="person__img">
+                      <img src="./img/victoria.jpg" alt="product">
+                    </div>
+                  </div>
+                  <div class="person__body">
+                    <div class="person__name">Виктория Жукова</div>
+                    <div class="person__info">
+                      <p class="person__post">Главный бухгалтер</p>
+                      <p class="person__experience">Опыт работы 16 лет</p>
+                    </div>
+                </article>
+              </li>
+              <li class="slider__item">
+                <article class="person person--vertical person--decor">
+                  <div class="person__image">
+                    <div class="person__img">
+                      <img src="./img/victoria.jpg" alt="product">
+                    </div>
+                  </div>
+                  <div class="person__body">
+                    <div class="person__name">Виктория Жукова</div>
+                    <div class="person__info">
+                      <p class="person__post">Главный бухгалтер</p>
+                      <p class="person__experience">Опыт работы 16 лет</p>
+                    </div>
+                </article>
+              </li>
+              <li class="slider__item">
+                <article class="person person--vertical person--decor">
+                  <div class="person__image">
+                    <div class="person__img">
+                      <img src="./img/victoria.jpg" alt="product">
+                    </div>
+                  </div>
+                  <div class="person__body">
+                    <div class="person__name">Виктория Жукова</div>
+                    <div class="person__info">
+                      <p class="person__post">Главный бухгалтер</p>
+                      <p class="person__experience">Опыт работы 16 лет</p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+          <a class="slider__arr uk-position-center-left" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+          <a class="slider__arr uk-position-center-right" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section uk-section">
+  <div class="uk-container section__container">
+    <div class="section__header">
+      <div class="section__title">
+        <h2>Отзывы наших клиентов</h2>
+      </div>
+      <div class="section__link">
+        <a href="#" class="link">Смотрите все отзывы</a>
+      </div>
+    </div>
+    <div class="section__body">
+      <div class="slider uk-slider slider--arr-outside" uk-slider>
+        <div class="uk-position-relative">
+          <div class="slider__container uk-slider-container">
+            <ul class="slider__list uk-slider-items uk-grid uk-grid-small">
+              <li class="slider__item">
+                <div uk-grid class="uk-grid-small uk-child-width-1-2@m">
+                  <div>
+                    <div class="feedback__description">
+                      <div>
+                        <article class="person">
+                          <div class="person__image">
+                            <div class="person__img">
+                              <img src="./img/ivanov.jpg" alt="product">
+                            </div>
+                          </div>
+                          <div class="person__body">
+                            <div class="person__name">Иван Иванов</div>
+                            <div class="person__info">
+                              <div class="person__post">Генеральный Директор</div>
+                              <div class="person__company">ООО «Универсальная Проектная Сеть»</div>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="feedback__text">It is a long established fact that a reader will be distracted
+                        by the
+                        readable content of a page when looking at its layout. The point of using Lorem Ipsum is
+                        that it has
+                        a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                        content here',
+                        making it look like.
+                      </div>
+                      <div class="feedback__link">
+                        <div>
+                          <a href="#" class="link link--icon">
+                            <span class="link__icon">{{mixins.icon('linkplus')}}</span><span>Читать полностью</span>
+                          </a>
+                        </div>
+                        <div>
+                          <a href="#" class="link link--icon">
+                            <span class="link__icon">{{mixins.icon('linkdoc')}}</span><span>Оригинал отзыва</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div uk-lightbox class="feedback__video">
+                      <a class="tile tile--play" href="https://www.youtube.com/watch?v=YE7VzlLtp-4">
+                        <div class="tile__image">
+                          <div class="tile__img">
+                            <img src="./img/videoposter.png" alt="">
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="slider__item">
+                <div uk-grid class="uk-grid-small uk-child-width-1-2@m">
+                  <div>
+                    <div class="feedback__description">
+                      <div>
+                        <article class="person">
+                          <div class="person__image">
+                            <div class="person__img">
+                              <img src="./img/ivanov.jpg" alt="product">
+                            </div>
+                          </div>
+                          <div class="person__body">
+                            <div class="person__name">Иван Иванов</div>
+                            <div class="person__info">
+                              <div class="person__post">Генеральный Директор</div>
+                              <div class="person__company">ООО «Универсальная Проектная Сеть»</div>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="feedback__text">It is a long established fact that a reader will be distracted
+                        by the
+                        readable content of a page when looking at its layout. The point of using Lorem Ipsum is
+                        that it has
+                        a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                        content here',
+                        making it look like.
+                      </div>
+                      <div class="feedback__link">
+                        <div>
+                          <a href="#" class="link link--icon">
+                            <span class="link__icon">{{mixins.icon('linkplus')}}</span><span>Читать полностью</span>
+                          </a>
+                        </div>
+                        <div>
+                          <a href="#" class="link link--icon">
+                            <span class="link__icon">{{mixins.icon('linkdoc')}}</span><span>Оригинал отзыва</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div uk-lightbox class="feedback__video">
+                      <a class="tile tile--play" href="https://www.youtube.com/watch?v=YE7VzlLtp-4">
+                        <div class="tile__image">
+                          <div class="tile__img">
+                            <img src="./img/videoposter.png" alt="">
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="slider__item">
+                <div uk-grid class="uk-grid-small uk-child-width-1-2@m">
+                  <div>
+                    <div class="feedback__description">
+                      <div>
+                        <article class="person">
+                          <div class="person__image">
+                            <div class="person__img">
+                              <img src="./img/ivanov.jpg" alt="product">
+                            </div>
+                          </div>
+                          <div class="person__body">
+                            <div class="person__name">Иван Иванов</div>
+                            <div class="person__info">
+                              <div class="person__post">Генеральный Директор</div>
+                              <div class="person__company">ООО «Универсальная Проектная Сеть»</div>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="feedback__text">It is a long established fact that a reader will be distracted
+                        by the
+                        readable content of a page when looking at its layout. The point of using Lorem Ipsum is
+                        that it has
+                        a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                        content here',
+                        making it look like.
+                      </div>
+                      <div class="feedback__link">
+                        <div>
+                          <a href="#" class="link link--icon">
+                            <span class="link__icon">{{mixins.icon('linkplus')}}</span><span>Читать полностью</span>
+                          </a>
+                        </div>
+                        <div>
+                          <a href="#" class="link link--icon">
+                            <span class="link__icon">{{mixins.icon('linkdoc')}}</span><span>Оригинал отзыва</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div uk-lightbox class="feedback__video">
+                      <a class="tile tile--play" href="https://www.youtube.com/watch?v=YE7VzlLtp-4">
+                        <div class="tile__image">
+                          <div class="tile__img">
+                            <img src="./img/videoposter.png" alt="">
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <a class="slider__arr uk-position-center-left" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+          <a class="slider__arr uk-position-center-right" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section uk-section section--collapse-top">
+  <div class="uk-container section__container">
+    <div class="section__header">
+      <div class="section__title">
+        <h2>Способы заключения договора</h2>
+      </div>
+    </div>
+    <div class="section__body">
+      <div uk-grid class="uk-grid-collapse uk-child-width-1-4@l uk-child-width-1-2@s">
+        <div>
+          <article class="card card--decor">
+            <div class="card__header">
+              <div class="card__icon">{{mixins.icon('paperdoc')}}</div>
+              <div class="card__title bold">Подписание в бумажном
+                виде</div>
+            </div>
+            <div class="card__body">
+              <div class="card__description">There are many variations of passages of Lorem Ipsum available,
+                but
+                the
+              </div>
+            </div>
+          </article>
+        </div>
+        <div>
+          <article class="card card--decor">
+            <div class="card__header">
+              <div class="card__icon">{{mixins.icon('scan')}}</div>
+              <div class="card__title bold">Путем обмена
+                сканами
+              </div>
+            </div>
+            <div class="card__body">
+              <div class="card__description">There are many variations of passages of Lorem Ipsum available,
+                but
+                the
+              </div>
+            </div>
+          </article>
+        </div>
+        <div>
+          <article class="card dark-theme card--accent">
+            <div class="card__header">
+              <div class="card__icon">{{mixins.icon('electronicdoc')}}</div>
+              <div class="card__title bold">Электронный документооборот</div>
+            </div>
+            <div class="card__body">
+              <div class="card__description">There are many variations of passages of Lorem Ipsum available,
+                but
+                the
+              </div>
+            </div>
+            <div class="card__footer">
+              <div class="card__btn">
+                <a href="#" class="btn btn--secondary">Заключить договор</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div>
+          <article class="card card--bg card--decor">
+            <div class="card__header">
+              <div class="card__icon">{{mixins.icon('payinvoice')}}</div>
+              <div class="card__title bold">Путем оплаты первого счета</div>
+            </div>
+            <div class="card__body">
+              <div class="card__description">There are many variations of passages of Lorem Ipsum available,
+                but
+                the
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section uk-section-small section--bg">
+  <div class="uk-container section__container">
+    <div class="section__body">
+      {% include "template/consultation.html" %}
+    </div>
+  </div>
+</section>
+<section class="section uk-section">
+  <div class="uk-container section__container">
+    <div class="section__body">
+      <div class="large-card">
+        <div class="large-card__header">
+          <h2>Часто задаваемые вопросы</h2>
+        </div>
+        <div class="large-card__body">
+          <ul uk-accordion class="accordion">
+            <li class="uk-open accordion__item">
+              <a class="uk-accordion-title accordion__title" href="#">Мы планировали взять
+                штатного бухгалтера. В чем отличие и удобство бухгалтерского аутсорсинга?</a>
+              <div class="uk-accordion-content accordion__content">
+                <p>Тариф рассчитывается индивидуально на каждого клиента и зависит от таких
+                  показателей, как количество бухгалтерских операций в месяц, количество
+                  сотрудников, система налогообложения, вид деятельности и др.</p>
+                <div class="accordion__subtitle">Стоимость услуг:</div>
+                <ul class="list list--ul list--ul-dash">
+                  <li><a href="#"><span>Бухгалтерское обслуживание</span></a>
+                  </li>
+                  <li><a href="#"><span>Юридическое обслуживание</span></a>
+                  </li>
+                  <li><a href="#"><span>Аудиторские услуги</span></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="accordion__item">
+              <a class="uk-accordion-title accordion__title" href="#">Работает ли центр с
+                плательщиками торгового сбора? Как правильно оформить документы?</a>
+              <div class="uk-accordion-content accordion__content">
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo
+                  consequat.
+                  Duis aute irure dolor reprehenderit.</p>
+              </div>
+            </li>
+            <li class="accordion__item">
+              <a class="uk-accordion-title accordion__title" href="#">С какими налоговыми режимами
+                работает центр?</a>
+              <div class="uk-accordion-content accordion__content">
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                  eu fugiat nulla
+                  pariatur.
+                  Excepteur sint occaecat cupidatat proident.</p>
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title accordion__title" href="#">Какие методы налоговой
+                оптимизации применяются? Какие гарантии у клиента?</a>
+              <div class="uk-accordion-content accordion__content">
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                  eu fugiat nulla
+                  pariatur.
+                  Excepteur sint occaecat cupidatat proident.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include "template/footer.html" %}

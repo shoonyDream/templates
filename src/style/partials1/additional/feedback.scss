@@ -6,6 +6,12 @@
     margin-bottom: calc(40 / var(--fz) * var(--fz-em));
   }
 
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: calc(72 / var(--fz) * var(--fz-em));
+  }
+
   &__title {
     display: grid;
     grid-template-columns: 1fr;

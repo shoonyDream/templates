@@ -2,9 +2,22 @@
   display: flex;
   flex-wrap: wrap;
   gap: calc(20 / var(--fz) * var(--fz-em));
+  padding: calc(50 / var(--fz) * var(--fz-em)) 0;
 
   @media (min-width: 960px) {
     flex-wrap: nowrap;
+    padding: 0;
+    gap: calc(64 / var(--fz) * var(--fz-em));
+  }
+
+  &--about {
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
   }
 
   &--reverse {
@@ -14,7 +27,9 @@
   }
 
   &+& {
-    margin-top: calc(30 / var(--fz) * var(--fz-em));
+    @media (min-width: 960px) {
+      margin-top: calc(100 / var(--fz) * var(--fz-em));
+    }
   }
 
   &__description,
@@ -32,18 +47,7 @@
     display: flex;
     flex-direction: column;
     align-self: center;
-
-    @media (min-width: 960px) {
-      padding-right: calc(80 / var(--fz) * var(--fz-em));
-    }
-
-    .checkmate--reverse & {
-
-      @media (min-width: 960px) {
-        padding-right: calc(85 / var(--fz) * var(--fz-em));
-        padding-left: calc(80 / var(--fz) * var(--fz-em));
-      }
-    }
+    flex-grow: 1;
   }
 
   & .uk-h2 {
@@ -78,6 +82,10 @@
   &__title {
     font-weight: 300;
     line-height: 1.3;
+
+    .checkmate--about & {
+      font-weight: 600;
+    }
   }
 
   &__lead {
@@ -86,6 +94,14 @@
     font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
     line-height: 1.7;
     font-weight: 400;
+
+    .checkmate--about & {
+      @media (min-width: 960px) {
+        --fz: 16;
+      }
+
+      font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    }
   }
 
   &__subtitle {
@@ -120,6 +136,13 @@
         padding-bottom: calc(580 / var(--fz) * var(--fz-em));
       }
     }
+
+    .checkmate--about & {
+
+      @media (min-width: 960px) {
+        padding-bottom: calc(400 / var(--fz) * var(--fz-em));
+      }
+    }
   }
 
   &__image {
@@ -142,6 +165,11 @@
         right: 0;
       }
 
+      .checkmate--about & {
+        width: calc(565 / var(--fz) * var(--fz-em));
+        height: calc(400 / var(--fz) * var(--fz-em));
+      }
+
       img {
         position: absolute;
         top: 0;
@@ -150,6 +178,13 @@
         height: 100%;
         object-fit: cover;
       }
+    }
+  }
+
+  &__header,
+  &__body {
+    @media (min-width: 960px) {
+      max-width: calc(500 / var(--fz) * var(--fz-em));
     }
   }
 }

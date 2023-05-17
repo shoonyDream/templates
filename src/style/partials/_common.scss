@@ -156,13 +156,7 @@ h4,
 
 .text-lead {
   font-size: var(--text-lead);
-}
-
-.text-is-highlighted {
-  font-size: calc(var(--text) / var(--fz-base) * var(--fz-em));
-  font-weight: 600;
-  color: var(--primary);
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 p {
@@ -339,16 +333,19 @@ p+p {
   }
 }
 
-.uk-pagination {
-  justify-content: center;
+.pagination {
   margin-top: calc(60 / var(--fz) * var(--fz-em));
   margin-bottom: calc(80 / var(--fz) * var(--fz-em));
-  gap: calc(20 / var(--fz) * var(--fz-em));
 
   @media(min-width: 960px) {
     margin-top: calc(80 / var(--fz) * var(--fz-em));
     margin-bottom: calc(120 / var(--fz) * var(--fz-em));
   }
+}
+
+.uk-pagination {
+  justify-content: center;
+  gap: calc(20 / var(--fz) * var(--fz-em));
 }
 
 .uk-pagination>*>* {

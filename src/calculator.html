@@ -1,0 +1,661 @@
+{% set page = 'main' %}
+{% import "template/_mixins.html" as mixins %}
+{% include "template/header.html" %}
+{% include "template/breadcrumbs.html" %}
+<section class="section section--calculator uk-section-small section--collapse-top">
+  <div class="uk-container section__container">
+    <div class="section__body">
+      <form action="" class="section-grid section-grid--reverse">
+        <aside class="section-grid__aside">
+          <div class="section-grid-aside" uk-sticky="offset: 200; end: true">
+            <div class="section-grid-aside__content">
+              <div class="total">
+                <div class="total-info">
+                  <div class="total-info__item">
+                    <div class="total-info-item">
+                      <div class="total-info-item__label">
+                        Система налогообложения
+                      </div>
+                      <div class="total-info-item__body">
+                        ОСНО
+                      </div>
+                    </div>
+                  </div>
+                  <div class="total-info__item">
+                    <div class="total-info-item">
+                      <div class="total-info-item__label">
+                        Количество операций в месяц
+                      </div>
+                      <div class="total-info-item__body">
+                        350
+                      </div>
+                    </div>
+                  </div>
+                  <div class="total-info__item">
+                    <div class="total-info-item">
+                      <div class="total-info-item__label">
+                        Численность сотрудников
+                      </div>
+                      <div class="total-info-item__body">
+                        20
+                      </div>
+                    </div>
+                  </div>
+                  <div class="total-info__item">
+                    <div class="total-info-item">
+                      <div class="total-info-item__label">
+                        Наценка по виду деятельности
+                      </div>
+                      <div class="total-info-item__body">
+                        Розничная торговля
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="price-container price-container--no-bg">
+                  <div class="price">
+                    <div class="price__label">Итого: </div>
+                    <input type="hidden" name="total_sum" value="0">
+                    <div class="price__unit" id="totalSum"></div>
+                    <div class="price__label">/мес</div>
+                  </div>
+                  <p class="price-container__text">* Стоимость услуг ориентировочная</p>
+                  <div class="button-container button-container--column">
+                    <button class="btn btn--primary">Заказать услуги</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </aside>
+        <div class="section-grid__content">
+          <h1 class="uk-h2">Калькулятор</h1>
+          <div class="calculator-form">
+            <div class="calculator-form__body" uk-grid>
+              <div class="calculator-form__item uk-width-1-1">
+                <div class="calculator-form-item">
+                  <div class="calculator-form-item__label">
+                    Система налогообложения
+                  </div>
+                  <div class="calculator-form-item__body">
+                    <fieldset id="work_type">
+                      <div uk-grid class="uk-grid-small uk-child-width-1-2 uk-child-width-auto@m">
+                        <div class="calculator-form-item__radio">
+                          <label class="radio">
+                            <div class="radio__label">
+                              <input type="radio" class="radio__input" value="1" name="work_type" checked />
+                              <span class="radio__mark"></span>
+                              <div class="radio__text">ОСНО</div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="calculator-form-item__radio">
+                          <label class="radio">
+                            <div class="radio__label">
+                              <input type="radio" class="radio__input" value="2" name="work_type" />
+                              <span class="radio__mark"></span>
+                              <div class="radio__text">УСН 15%</div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="calculator-form-item__radio">
+                          <label class="radio">
+                            <div class="radio__label">
+                              <input type="radio" class="radio__input" value="3" name="work_type" />
+                              <span class="radio__mark"></span>
+                              <div class="radio__text">УСН 6%</div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="calculator-form-item__radio">
+                          <label class="radio">
+                            <div class="radio__label">
+                              <input type="radio" class="radio__input" value="4" name="work_type" />
+                              <span class="radio__mark"></span>
+                              <div class="radio__text">Нулевая отчётность</div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+              <div class="calculator-form__item uk-width-1-2@m">
+                <div class="calculator-form-item">
+                  <div class="calculator-form-item__label">
+                    Количество операций в месяц
+                  </div>
+                  <div class="calculator-form-item__body">
+                    <div class="calculator-form-item__group">
+                      <div class="calculator-form-item__range">
+                        <input id="monthOperation" class="range styled-slider slider-progress" type="range" value="350"
+                          min="0" max="1000" step="1">
+                      </div>
+                      <div class="calculator-form-item__count">
+                        <div class="total-form total-form-operation">
+                          <button class="total-form__btn js__count minus" uk-icon="icon: minus; ratio: .75"></button>
+                          <input class="total-form__input" name="square" id="monthOperationValue" type="text"
+                            value="350" min="0" max="1000">
+                          <button class="total-form__btn js__count plus" uk-icon="icon: plus; ratio: .75"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="calculator-form__item uk-width-1-2@m">
+                <div class="calculator-form-item">
+                  <div class="calculator-form-item__label">
+                    Численность сотрудников
+                  </div>
+                  <div class="calculator-form-item__body">
+                    <div class="calculator-form-item__group">
+                      <div class="calculator-form-item__range">
+                        <input id="persons" class="range styled-slider slider-progress" type="range" value="20" min="0"
+                          max="100" step="1">
+                      </div>
+                      <div class="calculator-form-item__count">
+                        <div class="total-form total-form-persons">
+                          <button class="total-form__btn js__count minus" uk-icon="icon: minus; ratio: .75"></button>
+                          <input class="total-form__input" name="square" id="personsValue" type="text" value="20"
+                            min="0" max="100">
+                          <button class="total-form__btn js__count plus" uk-icon="icon: plus; ratio: .75"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calculator-form__body calculator-form__body--bordered" uk-grid>
+              <div class="calculator-form__item">
+                <div class="calculator-form-item">
+                  <div class="calculator-form-item__label">
+                    Наценка по виду деятельности
+                  </div>
+                  <div class="calculator-form-item__body">
+                    <fieldset id="work_activity">
+                      <div uk-grid class="uk-grid-small uk-child-width-1-2">
+                        <div class="calculator-form-item__checkbox">
+                          <label class="checkbox checkbox--square">
+                            <div class="checkbox__label">
+                              <input type="checkbox" class="checkbox__input" value="3" name="work_activity" />
+                              <span class="checkbox__mark"></span>
+                              <div class="checkbox__text">
+                                Розничная торговля
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="calculator-form-item__checkbox">
+                          <label class="checkbox checkbox--square">
+                            <div class="checkbox__label">
+                              <input type="checkbox" class="checkbox__input" value="3" name="work_activity" />
+                              <span class="checkbox__mark"></span>
+                              <div class="checkbox__text">
+                                ВЭД
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="calculator-form-item__checkbox">
+                          <label class="checkbox checkbox--square">
+                            <div class="checkbox__label">
+                              <input type="checkbox" class="checkbox__input" value="3" name="work_activity" />
+                              <span class="checkbox__mark"></span>
+                              <div class="checkbox__text">
+                                Производство
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="calculator-form-item__checkbox">
+                          <label class="checkbox checkbox--square">
+                            <div class="checkbox__label">
+                              <input type="checkbox" class="checkbox__input" value="3" name="work_activity" />
+                              <span class="checkbox__mark"></span>
+                              <div class="checkbox__text">
+                                Филиалы
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="calculator-form-item__checkbox">
+                          <label class="checkbox checkbox--square">
+                            <div class="checkbox__label">
+                              <input type="checkbox" class="checkbox__input" value="3" name="work_activity" />
+                              <span class="checkbox__mark"></span>
+                              <div class="checkbox__text">
+                                Строительство
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="calculator-form-item__checkbox">
+                          <label class="checkbox checkbox--square">
+                            <div class="checkbox__label">
+                              <input type="checkbox" class="checkbox__input" value="3" name="work_activity" />
+                              <span class="checkbox__mark"></span>
+                              <div class="checkbox__text">
+                                Валютный счет
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+              <div class="calculator-form__item">
+                <div class="calculator-form-item">
+                  <div class="calculator-form-item__label">
+                    Наценка по виду договоров и сложных операций
+                  </div>
+                  <div class="calculator-form-item__body">
+                    <fieldset id="hard_operations">
+                      <div uk-grid class="uk-grid-small uk-child-width-1-2">
+                        <div class="calculator-form-item__checkbox">
+                          <label class="checkbox checkbox--square">
+                            <div class="checkbox__label">
+                              <input type="checkbox" class="checkbox__input" value="3" name="hard_operations" />
+                              <span class="checkbox__mark"></span>
+                              <div class="checkbox__text">
+                                Лизинговые сделки
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="calculator-form-item__checkbox">
+                          <label class="checkbox checkbox--square">
+                            <div class="checkbox__label">
+                              <input type="checkbox" class="checkbox__input" value="3" name="hard_operations" />
+                              <span class="checkbox__mark"></span>
+                              <div class="checkbox__text">
+                                Эквайринг
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="calculator-form-item__checkbox">
+                          <label class="checkbox checkbox--square">
+                            <div class="checkbox__label">
+                              <input type="checkbox" class="checkbox__input" value="3" name="hard_operations" />
+                              <span class="checkbox__mark"></span>
+                              <div class="checkbox__text">
+                                Договор факторинга
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="calculator-form-item__checkbox">
+                          <label class="checkbox checkbox--square">
+                            <div class="checkbox__label">
+                              <input type="checkbox" class="checkbox__input" value="3" name="hard_operations" />
+                              <span class="checkbox__mark"></span>
+                              <div class="checkbox__text">
+                                ККМ
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="calculator-form-item__checkbox">
+                          <label class="checkbox checkbox--square">
+                            <div class="checkbox__label">
+                              <input type="checkbox" class="checkbox__input" value="3" name="hard_operations" />
+                              <span class="checkbox__mark"></span>
+                              <div class="checkbox__text">
+                                Договор франчайзинга
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+              <div class="calculator-form__item">
+                <div class="calculator-form-item">
+                  <div class="calculator-form-item__label">
+                    Обстоятельства, приводящих к раздельному учету операций
+                  </div>
+                  <div class="calculator-form-item__body">
+                    <fieldset id="separate_operations">
+                      <div uk-grid class="uk-grid-small uk-child-width-1-2">
+                        <div class="calculator-form-item__checkbox">
+                          <label class="checkbox checkbox--square">
+                            <div class="checkbox__label">
+                              <input type="checkbox" class="checkbox__input" value="3" name="separate_operations" />
+                              <span class="checkbox__mark"></span>
+                              <div class="checkbox__text">
+                                Совмещение общего режима налогообложения с ЕНВД
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="calculator-form-item__checkbox">
+                          <label class="checkbox checkbox--square">
+                            <div class="checkbox__label">
+                              <input type="checkbox" class="checkbox__input" value="3" name="separate_operations" />
+                              <span class="checkbox__mark"></span>
+                              <div class="checkbox__text">
+                                Наличие ТС на балансе организации
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="calculator-form-item__checkbox">
+                          <label class="checkbox checkbox--square">
+                            <div class="checkbox__label">
+                              <input type="checkbox" class="checkbox__input" value="3" name="separate_operations" />
+                              <span class="checkbox__mark"></span>
+                              <div class="checkbox__text">
+                                Одновременное осуществление операций с НДС и без НДС
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="calculator-form-item__checkbox">
+                          <label class="checkbox checkbox--square">
+                            <div class="checkbox__label">
+                              <input type="checkbox" class="checkbox__input" value="3" name="separate_operations" />
+                              <span class="checkbox__mark"></span>
+                              <div class="checkbox__text">
+                                Транспортная экспедиция
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="calculator-form-item__checkbox">
+                          <label class="checkbox checkbox--square">
+                            <div class="checkbox__label">
+                              <input type="checkbox" class="checkbox__input" value="3" name="separate_operations" />
+                              <span class="checkbox__mark"></span>
+                              <div class="checkbox__text">
+                                Совмещение УСН с ЕНВД
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+</section>
+<section class="section uk-section-small">
+  <div class="uk-container section__container">
+    <div class="section__body">
+      <div class="large-card">
+        <div class="large-card__header">
+          <h2>Выберите тарифный план</h2>
+          <div class="large-card__description-header">
+            <span>There are many variations of passages of Lorem Ipsum available, but the majority
+              have</span>
+          </div>
+        </div>
+        <div class="large-card__body">
+          <div uk-grid class="uk-grid-small uk-child-width-1-3@m">
+            <div>
+              <article class="card card--centered card--bg">
+                <div class="card__header">
+                  <div class="card__icon">{{mixins.icon('activetime')}}</div>
+                  <div class="card__title bold">Актив Ноль</div>
+                </div>
+                <div class="card__body">
+                  <div class="card__description">There are many variations of passages of Lorem
+                    Ipsum available,
+                    but the
+                  </div>
+                  <div class="card__price">
+                    <div class="price">
+                      <div class="price__label">от </div>
+                      <div class="price__unit">5 500</div>
+                      <div class="price__label"> руб/мес</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <div class="card__btn">
+                    <a href="#" class="btn btn--primary">Заключить договор</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article class="card card--centered card--bg">
+                <div class="card__header">
+                  <div class="card__icon">{{mixins.icon('calc-large')}}</div>
+                  <div class="card__title bold">Актив Простой</div>
+                </div>
+                <div class="card__body">
+                  <div class="card__description">There are many variations of passages of Lorem
+                    Ipsum available,
+                    but
+                    the
+                  </div>
+                  <div class="card__price">
+                    <div class="price">
+                      <div class="price__label">от </div>
+                      <div class="price__unit">5 500</div>
+                      <div class="price__label"> руб/мес</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <div class="card__btn">
+                    <a href="#" class="btn btn--primary">Заключить договор</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article class="card card--centered card--bg">
+                <div class="card__header">
+                  <div class="card__icon">{{mixins.icon('cup')}}</div>
+                  <div class="card__title bold">Актив Основной</div>
+                </div>
+                <div class="card__body">
+                  <div class="card__description">There are many variations of passages of Lorem
+                    Ipsum available,
+                    but the
+                  </div>
+                  <div class="card__price">
+                    <div class="price">
+                      <div class="price__label">от </div>
+                      <div class="price__unit">5 500</div>
+                      <div class="price__label"> руб/мес</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <div class="card__btn">
+                    <a href="#" class="btn btn--primary">Заключить договор</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section uk-section">
+  <div class="uk-container section__container">
+    <div class="section__header">
+      <div class="section__title">
+        <h2>Способы заключения договора</h2>
+      </div>
+    </div>
+    <div class="section__body">
+      <div uk-grid class="uk-grid-collapse uk-child-width-1-4@l uk-child-width-1-2@s">
+        <div>
+          <article class="card card--decor">
+            <div class="card__header">
+              <div class="card__icon">{{mixins.icon('paperdoc')}}</div>
+              <div class="card__title bold">Подписание в бумажном
+                виде</div>
+            </div>
+            <div class="card__body">
+              <div class="card__description">There are many variations of passages of Lorem Ipsum
+                available,
+                but
+                the
+              </div>
+            </div>
+          </article>
+        </div>
+        <div>
+          <article class="card card--decor">
+            <div class="card__header">
+              <div class="card__icon">{{mixins.icon('scan')}}</div>
+              <div class="card__title bold">Путем обмена
+                сканами
+              </div>
+            </div>
+            <div class="card__body">
+              <div class="card__description">There are many variations of passages of Lorem Ipsum
+                available,
+                but
+                the
+              </div>
+            </div>
+          </article>
+        </div>
+        <div>
+          <article class="card dark-theme card--accent">
+            <div class="card__header">
+              <div class="card__icon">{{mixins.icon('electronicdoc')}}</div>
+              <div class="card__title bold">Электронный документооборот</div>
+            </div>
+            <div class="card__body">
+              <div class="card__description">There are many variations of passages of Lorem Ipsum
+                available,
+                but
+                the
+              </div>
+            </div>
+            <div class="card__footer">
+              <div class="card__btn">
+                <a href="#" class="btn btn--secondary">Заключить договор</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div>
+          <article class="card card--bg card--decor">
+            <div class="card__header">
+              <div class="card__icon">{{mixins.icon('payinvoice')}}</div>
+              <div class="card__title bold">Путем оплаты первого счета</div>
+            </div>
+            <div class="card__body">
+              <div class="card__description">There are many variations of passages of Lorem Ipsum
+                available,
+                but
+                the
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section uk-section-small section--bg">
+  <div class="uk-container section__container">
+    <div class="section__body">
+      {% include "template/consultation.html" %}
+    </div>
+  </div>
+</section>
+<section class="section uk-section">
+  <div class="uk-container section__container">
+    <div class="section__header section__header--centered">
+      <div class="section__title section__title--centered">
+        <h2>Преимущества компании</h2>
+      </div>
+    </div>
+    <div class="section__body">
+      <div uk-grid class="uk-grid-small key-indicators uk-child-width-1-3@m">
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('experience')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> 10 лет опыта на рынке бухгалтерских услуг</div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('workexperience')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> 5 лет средний стаж специалистов в нашей компании
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('penalties')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> 0 штрафов от налоговой за несвоевременно сданную отчетность
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('mens')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> 15 претензий урегулировано в сторону клиентов со стороны
+                налоговой
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('mens')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> Страховка от ошибок бухгалтера
+                на 1 млн. рублей в год
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('mens')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> >75% аутсорсинг бухгалтерии выгоднее, чем содержание штата
+                бухгалтеров
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include "template/footer.html" %}

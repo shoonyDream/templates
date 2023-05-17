@@ -1,7 +1,11 @@
 .breadcrumbs-container {
-  padding: calc(20 / var(--fz) * var(--fz-em)) 0;
+  padding: calc(40 / var(--fz) * var(--fz-em)) 0;
   position: relative;
   z-index: 1;
+
+  .page-banner & {
+    padding: calc(20 / var(--fz) * var(--fz-em)) 0;
+  }
 }
 
 .breadcrumbs {

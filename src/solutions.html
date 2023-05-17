@@ -1,0 +1,430 @@
+{% set page = 'main' %}
+{% import "template/_mixins.html" as mixins %}
+{% include "template/header.html" %}
+<section class="section page-banner">
+  <div class="page-banner__bg" style="background-color: #FAFBFC"></div>
+  {% include "template/breadcrumbs.html" %}
+  <div class="uk-container section__container">
+    <div uk-grid class="uk-grid-small uk-flex-middle">
+      <div class="uk-width-1-2@m uk-flex-last@m">
+        <div class="page-banner__image">
+          <div class="page-banner__img">
+            <img src="./img/business-brainstorming.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="uk-width-1-2@m">
+        <div class="page-banner__container">
+          <h1>Решения для бизнеса</h1>
+          <div class="page-banner__text"><span>Time Asset - это ваша четкая бухгалтерия на аутсорсинге,
+              которая работает лучше, чем штатный бухгалтер</span></div>
+          <div class="page-banner__buttons">
+            <a class="btn" href="#"><span>Заключить договор</span></a>
+            <a class="btn btn--secondary" href="#"><span>Расcчитать стоимость</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section uk-section-small section--outside">
+  <div class="uk-container section__container">
+    <div class="section__body">
+      <div class="large-card">
+        <div class="large-card__header">
+          <h2>Выберите категорию:</h2>
+          <div class="large-card__description-header large-card__description-header--full">
+            Выберите категорию или воспользуйтесь поиском:
+          </div>
+          <div class="large-card__filters">
+            <section class="filter-section">
+              <div class="filter-section__tabs">
+                <div class="filter-section-tabs">
+                  <ul uk-tab>
+                    <li class="uk-active"><a href="#">Все</a></li>
+                    <li><a href="#">Торговля</a></li>
+                    <li><a href="#">Медицина</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">IT</a></li>
+                    <li>
+                      <div class="filter-section-clear">
+                        <a href="#" class="link link--icon">
+                          <span class="link__icon">{{mixins.icon('clock')}}</span><span>Сбросить</span>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="filter-section__search">
+                <div class="filter-section-search">
+                  <div class="filter-section-search__input">
+                    <div class="input">
+                      <input type="text" class="input__field" placeholder="Поиск по наименованию">
+                    </div>
+                  </div>
+                  <div class="filter-section-search__btn">
+                    <a class="btn btn--icon btn--square" href="#" role="button">{{mixins.icon('search')}}</a>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="large-card__body">
+          <div uk-grid
+            class="uk-grid-collapse list-border-container list-border-container--inside uk-child-width-1-4@m uk-grid">
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">Агентства недвижимости
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('real-estate')}}</div>
+              </a>
+            </div>
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">Аптеки
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('apteka')}}</div>
+              </a>
+            </div>
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">Автосервиса и СТО
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('car-service')}}</div>
+              </a>
+            </div>
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">Банки
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('bank')}}</div>
+              </a>
+            </div>
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">Фитнес-центры и тренажерные залы
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('fitnes')}}</div>
+              </a>
+            </div>
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">Интернет-магазины
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('online-store')}}</div>
+              </a>
+            </div>
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">IT-компании и web-студии
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('web')}}</div>
+              </a>
+            </div>
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">Лизинговые компании
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('lising')}}</div>
+              </a>
+            </div>
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">Ломбарды
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('lombard')}}</div>
+              </a>
+            </div>
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">Магазины автозапчастей
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('auto-parts')}}</div>
+              </a>
+            </div>
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">Магазины
+                    цветов
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('flowers')}}</div>
+              </a>
+            </div>
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">Магазины
+                    одежды
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('clothes')}}</div>
+              </a>
+            </div>
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">Мастерские
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('workshops')}}</div>
+              </a>
+            </div>
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">Медицинские учреждения и клиники
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('clinic')}}</div>
+              </a>
+            </div>
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">Учреждения образования
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('education')}}</div>
+              </a>
+            </div>
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">Отели
+                    и гостиницы
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('hotels')}}</div>
+              </a>
+            </div>
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">Салоны красоты и парикмахерские
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('hairdressers')}}</div>
+              </a>
+            </div>
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">Продуктовые магазины
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('products')}}</div>
+              </a>
+            </div>
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">Производственные предприятия
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('production')}}</div>
+              </a>
+            </div>
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">Рестораны и кафе
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('restaurant')}}</div>
+              </a>
+            </div>
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">Розничная торговля
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('retail')}}</div>
+              </a>
+            </div>
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">Сфера торговли
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('trading')}}</div>
+              </a>
+            </div>
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">Шиномонтажи
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('tire-repairs')}}</div>
+              </a>
+            </div>
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">Строительные компании
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('construction')}}</div>
+              </a>
+            </div>
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">Транспортные компании
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('transport')}}</div>
+              </a>
+            </div>
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">ТСЖ
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('tsg')}}</div>
+              </a>
+            </div>
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">Туристические фирмы
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('travel')}}</div>
+              </a>
+            </div>
+            <div class="list-border-container__item uk-first-column">
+              <a class="card card--decor card--icon-bottom">
+                <div class="card__header">
+                  <div class="card__title bold">Юридические компании
+                  </div>
+                </div>
+                <div class="card__icon">{{mixins.icon('scales')}}</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<section class="section uk-section-small section--bg">
+  <div class="uk-container section__container">
+    <div class="section__body">
+      {% include "template/consultation.html" %}
+    </div>
+  </div>
+</section>
+<section class="section uk-section">
+  <div class="uk-container section__container">
+    <div class="section__header section__header--centered">
+      <div class="section__title section__title--centered">
+        <h2>Преимущества компании</h2>
+      </div>
+    </div>
+    <div class="section__body">
+      <div uk-grid class="uk-grid-small key-indicators uk-child-width-1-3@m">
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('experience')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> 10 лет
+                опыта на рынке
+                бухгалтерских услуг</div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('workexperience')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> 5 лет средний стаж специалистов в нашей компании
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('penalties')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> 0 штрафов от налоговой за несвоевременно сданную отчетность
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('mens')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> 15 претензий урегулировано в сторону клиентов со стороны
+                налоговой
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('mens')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> Страховка от ошибок бухгалтера
+                на 1 млн. рублей в год
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator key-indicator--decor">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('mens')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description"> >75% аутсорсинг бухгалтерии выгоднее, чем содержание штата
+                бухгалтеров
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include "template/footer.html" %}

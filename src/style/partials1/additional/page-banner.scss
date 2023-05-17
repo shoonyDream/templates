@@ -64,12 +64,19 @@
   &__list {
     margin-top: calc(40 / var(--fz) * var(--fz-em));
 
+    &--small {
+      margin-top: 0;
+    }
+
     & ul {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
+
       gap: calc(16 / var(--fz) * var(--fz-em));
 
       @media (min-width: 960px) {
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: calc(24 / var(--fz) * var(--fz-em)) calc(10 / var(--fz) * var(--fz-em));
       }
 

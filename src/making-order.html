@@ -1,0 +1,304 @@
+{% set page = 'main' %}
+{% import "template/_mixins.html" as mixins %}
+{% include "template/header.html" %}
+{% include "template/breadcrumbs.html" %}
+<section class="section uk-section section--collapse-top">
+  <div class="uk-container section__container">
+    <div class="section__body">
+      <form action="" class="section-grid section-grid--reverse">
+        <aside class="section-grid__aside">
+          <div class="section-grid-aside" uk-sticky="offset: 200; end: true">
+            <div class="section-grid-aside__content">
+              <div class="price-container">
+                <div class="price">
+                  <div class="price__label">Итого: </div>
+                  <div class="price__unit">25 000</div>
+                  <div class="price__label"> руб/мес</div>
+                </div>
+                <p class="price-container__text">* Стоимость услуг ориентировочная</p>
+                <div class="button-container button-container--column">
+                  <button class="btn btn--primary">Оплатить</button>
+                  <a href="#" class="btn btn--secondary">Ознакомиться с договором</a>
+                </div>
+                <p class="price-container__text">Нажимая кнопку «Оплатить»,
+                  вы подтверждаете согласие с правилами продажи услуг «time asset», а так же соглашаетесь со сбором и
+                  обработкой персональных данных</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <div class="section-grid__content">
+          <h1 class="uk-h3">Оформление заказа</h1>
+          <h2 class="uk-h3 text-is-highlighted">Бухгалтерское сопровождение ООО</h2>
+          <p class="text-lead">Описание услуги За всю бухгалтерию на основной системе налогообложения ОСНО, (с
+            НДС) для
+            ООО и ИП Мы предлагаем особые условия для компаний «НА СТАРТЕ» деятельности и для тех, у кого наступило
+            «ЗАТИШЬЕ» в
+            активности. Если численность сотрудников у вас только один человек (руководитель компании), количество
+            хозяйственных
+            операций</p>
+          <div class="price-container uk-hidden@m">
+            <div class="price">
+              <div class="price__label">Итого: </div>
+              <div class="price__unit">25 000</div>
+              <div class="price__label"> руб/мес</div>
+            </div>
+            <p class="price-container__text">* Стоимость услуг ориентировочная</p>
+          </div>
+          <section class="section uk-section-small">
+            <div class="uk-container section__container">
+              <div class="section__body">
+                <div class="table-price">
+                  <div class="table-price__header">
+                    <div class="table-price__row">
+                      <div class="table-price__title table-price__gell table-price__gell--border">
+                        <p>Наименование</p>
+                      </div>
+                      <div class="table-price__title table-price__gell">
+                        <p>Стоимость</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-price__body">
+                    <div class="table-price__row">
+                      <div class="table-price__gell table-price__gell--border">
+                        <p>Подготовка сведений по индивидуальному Персонифицированному учету</p>
+                      </div>
+                      <div class="table-price__gell">
+                        <p class="table-price__unit">3 000 - 15 000 руб</p>
+                        <p>(в зависимости от вида деятельности)</p>
+                      </div>
+                    </div>
+                    <div class="table-price__row">
+                      <div class="table-price__gell table-price__gell--border">
+                        <p>Подготовка сведений 2НДФЛ</p>
+                      </div>
+                      <div class="table-price__gell">
+                        <p class="table-price__unit">3 000 - 15 000 руб</p>
+                        <p>(в зависимости от наличия разногласий с ИФНС)</p>
+                      </div>
+                    </div>
+                    <div class="table-price__row">
+                      <div class="table-price__gell table-price__gell--border">
+                        <p>Подготовка Учетной политики</p>
+                      </div>
+                      <div class="table-price__gell">
+                        <p class="table-price__unit">150 руб</p>
+                        <p>(за документ)</p>
+                      </div>
+                    </div>
+                    <div class="table-price__row">
+                      <div class="table-price__gell table-price__gell--border">
+                        <p>Подготовка сведений по индивидуальному Персонифицированному учету</p>
+                      </div>
+                      <div class="table-price__gell">
+                        <p class="table-price__unit">3 000 - 15 000 руб</p>
+                        <p>(в зависимости от вида деятельности)</p>
+                      </div>
+                    </div>
+                    <div class="table-price__row">
+                      <div class="table-price__gell table-price__gell--border">
+                        <p>Подготовка сведений 2НДФЛ</p>
+                      </div>
+                      <div class="table-price__gell">
+                        <p class="table-price__unit">3 000 - 15 000 руб</p>
+                        <p>(в зависимости от наличия разногласий с ИФНС)</p>
+                      </div>
+                    </div>
+                    <div class="table-price__row">
+                      <div class="table-price__gell table-price__gell--border">
+                        <p>Подготовка сведений 2НДФЛ</p>
+                      </div>
+                      <div class="table-price__gell">
+                        <p class="table-price__unit">3 000 - 15 000 руб</p>
+                        <p>(в зависимости от наличия разногласий с ИФНС)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="button-container uk-visible@m">
+                  <a class="btn  btn--secondary" type="submit"><span>Ознакомиться с договором</span></a>
+                  <a class="btn" type="submit"><span>Заключить договор</span></a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section">
+            <div class="section__header">
+              <div class="section__title">
+                <h4>Выберите способ заключения договора</h4>
+              </div>
+            </div>
+            <div class="section__body">
+              <div class="uk-grid-small uk-child-width-1-4@l uk-child-width-1-2@m uk-child-width-1-4@s" uk-grid>
+                <div>
+                  <label class="card card--small card--radio card--shadow">
+                    <div class="card__header">
+                      <div class="card__icon">{{mixins.icon('payinvoice')}}</div>
+                      <div class="card__title">Путем оплаты первого счета</div>
+                      <div class="radio card__radio">
+                        <div class="radio__label">
+                          <input type="radio" class="radio__input" value="1" name="radio" />
+                          <span class="radio__mark radio__mark--small"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div>
+                  <label class="card card--small card--radio card--shadow">
+                    <div class="card__header">
+                      <div class="card__icon">{{mixins.icon('paperdoc')}}</div>
+                      <div class="card__title">Подписание в бумажном виде</div>
+                      <div class="radio card__radio">
+                        <div class="radio__label">
+                          <input type="radio" class="radio__input" value="1" name="radio" />
+                          <span class="radio__mark radio__mark--small"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div>
+                  <label class="card card--small card--radio card--shadow">
+                    <div class="card__header">
+                      <div class="card__icon">{{mixins.icon('scan')}}</div>
+                      <div class="card__title">Путем обмена сканами</div>
+                      <div class="radio card__radio">
+                        <div class="radio__label">
+                          <input type="radio" class="radio__input" value="1" name="radio" />
+                          <span class="radio__mark radio__mark--small"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div>
+                  <label class="card card--small card--radio card--shadow">
+                    <div class="card__header">
+                      <div class="card__icon">{{mixins.icon('electronicdoc')}}</div>
+                      <div class="card__title">Электронный документооборот</div>
+                      <div class="radio card__radio">
+                        <div class="radio__label">
+                          <input type="radio" class="radio__input" value="1" name="radio" />
+                          <span class="radio__mark radio__mark--small"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section uk-section-small">
+            <div class="section__header">
+              <div class="section__title">
+                <h4>Выберите способ оплаты</h4>
+              </div>
+            </div>
+            <div class="section__body">
+              <div class="uk-grid uk-child-width-1-3@m">
+                <div>
+                  <label class="card card--small card--radio card--shadow">
+                    <div class="card__header">
+                      <div class="card__icon">{{mixins.icon('cardbank')}}</div>
+                      <div class="card__title">Картой</div>
+                      <p>Онлайн оплата</p>
+                      <div class="radio card__radio">
+                        <div class="radio__label">
+                          <input type="radio" class="radio__input" value="1" name="radio" />
+                          <span class="radio__mark radio__mark--small"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div>
+                  <label class="card card--small card--radio card--shadow">
+                    <div class="card__header">
+                      <div class="card__icon">{{mixins.icon('yandex')}}</div>
+                      <div class="card__title">Yandex Pay</div>
+                      <p>Бесконтактная оплата</p>
+                      <div class="radio card__radio">
+                        <div class="radio__label">
+                          <input type="radio" class="radio__input" value="1" name="radio" />
+                          <span class="radio__mark radio__mark--small"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div>
+                  <label class="card card--small card--radio card--shadow">
+                    <div class="card__header">
+                      <div class="card__icon">{{mixins.icon('buh')}}</div>
+                      <div class="card__title">По счёту</div>
+                      <p>Физ. лицо / Юр. лицо</p>
+                      <div class="radio card__radio">
+                        <div class="radio__label">
+                          <input type="radio" class="radio__input" value="1" name="radio" />
+                          <span class="radio__mark radio__mark--small"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section">
+            <div class="form form--order">
+              <div class="section__header">
+                <div class="section__title">
+                  <h4>Заполните форму</h4>
+                </div>
+              </div>
+              <div class="section__body">
+                <div class="form">
+                  <div class="form__body">
+                    <div class="form__item">
+                      <label class="form__label">
+                        <div class="input input--error">
+                          <input type="text" class="input__field" placeholder="Ваше имя">
+                        </div>
+                      </label>
+                    </div>
+                    <div class="form__item">
+                      <label class="form__label">
+                        <div class="input input--success">
+                          <input type="text" class="input__field" placeholder="Наименование компании">
+                        </div>
+                      </label>
+                    </div>
+                    <div class="form__item">
+                      <label class="form__label">
+                        <div class="input input--active">
+                          <input type="text" class="input__field" placeholder="Телефон">
+                        </div>
+                      </label>
+                    </div>
+                    <div class="form__item">
+                      <label class="form__label">
+                        <div class="input">
+                          <input type="email" class="input__field" placeholder="E-mail">
+                        </div>
+                      </label>
+                    </div>
+                    <div class="form__item">
+                      <label class="form__label">
+                        <div class="input">
+                          <input type="text" class="input__field" placeholder="ИНН">
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+{% include "template/footer.html" %}

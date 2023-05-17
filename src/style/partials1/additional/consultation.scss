@@ -5,11 +5,38 @@
   background-position: right;
   background-color: var(--bg-2);
 
+  &--small {
+    margin: 0 calc(-20 / var(--fz) * var(--fz-em));
+    padding: calc(60 / var(--fz) * var(--fz-em)) calc(20 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      margin: 0;
+      padding: 0;
+      padding-top: calc(20 / var(--fz) * var(--fz-em));
+      padding-bottom: calc(20 / var(--fz) * var(--fz-em));
+    }
+  }
+
+  &--reverse {
+    background: url(../../img/bg-acc.png);
+    margin: 0 calc(-20 / var(--fz) * var(--fz-em));
+    padding: 0 calc(20 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
   &__image {
     position: relative;
     overflow: hidden;
-    padding-bottom: 100%;
+    padding-bottom: calc(320 / var(--fz) * var(--fz-em));
     height: 0;
+
+    @media (min-width: 960px) {
+      padding-bottom: 100%;
+    }
 
     .consultation--small & {
       @media (min-width: 960px) {
@@ -17,16 +44,34 @@
         padding-bottom: 85%;
       }
     }
+
+    .consultation--reverse & {
+      padding-bottom: calc(350 / var(--fz) * var(--fz-em));
+    }
+  }
+
+  &__image-container {
+
+    .consultation--reverse & {
+      order: 1;
+      align-self: flex-end;
+    }
   }
 
   &__img {
     position: absolute;
     top: 0;
-    right: calc(30 / var(--fz) * var(--fz-em));
+    right: 0;
     width: 100%;
-    height: 100%;
+    height: calc(320 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      height: 100%;
+    }
 
     .consultation--small & {
+      right: calc(30 / var(--fz) * var(--fz-em));
+
       @media (min-width: 960px) {
         width: calc(240 / var(--fz) * var(--fz-em));
         height: calc(320 / var(--fz) * var(--fz-em));
@@ -35,9 +80,16 @@
       }
     }
 
+    .consultation--reverse & {
+      @media (min-width: 960px) {
+        width: calc(320 / var(--fz) * var(--fz-em));
+        height: calc(350 / var(--fz) * var(--fz-em));
+      }
+    }
+
     & img {
       position: absolute;
-      object-fit: cover;
+      object-fit: contain;
       top: 0;
       left: 0;
       width: 100%;
@@ -57,6 +109,16 @@
       margin-left: calc(100 / var(--fz) * var(--fz-em));
     }
 
+    .consultation--reverse & {
+      padding-top: calc(40 / var(--fz) * var(--fz-em));
+      padding-bottom: calc(40 / var(--fz) * var(--fz-em));
+
+      @media (min-width: 960px) {
+        padding-top: calc(80 / var(--fz) * var(--fz-em));
+        padding-bottom: calc(80 / var(--fz) * var(--fz-em));
+      }
+    }
+
     .consultation--small & {
       h4 {
         font-weight: 400;
@@ -69,17 +131,6 @@
     }
   }
 
-  &--small {
-    margin: 0 calc(-20 / var(--fz) * var(--fz-em));
-    padding: calc(60 / var(--fz) * var(--fz-em)) calc(20 / var(--fz) * var(--fz-em));
-
-    @media (min-width: 960px) {
-      margin: 0;
-      padding: 0;
-      padding-top: calc(20 / var(--fz) * var(--fz-em));
-      padding-bottom: calc(20 / var(--fz) * var(--fz-em));
-    }
-  }
 
   &__input {
     border: 1px solid var(--line);

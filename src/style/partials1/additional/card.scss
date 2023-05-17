@@ -12,6 +12,10 @@ a.card {
   }
 }
 
+label.card {
+  cursor: pointer;
+}
+
 a.card__title {
   text-decoration: none;
   color: var(--text-color);
@@ -39,6 +43,10 @@ a.card__title {
 
   @media (min-width: 960px) {
     padding: calc(40 / var(--fz) * var(--fz-em)) calc(32 / var(--fz) * var(--fz-em));
+  }
+
+  &--small {
+    padding: calc(24 / var(--fz) * var(--fz-em)) calc(20 / var(--fz) * var(--fz-em));
   }
 
   &--decor {
@@ -92,6 +100,10 @@ a.card__title {
     background: var(--card-bg);
   }
 
+  &--shadow {
+    box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.08);
+  }
+
   &--centered {
     align-items: center;
     text-align: center;
@@ -123,6 +135,11 @@ a.card__title {
     color: var(--z-white);
   }
 
+  &--icon-bottom {
+    padding-left: calc(20 / var(--fz) * var(--fz-em));
+    padding-right: calc(20 / var(--fz) * var(--fz-em));
+  }
+
   & &__header {
     & h4 {
       line-height: 1.6;
@@ -139,12 +156,32 @@ a.card__title {
       font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
       color: var(--primary);
     }
+
+    .card--radio & {
+
+      & .icon {
+        --fz: 20;
+
+        font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+        color: var(--primary);
+      }
+    }
+
+    .card--icon-bottom & {
+      position: absolute;
+      bottom: calc(15 / var(--fz) * var(--fz-em));
+      right: calc(20 / var(--fz) * var(--fz-em));
+    }
   }
 
   &--accent {
     & .icon {
       color: var(--z-white);
     }
+  }
+
+  &__header {
+    position: relative;
   }
 
   &__body {
@@ -182,6 +219,12 @@ a.card__title {
         line-height: 1.5;
       }
     }
+
+    .card--radio &,
+    .card--icon-bottom & {
+      text-transform: none;
+      font-weight: 600;
+    }
   }
 
   &__description {
@@ -190,6 +233,7 @@ a.card__title {
     &--large {
       @media (min-width: 960px) {
         --fz: 16;
+        margin-top: calc(8 / var(--fz) * var(--fz-em));
       }
 
       font-size: calc(var(--fz)/ var(--fz-base) * var(--fz-em));
@@ -205,5 +249,11 @@ a.card__title {
 
   &__btn {
     margin-top: calc(24 / var(--fz) * var(--fz-em));
+  }
+
+  &__radio {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }

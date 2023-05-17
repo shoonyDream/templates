@@ -1,0 +1,25 @@
+.framed-text {
+
+  @media (min-width: 960px) {
+    padding-left: calc(100 / var(--fz) * var(--fz-em));
+    padding-right: calc(100 / var(--fz) * var(--fz-em));
+  }
+
+  .framed-text__container {
+    background-color: var(--bg-2);
+    padding: calc(20 / var(--fz) * var(--fz-em));
+  }
+
+  &__description {
+    color: var(--primary);
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid var(--primary);
+    padding: calc(24 / var(--fz) * var(--fz-em)) calc(20 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      padding: calc(36 / var(--fz) * var(--fz-em)) calc(80 / var(--fz) * var(--fz-em));
+    }
+  }
+}

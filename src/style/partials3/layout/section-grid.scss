@@ -1,59 +1,48 @@
 .section-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(20 / var(--fz) * var(--fz-em));
+
   @media (min-width: 960px) {
-    display: flex;
+    flex-wrap: nowrap;
     flex-direction: row-reverse;
   }
 
   &__aside {
     position: relative;
-
-    &::before,
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      background-color: var(--border-color);
-      width: 100vw;
-      height: 1px;
-
-      @media (min-width: 960px) {
-        display: none;
-      }
-    }
-
-    &::before {
-      left: -50%;
-    }
-
-    &::after {
-      right: -50%;
-    }
+    order: 1;
+    width: 100%;
 
     @media (min-width: 960px) {
+      order: 0;
       overflow: hidden;
       flex-shrink: 0;
-      max-width: calc((295 + 20) / var(--fz) * var(--fz-em));
-      flex-basis: calc((295 + 20) / var(--fz) * var(--fz-em));
-      border-right: 1px solid var(--border-color);
+      max-width: calc((330 + 20) / var(--fz) * var(--fz-em));
+      flex-basis: calc((330 + 20) / var(--fz) * var(--fz-em));
       margin: 0;
-      margin-left: calc(-20 / var(--fz) * var(--fz-em));
-    }
-
-    &--third {
-      @media (min-width: 960px) {
-        max-width: calc(33% + (10 / var(--fz) * var(--fz-em)));
-        flex-basis: calc(33% + (10 / var(--fz) * var(--fz-em)));
-      }
-    }
-
-    .delivery-rules & {
-      margin-left: 0;
+      padding: 0 calc(20 / var(--fz) * var(--fz-em)) calc(20 / var(--fz) * var(--fz-em));
     }
   }
 
   &__content {
+    order: 0;
+
+    h1 {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
     @media (min-width: 960px) {
       flex-grow: 1;
+    }
+
+    .section--calculator & {
+      @media (min-width: 960px) {
+        padding-right: calc(120 / var(--fz) * var(--fz-em));
+      }
     }
 
     &>.section:not(.section--filters):not(.section--blog-detail):not(.section--delivery-rules) {
@@ -83,22 +72,4 @@
 
 .section-grid-aside {
   max-height: calc(100vh - var(--header-height) / var(--fz) * var(--fz-em) - 60px);
-  display: none;
-  overflow-x: hidden;
-
-  &.is-opened {
-    display: block;
-  }
-
-  @media (min-width: 960px) {
-    display: block !important;
-  }
-
-  &__content {
-    padding-bottom: calc(20 / var(--fz) * var(--fz-em));
-
-    @media (min-width: 960px) {
-      padding: calc(20 / var(--fz) * var(--fz-em)) 0;
-    }
-  }
 }
